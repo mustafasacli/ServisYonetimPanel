@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Entity", "ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj", "{20394588-54D6-40D9-A9BE-0B3B166B8E03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Api.ConsoleApp", "ServisYonetimPanel.Api.ConsoleApp\ServisYonetimPanel.Api.ConsoleApp.csproj", "{AC8E34AB-F629-4D6E-B0FE-9F8551520271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Web.UI", "ServisYonetimPanel.Web.UI\ServisYonetimPanel.Web.UI.csproj", "{1DD08F14-B2EC-4971-A799-36C9FC4C2483}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Models", "ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj", "{759B83DE-7011-48C0-A307-7C4331F0C43D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CFC94FF-AD17-42A0-87D3-0789648C1C86}
+	EndGlobalSection
+EndGlobal

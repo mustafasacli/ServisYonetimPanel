@@ -1,0 +1,7 @@
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\bin\Debug\ServisYonetimPanel.Api.ConsoleApp.exe.config
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\bin\Debug\ServisYonetimPanel.Api.ConsoleApp.exe
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\bin\Debug\ServisYonetimPanel.Api.ConsoleApp.pdb
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\obj\Debug\ServisYonetimPanel.Api.ConsoleApp.csprojResolveAssemblyReference.cache
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\obj\Debug\ServisYonetimPanel.Api.ConsoleApp.csproj.CoreCompileInputs.cache
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\obj\Debug\ServisYonetimPanel.Api.ConsoleApp.exe
+E:\Projects\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\ServisYonetimPanel.Api.ConsoleApp\obj\Debug\ServisYonetimPanel.Api.ConsoleApp.pdb
