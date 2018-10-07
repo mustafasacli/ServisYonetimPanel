@@ -3,6 +3,7 @@
     using ServisYonetimPanel.Common.Response;
     using ServisYonetimPanel.Contracts.BusinessContract;
     using ServisYonetimPanel.Entity;
+    using ServisYonetimPanel.Models.Model;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -11,12 +12,12 @@
 
     public class ServicePocoBusiness : IServicePocoBusiness
     {
-        public ServiceResponse<Guid> Add(ServicePoco poco)
+        public ServiceResponse<Guid> Add(ServicePocoModel poco)
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResponse<bool> Update(ServicePoco poco)
+        public ServiceResponse<bool> Update(ServicePocoModel poco)
         {
             throw new NotImplementedException();
         }
@@ -26,12 +27,12 @@
             throw new NotImplementedException();
         }
 
-        public ServiceResponse<IEnumerable<ServicePoco>> GetServicePocos()
+        public ServiceResponse<IEnumerable<ServicePocoModel>> GetServicePocos()
         {
             throw new NotImplementedException();
         }
 
-        public ServiceResponse<ServicePoco> Get(Guid id)
+        public ServiceResponse<ServicePocoModel> Get(Guid id)
         {
             throw new NotImplementedException();
         }

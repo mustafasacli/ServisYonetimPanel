@@ -1,14 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace ServisYonetimPanel.Entity
+﻿namespace ServisYonetimPanel.Entity
 {
-    public class ServiceEntity: BaseEntity
+    using System;
+    using System.ComponentModel.DataAnnotations;
+
+    public class ServiceEntity
     {
-        [Required(AllowEmptyStrings = false)]
-        public string Name { get; set; }
+        public Guid GId
+        { get; set; }
 
-        public long ServiceEntityDetailId { get; set; }
+        [Required]
+        public string Url
+        { get; set; }
 
-        public ServiceEntityDetail Detail { get; set; }
+        [Required]
+        public string UserName
+        { get; set; }
+
+        [Required]
+        public string Password
+        { get; set; }
     }
 }

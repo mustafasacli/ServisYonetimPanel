@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\ServisYonetimPanel.Output\Contracts\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -52,6 +52,10 @@
     <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj">
       <Project>{20394588-54D6-40D9-A9BE-0B3B166B8E03}</Project>
       <Name>ServisYonetimPanel.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj">
+      <Project>{759B83DE-7011-48C0-A307-7C4331F0C43D}</Project>
+      <Name>ServisYonetimPanel.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

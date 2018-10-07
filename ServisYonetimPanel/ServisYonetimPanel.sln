@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Web.UI",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Models", "ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj", "{759B83DE-7011-48C0-A307-7C4331F0C43D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Core.Web.UI", "ServisYonetimPanel.Core.Web.UI\ServisYonetimPanel.Core.Web.UI.csproj", "{15DAC062-8386-45B6-B64D-4AB03FF7FC60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServisYonetimPanel.Core.Web.UI", "ServisYonetimPanel.Core.Web.UI\ServisYonetimPanel.Core.Web.UI.csproj", "{15DAC062-8386-45B6-B64D-4AB03FF7FC60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Contracts", "ServisYonetimPanel.Contracts\ServisYonetimPanel.Contracts.csproj", "{61F35F80-6CAD-4AC2-A0A2-5ADC051878A4}"
 EndProject

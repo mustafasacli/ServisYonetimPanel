@@ -8,21 +8,24 @@
     using Microsoft.AspNetCore.Mvc;
     using ServisYonetimPanel.Contracts.BusinessContract;
     using ServisYonetimPanel.Entity;
+    using ServisYonetimPanel.Models.Model;
 
     [Route("api/[controller]")]
     [ApiController]
-    public class ServiceController : ControllerBase
+    public class ServiceController : BaseApiController
     {
         protected IServicePocoBusiness servicePocoBusiness;
 
-        public ServiceController(IServicePocoBusiness servicePocoBusiness)
+        public ServiceController(
+            IServicePocoBusiness servicePocoBusiness, IHttpContextAccessor accessor)
+            : base(accessor)
         {
             this.servicePocoBusiness = servicePocoBusiness;
         }
 
         // GET: api/Service
         [HttpGet]
-        public IEnumerable<ServicePoco> GetList()
+        public IEnumerable<ServicePocoModel> GetList()
         {
             var result = servicePocoBusiness.GetServicePocos();
             //return new List<ServicePoco> { }.AsEnumerable();
@@ -32,7 +35,7 @@
 
         // GET: api/Service/5
         [HttpGet("{id}", Name = "Get")]
-        public ServicePoco Get(Guid id)
+        public ServicePocoModel Get(Guid id)
         {
             var result = servicePocoBusiness.Get(id);
             //return new ServicePoco { };
@@ -42,7 +45,7 @@
 
         // POST: api/Service
         [HttpPost]
-        public Guid Post([FromBody] ServicePoco poco)
+        public Guid Post([FromBody] ServicePocoModel poco)
         {
             var result = Guid.Empty;
 
@@ -55,7 +58,7 @@
 
         // PUT: api/Service/5
         [HttpPut("{id}")]
-        public bool Put(Guid id, [FromBody] ServicePoco poco)
+        public bool Put(Guid id, [FromBody] ServicePocoModel poco)
         {
             var result = false;
 
