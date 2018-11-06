@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -23,5 +24,9 @@
     <ProjectReference Include="..\ServisYonetimPanel.Contracts\ServisYonetimPanel.Contracts.csproj" />
     <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="del /s /q &quot;$(ProjectDir)\\obj\\*.*&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\obj\\Debug&quot;" />
+  </Target>
 
 </Project>

@@ -1,9 +1,9 @@
-﻿namespace ServisYonetimPanel.Entity
+﻿namespace ServisYonetimPanel.Models.Model
 {
     using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class ServiceEntity : BaseEntity
+    public class ServicePocoModel
     {
         public Guid GId
         { get; set; }

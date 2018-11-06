@@ -45,4 +45,7 @@
     <Compile Include="Response\ServiceResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rd /s /q "$(ProjectDir)\\obj\\Debug"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

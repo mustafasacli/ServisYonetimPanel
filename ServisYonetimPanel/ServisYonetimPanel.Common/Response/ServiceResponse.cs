@@ -1,6 +1,6 @@
 ﻿namespace ServisYonetimPanel.Common.Response
 {
-    public class ServiceResponse<T>
+    public class ServiceResponse<T> : ServiceResponse
     {
         public T ResponseData { get; set; }
     }

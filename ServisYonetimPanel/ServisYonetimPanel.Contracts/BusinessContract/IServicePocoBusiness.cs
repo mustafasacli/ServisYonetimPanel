@@ -7,13 +7,13 @@
 
     public interface IServicePocoBusiness
     {
-        ServiceResponse<Guid> Add(ServicePocoModel poco);
+        ServiceResponse<object> Add(ServicePocoModel poco);
 
         ServiceResponse<bool> Update(ServicePocoModel poco);
 
-        ServiceResponse<bool> Delete(Guid id);
+        ServiceResponse<bool> Delete(object id);
 
-        ServiceResponse<ServicePocoModel> Get(Guid id);
+        ServiceResponse<ServicePocoModel> Get(object id);
 
         ServiceResponse<IEnumerable<ServicePocoModel>> GetServicePocos();
     }

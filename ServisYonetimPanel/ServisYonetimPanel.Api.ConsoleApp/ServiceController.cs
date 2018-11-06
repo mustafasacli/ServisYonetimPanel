@@ -1,24 +1,18 @@
-﻿namespace ServisYonetimPanel.Core.Web.UI.Controllers
+﻿namespace ServisYonetimPanel.Api.ConsoleApp
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
     using ServisYonetimPanel.Contracts.BusinessContract;
     using ServisYonetimPanel.Entity;
     using ServisYonetimPanel.Models.Model;
+    using System;
+    using System.Collections.Generic;
+    using System.Web.Http;
 
     [Route("api/[controller]")]
-    [ApiController]
     public class ServiceController : BaseApiController
     {
         protected IServicePocoBusiness servicePocoBusiness;
 
-        public ServiceController(
-            IServicePocoBusiness servicePocoBusiness, IHttpContextAccessor accessor)
-            : base(accessor)
+        public ServiceController(IServicePocoBusiness servicePocoBusiness)
         {
             this.servicePocoBusiness = servicePocoBusiness;
         }
@@ -34,7 +28,7 @@
         }
 
         // GET: api/Service/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet]
         public ServicePocoModel Get(object id)
         {
             var result = servicePocoBusiness.Get(id);
@@ -57,7 +51,7 @@
         }
 
         // PUT: api/Service/5
-        [HttpPut("{id}")]
+        [HttpPut]
         public bool Put(object id, [FromBody] ServicePocoModel poco)
         {
             var result = false;
@@ -70,7 +64,7 @@
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public bool Delete(object id)
         {
             var result = false;

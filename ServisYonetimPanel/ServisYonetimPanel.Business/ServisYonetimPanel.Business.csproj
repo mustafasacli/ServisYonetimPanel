@@ -31,6 +31,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dexter">
+      <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\Dexter.dll</HintPath>
+    </Reference>
+    <Reference Include="Dexter.Extensions">
+      <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\Dexter.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DexterCfg">
+      <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\DexterCfg.dll</HintPath>
+    </Reference>
+    <Reference Include="Rocket">
+      <HintPath>..\..\..\..\..\..\SvnProjects\RocketRepository\RocketSolution\Rocket.Output\Rocket.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseBusiness.cs" />
+    <Compile Include="InternalServiceLogHelper.cs" />
+    <Compile Include="ServiceFileOperator.cs" />
     <Compile Include="ServicePocoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,5 +77,11 @@
       <Name>ServisYonetimPanel.Models</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="dexter.cfg.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rd /s /q "$(ProjectDir)\\obj\\Debug"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
