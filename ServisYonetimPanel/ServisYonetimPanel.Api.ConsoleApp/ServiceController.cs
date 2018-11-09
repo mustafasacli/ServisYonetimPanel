@@ -1,79 +1,97 @@
 ﻿namespace ServisYonetimPanel.Api.ConsoleApp
 {
+    using ServisYonetimPanel.Business;
     using ServisYonetimPanel.Contracts.BusinessContract;
     using ServisYonetimPanel.Entity;
     using ServisYonetimPanel.Models.Model;
     using System;
     using System.Collections.Generic;
     using System.Web.Http;
+    using System.Web.Http.Description;
 
-    [Route("api/[controller]")]
+    [RoutePrefix("service")]
     public class ServiceController : BaseApiController
     {
         protected IServicePocoBusiness servicePocoBusiness;
 
-        public ServiceController(IServicePocoBusiness servicePocoBusiness)
+        public ServiceController()
         {
-            this.servicePocoBusiness = servicePocoBusiness;
+            this.servicePocoBusiness = new ServicePocoBusiness();
         }
 
+        /*
+         
+        [ResponseType(typeof(List<ServiceDataVM>))]
+        [AcceptVerbs("GET")]
+        public IHttpActionResult
+             */
+
         // GET: api/Service
+        //[ResponseType(typeof(IEnumerable<ServicePocoModel>))]
         [HttpGet]
-        public IEnumerable<ServicePocoModel> GetList()
+        [Route("GetList")]
+        //[AcceptVerbs("GET")]
+        public IHttpActionResult GetList()
         {
             var result = servicePocoBusiness.GetServicePocos();
             //return new List<ServicePoco> { }.AsEnumerable();
             //return new string[] { "value1", "value2" };
-            return result.ResponseData;
+            return Json(result);//result.ResponseData;
         }
 
         // GET: api/Service/5
+        //[AcceptVerbs("GET")]
         [HttpGet]
-        public ServicePocoModel Get(object id)
+        //[ResponseType(typeof(ServicePocoModel))]
+        [Route("Get")]
+        public IHttpActionResult Get(object id)
         {
             var result = servicePocoBusiness.Get(id);
             //return new ServicePoco { };
             //return "value";
-            return result.ResponseData;
+            return Json(result);//result.ResponseData;
         }
 
         // POST: api/Service
         [HttpPost]
-        public object Post([FromBody] ServicePocoModel poco)
+        [Route("Post")]
+        public IHttpActionResult Post([FromBody] ServicePocoModel poco)
         {
-            var result = new object();
+            // var result = new object();
 
             //method body
             var response = servicePocoBusiness.Add(poco);
-            result = response.ResponseData;
+            //var result = response.ResponseData;
 
-            return result;
+            return Json(response);//return result;
         }
 
         // PUT: api/Service/5
         [HttpPut]
-        public bool Put(object id, [FromBody] ServicePocoModel poco)
+        [Route("Put")]
+        public IHttpActionResult Put(object id, [FromBody] ServicePocoModel poco)
         {
             var result = false;
 
             //method body
             var response = servicePocoBusiness.Update(poco);
-            result = response.ResponseData;
+            //result = response.ResponseData;
 
-            return result;
+            return Json(result);//result;
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete]
-        public bool Delete(object id)
+        [Route("Delete")]
+        public IHttpActionResult Delete(object id)
         {
-            var result = false;
+            //var result = false;
 
             //method body
             var response = servicePocoBusiness.Delete(id);
-            result = response.ResponseData;
+            //result = response.ResponseData;
 
-            return result;
+            return Json(response);//result;
         }
     }
 }
