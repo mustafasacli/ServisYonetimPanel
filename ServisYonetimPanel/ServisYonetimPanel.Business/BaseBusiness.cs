@@ -16,7 +16,20 @@
         protected BaseBusiness()
         {
             //Get Setting Values from dexter config file. dexter.cfg.xml
-            var dbConn = DxCfgConnectionFactory.Instance.GetConnection("main");
+            string connKey = DxCfgConnectionFactory.Instance["conn-key"];
+            string connStrKey = DxCfgConnectionFactory.Instance["conn-string-key"];
+
+            if (string.IsNullOrWhiteSpace(connKey))
+                connKey = "main";
+
+            if (string.IsNullOrWhiteSpace(connStrKey))
+                connStrKey = "mainConnStr";
+
+            var connStr = DxCfgConnectionFactory.Instance[connStrKey];
+
+            var dbConn = DxCfgConnectionFactory.Instance.GetConnection(connKey);
+            dbConn.ConnectionString = connStr;
+
             rcDb = new RxDatabase(dbConn);
         }
 
