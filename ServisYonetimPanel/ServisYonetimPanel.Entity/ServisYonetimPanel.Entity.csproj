@@ -43,17 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ServiceEntityDeleteCommand.cs" />
-    <Compile Include="ICommand.cs" />
-    <Compile Include="IInsertCommand.cs" />
-    <Compile Include="InsertCommand.cs" />
-    <Compile Include="IServiceEntity.cs" />
-    <Compile Include="IUpdateCommand.cs" />
+    <Compile Include="DetailRecord.cs" />
+    <Compile Include="MasterRecord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceEntityInsertCommand.cs" />
-    <Compile Include="ServiceEntityUpdateCommand.cs" />
-    <Compile Include="ServiceGetCommand.cs" />
-    <Compile Include="UpdateCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

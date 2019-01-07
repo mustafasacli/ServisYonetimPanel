@@ -1,23 +1,18 @@
 ﻿namespace ServisYonetimPanel.Models.Model
 {
-    using System;
     using System.ComponentModel.DataAnnotations;
 
-    public class ServicePocoModel
+    public class ServicePocoModel : BasePocoModel
     {
-        public Guid GId
+        [Key]
+        public long Id
+        { get; set; }
+
+        public string MasterKey
         { get; set; }
 
         [Required]
-        public string Url
-        { get; set; }
-
-        [Required]
-        public string UserName
-        { get; set; }
-
-        [Required]
-        public string Password
+        public string Name
         { get; set; }
     }
 }

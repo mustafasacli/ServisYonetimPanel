@@ -1,5 +1,6 @@
 ﻿namespace ServisYonetimPanel.Business
 {
+    using Dexter.Extensions;
     using DexterCfg.Factory;
     using Rocket;
     using Rocket.Interfaces;
@@ -10,8 +11,7 @@
 
     public abstract class BaseBusiness
     {
-        private IRcDatabase rcDb = null;
-        //private readonly IDbConnection dbConn;
+        protected readonly IRcDatabase rcDb;
 
         protected BaseBusiness()
         {
@@ -35,37 +35,40 @@
 
         protected virtual object InternalAdd<T>(T entity) where T : class
         {
-            //object o = RxCrudFactory.InsertAndGetIdWIT(dbConn, entity);
             var o = rcDb.InsertAndGetIdWIT(entity);
             return o;
         }
 
         protected virtual object InternalUpdate<T>(T entity) where T : class
         {
-            //var o = RxCrudFactory.UpdateWIT(dbConn, entity);
             var o = rcDb.UpdateWIT(entity);
             return o;
         }
 
         protected virtual object InternalDelete<T>(object id) where T : class
         {
-            //var o = RxCrudFactory.DeleteWIT(dbConn, id);
             var o = rcDb.DeletByIdWIT<T>(id);
             return o;
         }
 
         protected virtual IEnumerable<T> InternalGetList<T>() where T : class
         {
-            // var t = RxGetFactory.GetAll<T>(dbConn);
             var t = rcDb.GetAll<T>();
             return t.AsEnumerable();
         }
 
         protected virtual T InternalGet<T>(object id) where T : class
         {
-            // var t = RxGetFactory.GetById<T>(dbConn, id);
             var t = rcDb.GetById<T>(id);
             return t;
+        }
+
+        protected virtual IEnumerable<T> InternalGetListWithParam<T>(string sql, CommandType commandType = CommandType.Text
+            , Dictionary<string, object> inputs = null, Dictionary<string, object> outputs = null) where T : class
+        {
+            var t = rcDb.GetDynamicResultSet(sql, commandType, mTrans: null, inputArgs: inputs, outputArgs: outputs);
+            var list = t.ConvertToList<T>();
+            return list.AsEnumerable();
         }
 
         protected void LogException(Exception e)
@@ -76,6 +79,7 @@
             }
             catch (Exception ee)
             {
+                InternalServiceLogHelper.LogException(ee);
             }
         }
     }

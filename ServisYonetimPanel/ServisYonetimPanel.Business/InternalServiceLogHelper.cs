@@ -25,16 +25,7 @@
 
                 string folderName = $"{AssemblyDirectory}/SeviceErrors";
 
-                try
-                {
-                    if (!Directory.Exists(folderName))
-                    {
-                        Directory.CreateDirectory(folderName);
-                    }
-                }
-                catch (Exception ex)
-                {
-                }
+                CreateDirIfNotExist(folderName);
 
                 var ErrorFileDateFormat = "yyyy-MM-dd-HH-mm-ss"; ;
                 var ErrorFileName = $"service-error-{DateTime.Now.ToString(ErrorFileDateFormat)}.log";
@@ -57,6 +48,20 @@
                 ServiceFileOperator.Instance.Write(fileName, rows);
             }
             catch (Exception ee)
+            {
+            }
+        }
+
+        private static void CreateDirIfNotExist(string folderName)
+        {
+            try
+            {
+                if (!Directory.Exists(folderName))
+                {
+                    Directory.CreateDirectory(folderName);
+                }
+            }
+            catch (Exception ex)
             {
             }
         }

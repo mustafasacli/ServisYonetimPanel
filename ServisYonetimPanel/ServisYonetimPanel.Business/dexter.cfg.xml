@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dexter.configuration>
-  <connection-settings>
-    <setting key="conn_key" value="" />
-    <setting key="connection_string" value="" />
-  </connection-settings>
+  <dexter-settings writeEventLog="0" writeErrorLog="1">
+    <setting key="conn-key">sql</setting>
+    <setting key="conn-string-key">connStringSql</setting>
+    <setting key="connTypeName">sql</setting>
+
+    <setting key="connStringSqlCache">Data Source=.\SQLEXPRESS;Initial Catalog=SimpleCacheServerTestDb;Integrated Security=SSPI;</setting>
+    <setting key="connStringSql">Data Source=.\SQLEXPRESS;Initial Catalog=ServisYonetimDb;Integrated Security=True</setting>
+  </dexter-settings>
   <dexter.configs writeEventLog="0" writeErrorLog="1">
     <dexter>
-      <add name="main"
+      <add name="sql"
     typename="System.Data.SqlClient.SqlConnection"
     namespace="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
     dialect="Sql" />
@@ -22,6 +26,12 @@
       namespace="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
       dialect="MySql" />
       -->
+      <!--
+			<add name="mysql"
+      typename="MySql.Data.MySqlClient.MySqlConnection"
+      namespace="MySql.Data, Version=6.1.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
+      dialect="MySql" />
+			-->
       <!--
 			<add name="sqlite"
       typename="System.Data.SQLite.SQLiteConnection"
@@ -45,12 +55,6 @@
       typename="IBM.Data.Informix.IfxConnection"
       namespace="IBM.Data.Informix, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208"
       dialect="Informix" />
-			-->
-      <!--
-			<add name="mysql"
-      typename="MySql.Data.MySqlClient.MySqlConnection"
-      namespace="MySql.Data, Version=6.1.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"
-      dialect="MySql" />
 			-->
       <!--
 			<add name="oracle"

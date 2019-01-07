@@ -40,7 +40,8 @@
     <Reference Include="DexterCfg">
       <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\DexterCfg.dll</HintPath>
     </Reference>
-    <Reference Include="Rocket">
+    <Reference Include="Rocket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9192d6c7ff76dd19, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\SvnProjects\RocketRepository\RocketSolution\Rocket.Output\Rocket.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -55,11 +56,16 @@
   <ItemGroup>
     <Compile Include="BaseBusiness.cs" />
     <Compile Include="InternalServiceLogHelper.cs" />
+    <Compile Include="ServiceDetailPocoBusiness.cs" />
     <Compile Include="ServiceFileOperator.cs" />
     <Compile Include="ServicePocoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ServisYonetimPanel.Command\ServisYonetimPanel.Command.csproj">
+      <Project>{1bef625e-2938-4cee-b587-9d415f8f0ec7}</Project>
+      <Name>ServisYonetimPanel.Command</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ServisYonetimPanel.Common\ServisYonetimPanel.Common.csproj">
       <Project>{6c79e3ee-c94d-4079-ab61-400d6a20b8bf}</Project>
       <Name>ServisYonetimPanel.Common</Name>
@@ -79,8 +85,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="dexter.cfg.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

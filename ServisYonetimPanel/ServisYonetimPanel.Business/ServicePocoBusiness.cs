@@ -1,9 +1,9 @@
 ﻿namespace ServisYonetimPanel.Business
 {
     using Dexter.Extensions;
+    using ServisYonetimPanel.Command;
     using ServisYonetimPanel.Common.Response;
     using ServisYonetimPanel.Contracts.BusinessContract;
-    using ServisYonetimPanel.Entity;
     using ServisYonetimPanel.Models.Model;
     using System;
     using System.Collections.Generic;
@@ -11,7 +11,9 @@
 
     public class ServicePocoBusiness : BaseBusiness, IServicePocoBusiness
     {
-        public ServicePocoBusiness() : base()
+        private static object lockObj = new object();
+
+        public ServicePocoBusiness()
         {
         }
 
@@ -21,10 +23,24 @@
 
             try
             {
+                var existCount = rcDb.ExecuteScalar("select count(1) from serviceentity where name = @name and isactive = true;",
+                    inputArgs: new Dictionary<string, object> { { "@name", poco.Name } }).ToInt();
+
+                if (existCount > 0)
+                {
+                    response.ResponseCode = -1001;
+                    response.ResponseMessage = "Data with given name is already exist.";
+                    return response;
+                }
+
                 var entity = GeneralMapperExtensions.Map<ServicePocoModel, ServiceEntityInsertCommand>(poco);
 
-                entity.CreatedOn = DateTime.Now;
-                entity.CreatedBy = 1;
+                lock (lockObj)
+                {
+                    entity.CreatedOn = DateTime.Now;
+                    entity.CreatedBy = 1;
+                    entity.MasterKey = entity.CreatedOn.Ticks.ToString("X");
+                }
 
                 var o = InternalAdd(entity);
                 response.ResponseData = o;
@@ -45,6 +61,16 @@
 
             try
             {
+                var existCount = rcDb.ExecuteScalar("select count(1) from serviceentity where name = @name and isactive = true and id <> @id;",
+                    inputArgs: new Dictionary<string, object> { { "@name", poco.Name }, { "@id", poco.Id } }).ToInt();
+
+                if (existCount > 0)
+                {
+                    response.ResponseCode = -1001;
+                    response.ResponseMessage = "Data with given name is already exist.";
+                    return response;
+                }
+
                 var entity = GeneralMapperExtensions.Map<ServicePocoModel, ServiceEntityUpdateCommand>(poco);
 
                 entity.UpdatedOn = DateTime.Now;
@@ -69,8 +95,8 @@
 
             try
             {
-                var cmd = new ServiceEntityDeleteCommand { GId = (Guid)id, UpdatedBy = 1, IsActive = false };
-                cmd.UpdatedOn = DateTime.Now;
+                var cmd = new ServiceEntityDeleteCommand
+                { Id = id.ToInt(), UpdatedOn = DateTime.Now, UpdatedBy = 1, IsActive = false };
 
                 var o = InternalUpdate(cmd);
                 response.ResponseData = (o as bool?).GetValueOrDefault();
@@ -92,7 +118,9 @@
             try
             {
                 var entList = InternalGetList<ServiceGetCommand>();
-                var modelList = entList.AsEnumerable().Select(s => GeneralMapperExtensions.Map<ServiceGetCommand, ServicePocoModel>(s)).ToList();
+
+                var modelList = entList.AsEnumerable().Select(s =>
+                GeneralMapperExtensions.Map<ServiceGetCommand, ServicePocoModel>(s)).ToList();
 
                 response.ResponseData = (modelList ?? new List<ServicePocoModel> { }).AsEnumerable();
                 response.ResponseCode = 1;
@@ -114,6 +142,7 @@
             {
                 var o = InternalGet<ServiceGetCommand>(id);
                 var result = GeneralMapperExtensions.Map<ServiceGetCommand, ServicePocoModel>(o);
+
                 response.ResponseData = result ?? new ServicePocoModel { };
                 response.ResponseCode = 1;
             }
