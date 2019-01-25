@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dexter.configuration>
   <dexter-settings writeEventLog="0" writeErrorLog="1">
-    <setting key="conn-key">connTypeName</setting>
-    <setting key="conn-string-key">connStringSqlCache</setting>
+    <setting key="conn-key">sql</setting>
+    <setting key="conn-string-key">connStringSql</setting>
     <setting key="connTypeName">sql</setting>
     <setting key="connStringName">connStringOraMngd</setting>
 
+    <setting key="connStringSql">Data Source=.\SQLEXPRESS;Initial Catalog=ServisYonetimDb;Integrated Security=True</setting>
     <setting key="connStringSqlCache">Data Source=.\SQLEXPRESS;Initial Catalog=SimpleCacheServerTestDb;Integrated Security=SSPI;</setting>
-    <setting key="connStringSql">data source=.\SQLEXPRESS;initial catalog=FileStoreDbTest;integrated security=True;</setting>
+    <!--<setting key="connStringSql">data source=.\SQLEXPRESS;initial catalog=FileStoreDbTest;integrated security=True;</setting>-->
     <setting key="connStringMySql">data source=127.0.0.1;initial catalog=FileStoreDbTest;user id=root;password=my123123;</setting>
     <setting key="connStringPgSql">server=127.0.0.1;Database=postgres;user id=postgres;password=pg123123;</setting>
     <setting key="connStringOraMngd">

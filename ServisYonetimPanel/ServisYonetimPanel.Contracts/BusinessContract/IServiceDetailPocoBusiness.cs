@@ -14,7 +14,7 @@
 
         ServiceResponse<IEnumerable<ServiceDetailPocoModel>> GetServiceDetailPocos(long masterId);
 
-        ServiceResponse<IEnumerable<ServiceDetailPocoModel>> GetServiceDetailPocosBYMasterKey(string masterKey);
+        ServiceResponse<IEnumerable<ServiceDetailPocoModel>> GetServiceDetailPocosByMasterKey(string masterKey);
 
         ServiceResponse<ServiceDetailPocoModel> Get(object id);
     }

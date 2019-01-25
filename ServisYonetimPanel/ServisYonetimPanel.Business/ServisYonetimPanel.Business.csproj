@@ -40,11 +40,15 @@
     <Reference Include="DexterCfg">
       <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\DexterCfg.dll</HintPath>
     </Reference>
+    <Reference Include="Net.FreeORM.EFValidation">
+      <HintPath>..\..\..\..\..\EFValidationProject\EFValidationProject1\Output\Net.FreeORM.EFValidation\Net.FreeORM.EFValidation.dll</HintPath>
+    </Reference>
     <Reference Include="Rocket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9192d6c7ff76dd19, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\SvnProjects\RocketRepository\RocketSolution\Rocket.Output\Rocket.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />

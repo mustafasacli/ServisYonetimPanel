@@ -11,9 +11,7 @@
 
     public abstract class BaseBusiness
     {
-        protected readonly IRcDatabase rcDb;
-
-        protected BaseBusiness()
+        private static IDbConnection BuildDbInstance()
         {
             //Get Setting Values from dexter config file. dexter.cfg.xml
             string connKey = DxCfgConnectionFactory.Instance["conn-key"];
@@ -25,49 +23,63 @@
             if (string.IsNullOrWhiteSpace(connStrKey))
                 connStrKey = "mainConnStr";
 
-            var connStr = DxCfgConnectionFactory.Instance[connStrKey];
+            var connectionString = DxCfgConnectionFactory.Instance[connStrKey];
 
-            var dbConn = DxCfgConnectionFactory.Instance.GetConnection(connKey);
-            dbConn.ConnectionString = connStr;
+            var dbConnection = DxCfgConnectionFactory.Instance.GetConnection(connKey);
+            dbConnection.ConnectionString = connectionString;
+            return dbConnection;
+        }
 
-            rcDb = new RxDatabase(dbConn);
+        private static Lazy<IRcDatabase> dbInstance = new Lazy<IRcDatabase>(() =>
+        {
+            var dbConnection = BuildDbInstance();
+            var db = new RxDatabase(dbConnection);
+            return db;
+        }
+        );
+
+        protected IRcDatabase Database => dbInstance.Value;
+
+        protected BaseBusiness()
+        {
         }
 
         protected virtual object InternalAdd<T>(T entity) where T : class
         {
-            var o = rcDb.InsertAndGetIdWIT(entity);
-            return o;
+            var result = Database.InsertAndGetIdWIT(entity);
+            return result;
         }
 
         protected virtual object InternalUpdate<T>(T entity) where T : class
         {
-            var o = rcDb.UpdateWIT(entity);
-            return o;
+            var result = Database.UpdateWIT(entity);
+            return result;
         }
 
         protected virtual object InternalDelete<T>(object id) where T : class
         {
-            var o = rcDb.DeletByIdWIT<T>(id);
-            return o;
+            var result = Database.DeletByIdWIT<T>(id);
+            return result;
         }
 
         protected virtual IEnumerable<T> InternalGetList<T>() where T : class
         {
-            var t = rcDb.GetAll<T>();
-            return t.AsEnumerable();
+            var result = Database.GetAll<T>();
+            return result.AsEnumerable();
         }
 
         protected virtual T InternalGet<T>(object id) where T : class
         {
-            var t = rcDb.GetById<T>(id);
-            return t;
+            var result = Database.GetById<T>(id);
+            return result;
         }
 
         protected virtual IEnumerable<T> InternalGetListWithParam<T>(string sql, CommandType commandType = CommandType.Text
             , Dictionary<string, object> inputs = null, Dictionary<string, object> outputs = null) where T : class
         {
-            var t = rcDb.GetDynamicResultSet(sql, commandType, mTrans: null, inputArgs: inputs, outputArgs: outputs);
-            var list = t.ConvertToList<T>();
+            var result = Database.GetDynamicResultSet(
+                sql, commandType, mTrans: null, inputArgs: inputs, outputArgs: outputs);
+            var list = result.ConvertToList<T>();
             return list.AsEnumerable();
         }
 

@@ -21,11 +21,11 @@
             try
             {
                 string str;
-                FileMode fMode = File.Exists(filePath) ? FileMode.Append : FileMode.OpenOrCreate;
+                FileMode fileMode = File.Exists(filePath) ? FileMode.Append : FileMode.OpenOrCreate;
                 if (!writeLine)
                 {
                     using (StreamWriter writer = new StreamWriter(
-                               new FileStream(filePath, fMode))
+                               new FileStream(filePath, fileMode))
                     { AutoFlush = true })
                     {
                         foreach (string s in rows)
@@ -47,7 +47,7 @@
                 else
                 {
                     using (StreamWriter writer = new StreamWriter(
-                new FileStream(filePath, fMode))
+                new FileStream(filePath, fileMode))
                     { AutoFlush = true })
                     {
                         foreach (string s in rows)

@@ -37,10 +37,11 @@
 
         // POST: api/Service
         [HttpPost]
-        [Route("Post")]
-        public IHttpActionResult Post([FromBody] ServicePocoModel poco)
+        [Route(Name = "Post")]
+        public IHttpActionResult Post([FromUri] string name)//ServicePocoModel poco)
         {
             //method body
+            var poco = new ServicePocoModel { Name = name };
             var response = servicePocoBusiness.Add(poco);
             //var result = response.ResponseData;
 
@@ -49,7 +50,7 @@
 
         // PUT: api/Service/5
         [HttpPut]
-        [Route("Put")]
+        [Route(Name = "Put")]
         public IHttpActionResult Put(object id, [FromBody] ServicePocoModel poco)
         {
             var result = false;

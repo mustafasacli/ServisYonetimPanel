@@ -7,11 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Entity",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Api.ConsoleApp", "ServisYonetimPanel.Api.ConsoleApp\ServisYonetimPanel.Api.ConsoleApp.csproj", "{AC8E34AB-F629-4D6E-B0FE-9F8551520271}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Web.UI", "ServisYonetimPanel.Web.UI\ServisYonetimPanel.Web.UI.csproj", "{1DD08F14-B2EC-4971-A799-36C9FC4C2483}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Models", "ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj", "{759B83DE-7011-48C0-A307-7C4331F0C43D}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServisYonetimPanel.Core.Web.UI", "ServisYonetimPanel.Core.Web.UI\ServisYonetimPanel.Core.Web.UI.csproj", "{15DAC062-8386-45B6-B64D-4AB03FF7FC60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Contracts", "ServisYonetimPanel.Contracts\ServisYonetimPanel.Contracts.csproj", "{61F35F80-6CAD-4AC2-A0A2-5ADC051878A4}"
 EndProject
@@ -22,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Command", "ServisYonetimPanel.Command\ServisYonetimPanel.Command.csproj", "{1BEF625E-2938-4CEE-B587-9D415F8F0EC7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Data", "ServisYonetimPanel.Data\ServisYonetimPanel.Data.csproj", "{8F8AC50D-047C-4A41-8832-54CAC820CAD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Core.Web.API", "ServisYonetimPanel.Core.Web.API\ServisYonetimPanel.Core.Web.API.csproj", "{0A52EE6D-94A1-4930-91E1-6A80A872BBD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,18 +35,10 @@ Global
 		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DD08F14-B2EC-4971-A799-36C9FC4C2483}.Release|Any CPU.Build.0 = Release|Any CPU
 		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{759B83DE-7011-48C0-A307-7C4331F0C43D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15DAC062-8386-45B6-B64D-4AB03FF7FC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15DAC062-8386-45B6-B64D-4AB03FF7FC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15DAC062-8386-45B6-B64D-4AB03FF7FC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15DAC062-8386-45B6-B64D-4AB03FF7FC60}.Release|Any CPU.Build.0 = Release|Any CPU
 		{61F35F80-6CAD-4AC2-A0A2-5ADC051878A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61F35F80-6CAD-4AC2-A0A2-5ADC051878A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61F35F80-6CAD-4AC2-A0A2-5ADC051878A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -69,6 +59,10 @@ Global
 		{8F8AC50D-047C-4A41-8832-54CAC820CAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F8AC50D-047C-4A41-8832-54CAC820CAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F8AC50D-047C-4A41-8832-54CAC820CAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A52EE6D-94A1-4930-91E1-6A80A872BBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A52EE6D-94A1-4930-91E1-6A80A872BBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A52EE6D-94A1-4930-91E1-6A80A872BBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A52EE6D-94A1-4930-91E1-6A80A872BBD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

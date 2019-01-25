@@ -25,7 +25,7 @@
 
                 string folderName = $"{AssemblyDirectory}/SeviceErrors";
 
-                CreateDirIfNotExist(folderName);
+                CreateDirectoryIfNotExist(folderName);
 
                 var ErrorFileDateFormat = "yyyy-MM-dd-HH-mm-ss"; ;
                 var ErrorFileName = $"service-error-{DateTime.Now.ToString(ErrorFileDateFormat)}.log";
@@ -52,7 +52,7 @@
             }
         }
 
-        private static void CreateDirIfNotExist(string folderName)
+        private static void CreateDirectoryIfNotExist(string folderName)
         {
             try
             {

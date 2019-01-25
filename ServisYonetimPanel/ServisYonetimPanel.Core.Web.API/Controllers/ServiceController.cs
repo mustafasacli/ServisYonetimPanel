@@ -1,17 +1,11 @@
-﻿namespace ServisYonetimPanel.Core.Web.UI.Controllers
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
-    using ServisYonetimPanel.Contracts.BusinessContract;
-    using ServisYonetimPanel.Entity;
-    using ServisYonetimPanel.Models.Model;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using ServisYonetimPanel.Contracts.BusinessContract;
+using ServisYonetimPanel.Models.Model;
+using System.Collections.Generic;
 
+namespace ServisYonetimPanel.Core.Web.API.Controllers
+{
     [Route("api/[controller]")]
     [ApiController]
     public class ServiceController : BaseApiController
@@ -27,17 +21,16 @@
 
         // GET: api/Service
         [HttpGet]
-        public IEnumerable<ServicePocoModel> GetList()
+        public ActionResult<IEnumerable<ServicePocoModel>> GetList()
         {
             var result = servicePocoBusiness.GetServicePocos();
-            //return new List<ServicePoco> { }.AsEnumerable();
-            //return new string[] { "value1", "value2" };
-            return result.ResponseData;
+
+            return Ok(result.ResponseData);
         }
 
         // GET: api/Service/5
         [HttpGet("{id}", Name = "Get")]
-        public ServicePocoModel Get(object id)
+        public ActionResult<ServicePocoModel> Get(object id)
         {
             var result = servicePocoBusiness.Get(id);
             //return new ServicePoco { };
@@ -47,7 +40,7 @@
 
         // POST: api/Service
         [HttpPost]
-        public object Post([FromBody] string name)//JObject jsonData)//ServicePocoModel poco)
+        public ActionResult<object> Post([FromQuery] string name)//JObject jsonData)//ServicePocoModel poco)
         {
             var result = new object();
             // var poco = JsonConvert.DeserializeObject<ServicePocoModel>(jsonData.ToString());

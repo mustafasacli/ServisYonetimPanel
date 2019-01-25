@@ -21,7 +21,7 @@ namespace ServisYonetimPanel.Business
 
             try
             {
-                var existCount = rcDb.ExecuteScalar("select count(1) from servicedetailentity where detailkey = @name and isactive = true and masterid = @masterid;",
+                var existCount = Database.ExecuteScalar("select count(1) from servicedetailentity where detailkey = @name and isactive = 1 and masterid = @masterid;",
                     inputArgs: new Dictionary<string, object> { { "@name", poco.DetailKey }, { "@masterid", poco.MasterId } }).ToInt();
 
                 if (existCount > 0)
@@ -55,7 +55,7 @@ namespace ServisYonetimPanel.Business
 
             try
             {
-                var existCount = rcDb.ExecuteScalar("select count(1) from servicedetailentity where detailkey = @name and isactive = true and masterid = @masterid and id <> @id;",
+                var existCount = Database.ExecuteScalar("select count(1) from servicedetailentity where detailkey = @name and isactive = true and masterid = @masterid and id <> @id;",
                     inputArgs: new Dictionary<string, object> { { "@name", poco.DetailKey }, { "@masterid", poco.MasterId }, { "@id", poco.Id } }).ToInt();
 
                 if (existCount > 0)
@@ -129,7 +129,7 @@ namespace ServisYonetimPanel.Business
             return response;
         }
 
-        public ServiceResponse<IEnumerable<ServiceDetailPocoModel>> GetServiceDetailPocosBYMasterKey(string masterKey)
+        public ServiceResponse<IEnumerable<ServiceDetailPocoModel>> GetServiceDetailPocosByMasterKey(string masterKey)
         {
             var response = new ServiceResponse<IEnumerable<ServiceDetailPocoModel>>() { ResponseCode = -1 };
 

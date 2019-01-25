@@ -4,7 +4,7 @@
 
     internal interface IInsertCommand
     {
-        int CreatedBy { get; set; }
+        long CreatedBy { get; set; }
 
         DateTime CreatedOn { get; set; }
     }

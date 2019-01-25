@@ -19,7 +19,7 @@
         public string Name
         { get; set; }
 
-        public int CreatedBy
+        public long CreatedBy
         { get; set; }
 
         public DateTime CreatedOn

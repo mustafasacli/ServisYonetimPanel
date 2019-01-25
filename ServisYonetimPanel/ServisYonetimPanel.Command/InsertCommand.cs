@@ -10,7 +10,7 @@
             this.CreatedBy = 1;
         }
 
-        public int CreatedBy { get; set; }
+        public long CreatedBy { get; set; }
 
         public DateTime CreatedOn { get; set; }
 
