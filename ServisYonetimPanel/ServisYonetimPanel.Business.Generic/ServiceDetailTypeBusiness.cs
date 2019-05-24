@@ -26,26 +26,41 @@
         {
             if (serviceDetailTypeModel == null)
             {
-                return new ServiceResponse<long> { ResponseCode = -1000, ResponseMessage = "Model is null" };
+                return new ServiceResponse<long>
+                {
+                    ResponseCode = -1000,
+                    ResponseMessage = "Model is null"
+                };
             }
 
             if (serviceDetailTypeModel == default(ServiceDetailTypeModel))
             {
-                return new ServiceResponse<long> { ResponseCode = -1001, ResponseMessage = "Model is default" };
+                return new ServiceResponse<long>
+                {
+                    ResponseCode = -1001,
+                    ResponseMessage = "Model is default"
+                };
             }
 
-            var validationResult = serviceDetailTypeModel.Validate();
-
-            if (validationResult.HasError)
+            var response = new ServiceResponse<long>()
             {
-                var message = GetValidationErrors(validationResult);
-                return new ServiceResponse<long> { ResponseCode = -2000, ResponseMessage = message };
-            }
-
-            var response = new ServiceResponse<long>() { Data = -1 };
+                Data = -1
+            };
 
             try
             {
+                var validationResult = serviceDetailTypeModel.Validate();
+
+                if (validationResult.HasError)
+                {
+                    var message = GetValidationErrors(validationResult);
+                    return new ServiceResponse<long>
+                    {
+                        ResponseCode = -2000,
+                        ResponseMessage = message
+                    };
+                }
+
                 var entity = GeneralMapperExtensions.Map<ServiceDetailTypeModel, ServiceDetailType>(serviceDetailTypeModel);
                 entity.Id = 0;
 
@@ -85,7 +100,11 @@
         /// <returns></returns>
         public ServiceResponse<int> Delete(int serviceDetailTypeModelId)
         {
-            var response = new ServiceResponse<int>() { ResponseCode = -1, Data = -1 };
+            var response = new ServiceResponse<int>()
+            {
+                ResponseCode = -1,
+                Data = -1
+            };
 
             if (serviceDetailTypeModelId < 1)
             {
@@ -94,21 +113,30 @@
                 return response;
             }
 
-            using (var repository = new ServisYonetimRepository<ServiceDetailType>())
+            try
             {
-                if (repository.Any(q => q.Id == serviceDetailTypeModelId && q.IsActive))
+                using (var repository = new ServisYonetimRepository<ServiceDetailType>())
                 {
-                    return new ServiceResponse<int>
+                    if (repository.Any(q => q.Id == serviceDetailTypeModelId && q.IsActive))
                     {
-                        ResponseCode = -3000,
-                        ResponseMessage = "Entity is not exist with given name."
-                    };
-                }
+                        return new ServiceResponse<int>
+                        {
+                            ResponseCode = -3000,
+                            ResponseMessage = "Entity is not exist with given name."
+                        };
+                    }
 
-                var entity = repository.FirstOrDefault(q => q.Id == serviceDetailTypeModelId);
-                SetUpdateValues(entity, isDelete: true);
-                response.ResponseCode = repository.SaveChanges();
-                response.Data = response.ResponseCode;
+                    var entity = repository.FirstOrDefault(q => q.Id == serviceDetailTypeModelId);
+                    SetUpdateValues(entity, isDelete: true);
+                    response.ResponseCode = repository.SaveChanges();
+                    response.Data = response.ResponseCode;
+                }
+            }
+            catch (Exception e)
+            {
+                response.ResponseCode = -100;
+                response.ResponseMessage = e.Message;
+                SimpleFileLogger.Instance.Error(e);
             }
 
             return response;
@@ -193,26 +221,41 @@
         {
             if (serviceDetailTypeModel == null)
             {
-                return new ServiceResponse<int> { ResponseCode = -1000, ResponseMessage = "Model is null" };
+                return new ServiceResponse<int>
+                {
+                    ResponseCode = -1000,
+                    ResponseMessage = "Model is null"
+                };
             }
 
             if (serviceDetailTypeModel == default(ServiceDetailTypeModel))
             {
-                return new ServiceResponse<int> { ResponseCode = -1001, ResponseMessage = "Model is default" };
+                return new ServiceResponse<int>
+                {
+                    ResponseCode = -1001,
+                    ResponseMessage = "Model is default"
+                };
             }
 
-            var validationResult = serviceDetailTypeModel.Validate();
-
-            if (validationResult.HasError)
+            var response = new ServiceResponse<int>()
             {
-                var message = GetValidationErrors(validationResult);
-                return new ServiceResponse<int> { ResponseCode = -2000, ResponseMessage = message };
-            }
-
-            var response = new ServiceResponse<int>() { Data = -1 };
+                Data = -1
+            };
 
             try
             {
+                var validationResult = serviceDetailTypeModel.Validate();
+
+                if (validationResult.HasError)
+                {
+                    var message = GetValidationErrors(validationResult);
+                    return new ServiceResponse<int>
+                    {
+                        ResponseCode = -2000,
+                        ResponseMessage = message
+                    };
+                }
+
                 var entity = GeneralMapperExtensions.Map<ServiceDetailTypeModel, ServiceDetailType>(serviceDetailTypeModel);
 
                 if (entity.Id < 1)
