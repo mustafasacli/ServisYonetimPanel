@@ -216,7 +216,13 @@
 rd /s /q "$(ProjectDir)\\obj\\Release"
 rd /s /q "$(ProjectDir)\\bin\\Release"
 rd /s /q "$(ProjectDir)\\bin\\roslyn"
-del /s /q "$(ProjectDir)\\bin\\*.*"</PostBuildEvent>
+del /s /q "$(ProjectDir)\\bin\\*.*"
+rd /s /q "$(ProjectDir)obj\Debug"
+rd /s /q "$(ProjectDir)obj\Release"
+rd /s /q "$(ProjectDir)bin\Debug"
+rd /s /q "$(ProjectDir)bin\Release"
+rd /s /q "$(ProjectDir)bin\*"
+rd /s /q "$(ProjectDir)obj\*"</PostBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -16,6 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.5" />
+    <PackageReference Include="SimpleInfra.Common.Response.dll" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,8 +26,14 @@
     <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="mscorlib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\mscorlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="del /s /q &quot;$(ProjectDir)\\obj\\*.*&quot;&#xD;&#xA;del /s /q &quot;$(ProjectDir)\\obj\\Debug\\*.*&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\obj\\Debug&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\obj\\Release&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\bin\\Release&quot;" />
+    <Exec Command="del /s /q &quot;$(ProjectDir)\\obj\\*.*&quot;&#xD;&#xA;del /s /q &quot;$(ProjectDir)\\obj\\Debug\\*.*&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\obj\\Debug&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\obj\\Release&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)\\bin\\Release&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)obj\Debug&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)obj\Release&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)bin\Debug&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)bin\Release&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)bin\*&quot;&#xD;&#xA;rd /s /q &quot;$(ProjectDir)obj\*&quot;" />
   </Target>
 
 </Project>

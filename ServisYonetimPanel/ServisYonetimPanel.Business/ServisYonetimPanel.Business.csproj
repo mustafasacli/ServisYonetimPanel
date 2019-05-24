@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\ServisYonetimPanel.Output\Business\ServisYonetimPanel.Business.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,21 +31,41 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>servisyonetimpanel.business.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dexter">
-      <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\Dexter.dll</HintPath>
-    </Reference>
-    <Reference Include="Dexter.Extensions">
-      <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\Dexter.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="DexterCfg">
-      <HintPath>..\..\..\..\..\..\SvnProjects\DexterRepository\DexterSolution\Dexter.Output\DexterCfg.dll</HintPath>
+      <HintPath>..\..\..\..\Svn_Projects\Dexter\DexterSolution\Dexter.Output\DexterCfg.dll</HintPath>
+    </Reference>
+    <Reference Include="Mst.Dexter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9aae15b29e538d7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mst.Dexter.dll.1.0.0\lib\net451\Mst.Dexter.dll</HintPath>
+    </Reference>
+    <Reference Include="Mst.Dexter.Extensions, Version=1.1.0.1, Culture=neutral, PublicKeyToken=3d7be7f033594697, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mst.Dexter.Extensions.dll.1.2.0\lib\net451\Mst.Dexter.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Mst.DexterCfg, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9884bbe0e72e13f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mst.DexterCfg.dll.1.1.0\lib\net451\Mst.DexterCfg.dll</HintPath>
     </Reference>
     <Reference Include="Rocket">
-      <HintPath>..\..\..\..\..\..\SvnProjects\RocketRepository\RocketSolution\Rocket.Output\Rocket.dll</HintPath>
+      <HintPath>..\..\..\..\Svn_Projects\Rocket\RocketSolution\Rocket_Ofuscated\Rocket.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleFileLogging, Version=2.2.0.0, Culture=neutral, PublicKeyToken=3473942f32152fab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleFileLogging.dll.2.2.0\lib\net451\SimpleFileLogging.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInfra.Common.Response, Version=1.1.0.0, Culture=neutral, PublicKeyToken=c1ce61cdd45628f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInfra.Common.Response.dll.1.1.0\lib\net452\SimpleInfra.Common.Response.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInfra.Validation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1cf961c38c9ca8d1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInfra.Validation.dll.1.0.0\lib\net451\SimpleInfra.Validation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,39 +75,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseBusiness.cs" />
-    <Compile Include="InternalServiceLogHelper.cs" />
-    <Compile Include="ServiceFileOperator.cs" />
     <Compile Include="ServicePocoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ServisYonetimPanel.Common\ServisYonetimPanel.Common.csproj">
-      <Project>{6c79e3ee-c94d-4079-ab61-400d6a20b8bf}</Project>
-      <Name>ServisYonetimPanel.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServisYonetimPanel.Contracts\ServisYonetimPanel.Contracts.csproj">
-      <Project>{61F35F80-6CAD-4AC2-A0A2-5ADC051878A4}</Project>
-      <Name>ServisYonetimPanel.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj">
-      <Project>{20394588-54D6-40D9-A9BE-0B3B166B8E03}</Project>
-      <Name>ServisYonetimPanel.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj">
-      <Project>{759B83DE-7011-48C0-A307-7C4331F0C43D}</Project>
-      <Name>ServisYonetimPanel.Models</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="dexter.cfg.xml">
+    <Content Include="dexter.cfg.xml" />
+    <Content Include="dexter.cfg_2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="servisyonetimpanel.business.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServisYonetimPanel.Contracts\ServisYonetimPanel.Contracts.csproj">
+      <Project>{61f35f80-6cad-4ac2-a0a2-5adc051878a4}</Project>
+      <Name>ServisYonetimPanel.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj">
+      <Project>{20394588-54d6-40d9-a9be-0b3b166b8e03}</Project>
+      <Name>ServisYonetimPanel.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj">
+      <Project>{759b83de-7011-48c0-a307-7c4331f0c43d}</Project>
+      <Name>ServisYonetimPanel.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>rd /s /q "$(ProjectDir)\\obj\\Debug"
-rd /s /q "$(ProjectDir)\\obj\\Release"
-rd /s /q "$(ProjectDir)\\bin\\Release"</PostBuildEvent>
+    <PostBuildEvent>rd /s /q "$(ProjectDir)obj\Debug"
+rd /s /q "$(ProjectDir)obj\Release"
+rd /s /q "$(ProjectDir)bin\Debug"
+rd /s /q "$(ProjectDir)bin\Release"
+rd /s /q "$(ProjectDir)bin\*"
+rd /s /q "$(ProjectDir)obj\*"</PostBuildEvent>
   </PropertyGroup>
 </Project>

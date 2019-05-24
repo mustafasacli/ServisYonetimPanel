@@ -1,7 +1,7 @@
 ﻿namespace ServisYonetimPanel.Contracts.BusinessContract
 {
-    using ServisYonetimPanel.Common.Response;
     using ServisYonetimPanel.Models.Model;
+    using SimpleInfra.Common.Response;
     using System;
     using System.Collections.Generic;
 

@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\ServisYonetimPanel.Output\Entity\ServisYonetimPanel.Entity.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>servisyonetimpanel.entity.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,6 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="ServiceDetailType.cs" />
+    <Compile Include="ServiceEntity.cs" />
     <Compile Include="ServiceEntityDeleteCommand.cs" />
     <Compile Include="ICommand.cs" />
     <Compile Include="IInsertCommand.cs" />
@@ -50,16 +61,23 @@
     <Compile Include="IServiceEntity.cs" />
     <Compile Include="IUpdateCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceDetailEntity.cs" />
     <Compile Include="ServiceEntityInsertCommand.cs" />
     <Compile Include="ServiceEntityUpdateCommand.cs" />
     <Compile Include="ServiceGetCommand.cs" />
     <Compile Include="UpdateCommand.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="servisyonetimpanel.entity.snk" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>rd /s /q "$(ProjectDir)\\obj\\Debug"
-rd /s /q "$(ProjectDir)\\obj\\Release"
-rd /s /q "$(ProjectDir)\\bin\\Release"</PostBuildEvent>
+    <PostBuildEvent>rd /s /q "$(ProjectDir)obj\Debug"
+rd /s /q "$(ProjectDir)obj\Release"
+rd /s /q "$(ProjectDir)bin\Debug"
+rd /s /q "$(ProjectDir)bin\Release"
+rd /s /q "$(ProjectDir)bin\*"
+rd /s /q "$(ProjectDir)obj\*"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
