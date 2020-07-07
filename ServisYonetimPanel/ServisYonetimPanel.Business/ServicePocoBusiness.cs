@@ -3,8 +3,12 @@
     using Dexter.Extensions;
     using ServisYonetimPanel.Command;
     using ServisYonetimPanel.Common.Response;
+    using Mst.Dexter.Extensions;
     using ServisYonetimPanel.Contracts.BusinessContract;
     using ServisYonetimPanel.Models.Model;
+    using SimpleFileLogging;
+    using SimpleFileLogging.Enums;
+    using SimpleInfra.Common.Response;
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -16,6 +20,7 @@
 
         public ServicePocoBusiness()
         {
+            SimpleFileLogger.Instance.LogDateFormatType = SimpleLogDateFormats.Hour;
         }
 
         public ServiceResponse<object> Add(ServicePocoModel poco)
@@ -59,11 +64,12 @@
                 entity.IsActive = true;
 
                 var o = InternalAdd(entity);
-                response.ResponseData = o;
+                response.Data = o;
                 response.ResponseCode = 1;
             }
             catch (Exception e)
             {
+                SimpleFileLogger.Instance.Error(e);
                 response.ResponseCode = -100;
                 response.ResponseMessage = e.Message;
             }
@@ -110,16 +116,13 @@
                     entity.UpdatedOn = DateTime.Now;
                     entity.UpdatedBy = 1;
 
-                    var o = InternalUpdate(entity);
-                    response.ResponseData = (o as bool?).GetValueOrDefault();
-                }
-                else
-                    response.ResponseData = true;
-
+                var o = InternalUpdate(entity);
+                response.ResponseData = (o as bool?).GetValueOrDefault();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
             {
+                SimpleFileLogger.Instance.Error(e);
                 response.ResponseCode = -100;
                 response.ResponseMessage = e.Message;
             }
@@ -137,11 +140,12 @@
                 { Id = id.ToInt(), UpdatedOn = DateTime.Now, UpdatedBy = 1, IsActive = false };
 
                 var o = InternalUpdate(cmd);
-                response.ResponseData = (o as bool?).GetValueOrDefault();
+                response.Data = (o as bool?).GetValueOrDefault();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
             {
+                SimpleFileLogger.Instance.Error(e);
                 response.ResponseCode = -100;
                 response.ResponseMessage = e.Message;
             }
@@ -160,11 +164,12 @@
                 var modelList = entList.AsEnumerable().Select(s =>
                 GeneralMapperExtensions.Map<ServiceGetCommand, ServicePocoModel>(s)).ToList();
 
-                response.ResponseData = (modelList ?? new List<ServicePocoModel> { }).AsEnumerable();
+                response.Data = (modelList ?? new List<ServicePocoModel> { }).AsEnumerable();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
             {
+                SimpleFileLogger.Instance.Error(e);
                 response.ResponseCode = -100;
                 response.ResponseMessage = e.Message;
             }
@@ -180,12 +185,12 @@
             {
                 var o = InternalGet<ServiceGetCommand>(id);
                 var result = GeneralMapperExtensions.Map<ServiceGetCommand, ServicePocoModel>(o);
-
                 response.ResponseData = result ?? new ServicePocoModel { };
                 response.ResponseCode = 1;
             }
             catch (Exception e)
             {
+                SimpleFileLogger.Instance.Error(e);
                 response.ResponseCode = -100;
                 response.ResponseMessage = e.Message;
             }

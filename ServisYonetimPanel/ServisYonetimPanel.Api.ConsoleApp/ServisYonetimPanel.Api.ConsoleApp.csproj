@@ -69,11 +69,15 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInfra.Common.Response, Version=1.1.0.0, Culture=neutral, PublicKeyToken=c1ce61cdd45628f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInfra.Common.Response.dll.1.1.0\lib\net452\SimpleInfra.Common.Response.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.6\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Http, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.6\lib\net45\System.Web.Http.dll</HintPath>
@@ -101,13 +105,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ServisYonetimPanel.Business.Generic\ServisYonetimPanel.Business.Generic.csproj">
+      <Project>{7c14399c-2418-430e-9cdf-14a779104946}</Project>
+      <Name>ServisYonetimPanel.Business.Generic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ServisYonetimPanel.Business\ServisYonetimPanel.Business.csproj">
       <Project>{d86d15cc-d9b0-49a7-9a42-6d4a5860cc3d}</Project>
       <Name>ServisYonetimPanel.Business</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServisYonetimPanel.Common\ServisYonetimPanel.Common.csproj">
-      <Project>{6c79e3ee-c94d-4079-ab61-400d6a20b8bf}</Project>
-      <Name>ServisYonetimPanel.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\ServisYonetimPanel.Contracts\ServisYonetimPanel.Contracts.csproj">
       <Project>{61f35f80-6cad-4ac2-a0a2-5adc051878a4}</Project>
@@ -136,8 +140,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>rd /s /q "$(ProjectDir)\\obj\\Debug"
-rd /s /q "$(ProjectDir)\\obj\\Release"
-rd /s /q "$(ProjectDir)\\bin\\Release"</PostBuildEvent>
+    <PostBuildEvent>rd /s /q "$(ProjectDir)obj\Debug"
+rd /s /q "$(ProjectDir)obj\Release"
+rd /s /q "$(ProjectDir)bin\Debug"
+rd /s /q "$(ProjectDir)bin\Release"
+rd /s /q "$(ProjectDir)bin\*"
+rd /s /q "$(ProjectDir)obj\*"</PostBuildEvent>
   </PropertyGroup>
 </Project>

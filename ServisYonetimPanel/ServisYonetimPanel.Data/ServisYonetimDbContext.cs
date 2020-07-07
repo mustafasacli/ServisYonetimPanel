@@ -2,21 +2,20 @@
 {
     using ServisYonetimPanel.Entity;
     using System.Data.Entity;
-    using System.Data.Entity.ModelConfiguration.Conventions;
 
-    public class ServisYonetimDbContext : DbContext
+    internal class ServisYonetimDbContext : DbContext
     {
-        public ServisYonetimDbContext() : base("ServisYonetimDb")
+        public ServisYonetimDbContext() : base("name=ServisYonetimDbContext")
         {
         }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-        }
+        public virtual DbSet<ServiceDetailType> ServiceDetailTypeList
+        { get; set; }
 
-        public DbSet<DetailRecord> DetailRecords { get; set; }
+        public virtual DbSet<ServiceEntity> ServiceEntityList
+        { get; set; }
 
-        public DbSet<MasterRecord> MasterRecords { get; set; }
+        public virtual DbSet<ServiceDetailEntity> ServiceEntityDetailList
+        { get; set; }
     }
 }

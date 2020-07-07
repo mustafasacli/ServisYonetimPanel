@@ -30,8 +30,9 @@
         public IEnumerable<ServicePocoModel> GetList()
         {
             var result = servicePocoBusiness.GetServicePocos();
-            //return new List<ServicePoco> { }.AsEnumerable();
-            //return new string[] { "value1", "value2" };
+            // return new List<ServicePoco> { }.AsEnumerable();
+            // return new string[] { "value1", "value2" };
+
             return result.ResponseData;
         }
 

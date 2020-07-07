@@ -4,6 +4,8 @@
     using DexterCfg.Factory;
     using Rocket;
     using Rocket.Interfaces;
+    using Rocket.ConnectionExtensions;
+    using Rocket.Extensions;
     using System;
     using System.Collections.Generic;
     using System.Data;
@@ -13,7 +15,7 @@
     {
         private static IDbConnection BuildDbInstance()
         {
-            //Get Setting Values from dexter config file. dexter.cfg.xml
+            // Get Setting Values from dexter config file. dexter.cfg.xml
             string connKey = DxCfgConnectionFactory.Instance["conn-key"];
             string connStrKey = DxCfgConnectionFactory.Instance["conn-string-key"];
 
