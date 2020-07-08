@@ -42,22 +42,19 @@
       <HintPath>..\..\..\..\Svn_Projects\Dexter\DexterSolution\Dexter.Output\DexterCfg.dll</HintPath>
     </Reference>
     <Reference Include="Mst.Dexter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f9aae15b29e538d7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mst.Dexter.dll.1.0.0\lib\net451\Mst.Dexter.dll</HintPath>
+      <HintPath>..\packages\Mst.Dexter.dll.1.2.0\lib\net45\Mst.Dexter.dll</HintPath>
     </Reference>
-    <Reference Include="Mst.Dexter.Extensions, Version=1.1.0.1, Culture=neutral, PublicKeyToken=3d7be7f033594697, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mst.Dexter.Extensions.dll.1.2.0\lib\net451\Mst.Dexter.Extensions.dll</HintPath>
+    <Reference Include="Mst.Dexter.Extensions, Version=1.8.0.0, Culture=neutral, PublicKeyToken=3d7be7f033594697, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mst.Dexter.Extensions.dll.1.8.0\lib\net45\Mst.Dexter.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Mst.DexterCfg, Version=1.1.0.0, Culture=neutral, PublicKeyToken=9884bbe0e72e13f7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Mst.DexterCfg.dll.1.1.0\lib\net451\Mst.DexterCfg.dll</HintPath>
+      <HintPath>..\packages\Mst.DexterCfg.dll.1.2.0\lib\net45\Mst.DexterCfg.dll</HintPath>
     </Reference>
-    <Reference Include="Rocket">
-      <HintPath>..\..\..\..\Svn_Projects\Rocket\RocketSolution\Rocket_Ofuscated\Rocket.dll</HintPath>
+    <Reference Include="SimpleFileLogging, Version=2.4.0.0, Culture=neutral, PublicKeyToken=3473942f32152fab, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleFileLogging.dll.2.4.0\lib\net45\SimpleFileLogging.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleFileLogging, Version=2.2.0.0, Culture=neutral, PublicKeyToken=3473942f32152fab, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleFileLogging.dll.2.2.0\lib\net451\SimpleFileLogging.dll</HintPath>
-    </Reference>
-    <Reference Include="SimpleInfra.Common.Response, Version=1.1.0.0, Culture=neutral, PublicKeyToken=c1ce61cdd45628f7, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInfra.Common.Response.dll.1.1.0\lib\net452\SimpleInfra.Common.Response.dll</HintPath>
+    <Reference Include="SimpleInfra.Common.Response, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c1ce61cdd45628f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInfra.Common.Response.dll.1.3.0\lib\net40\SimpleInfra.Common.Response.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInfra.Validation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1cf961c38c9ca8d1, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInfra.Validation.dll.1.0.0\lib\net451\SimpleInfra.Validation.dll</HintPath>
@@ -85,10 +82,6 @@
     <ProjectReference Include="..\ServisYonetimPanel.Command\ServisYonetimPanel.Command.csproj">
       <Project>{1bef625e-2938-4cee-b587-9d415f8f0ec7}</Project>
       <Name>ServisYonetimPanel.Command</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ServisYonetimPanel.Common\ServisYonetimPanel.Common.csproj">
-      <Project>{6c79e3ee-c94d-4079-ab61-400d6a20b8bf}</Project>
-      <Name>ServisYonetimPanel.Common</Name>
     </ProjectReference>
     <Content Include="dexter.cfg.xml" />
     <Content Include="dexter.cfg_2.xml">

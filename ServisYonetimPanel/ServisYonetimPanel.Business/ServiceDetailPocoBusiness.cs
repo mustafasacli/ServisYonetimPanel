@@ -3,6 +3,7 @@ using ServisYonetimPanel.Command;
 using ServisYonetimPanel.Common.Response;
 using ServisYonetimPanel.Contracts.BusinessContract;
 using ServisYonetimPanel.Models.Model;
+using SimpleInfra.Common.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,7 +38,7 @@ namespace ServisYonetimPanel.Business
                 entity.CreatedBy = 1;
 
                 var o = InternalAdd(entity);
-                response.ResponseData = o;
+                response.Data = o;
                 response.ResponseCode = 1;
             }
             catch (Exception e)
@@ -65,13 +66,13 @@ namespace ServisYonetimPanel.Business
                     return response;
                 }
 
-                var entity = GeneralMapperExtensions.Map<ServiceDetailPocoModel, ServiceDetailEntityUpdateCommand>(poco);
+                var entity = poco.Map<ServiceDetailPocoModel, ServiceDetailEntityUpdateCommand>();
 
                 entity.UpdatedOn = DateTime.Now;
                 entity.UpdatedBy = 1;
 
                 var o = InternalUpdate(entity);
-                response.ResponseData = (o as bool?).GetValueOrDefault();
+                response.Data = (o as bool?).GetValueOrDefault();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
@@ -93,7 +94,7 @@ namespace ServisYonetimPanel.Business
                 { Id = id, UpdatedOn = DateTime.Now, UpdatedBy = 1, IsActive = false };
 
                 var o = InternalUpdate(cmd);
-                response.ResponseData = (o as bool?).GetValueOrDefault();
+                response.Data = (o as bool?).GetValueOrDefault();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
@@ -117,7 +118,7 @@ namespace ServisYonetimPanel.Business
                 var modelList = entList.AsEnumerable().Select(s =>
                 GeneralMapperExtensions.Map<ServiceGetCommand, ServiceDetailPocoModel>(s)).ToList();
 
-                response.ResponseData = (modelList ?? new List<ServiceDetailPocoModel> { }).AsEnumerable();
+                response.Data = (modelList ?? new List<ServiceDetailPocoModel> { }).AsEnumerable();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
@@ -141,7 +142,7 @@ namespace ServisYonetimPanel.Business
                 var modelList = entList.AsEnumerable().Select(s =>
                 GeneralMapperExtensions.Map<ServiceGetCommand, ServiceDetailPocoModel>(s)).ToList();
 
-                response.ResponseData = (modelList ?? new List<ServiceDetailPocoModel> { }).AsEnumerable();
+                response.Data = (modelList ?? new List<ServiceDetailPocoModel> { }).AsEnumerable();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
@@ -161,7 +162,7 @@ namespace ServisYonetimPanel.Business
             {
                 var o = InternalGet<ServiceGetCommand>(id);
                 var result = GeneralMapperExtensions.Map<ServiceGetCommand, ServiceDetailPocoModel>(o);
-                response.ResponseData = result ?? new ServiceDetailPocoModel { };
+                response.Data = result ?? new ServiceDetailPocoModel { };
                 response.ResponseCode = 1;
             }
             catch (Exception e)

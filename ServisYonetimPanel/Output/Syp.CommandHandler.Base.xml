@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syp.CommandHandler.Base</name>
+    </assembly>
+    <members>
+        <member name="T:Syp.CommandHandler.Base.BaseCommandHandler`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+        </member>
+        <member name="M:Syp.CommandHandler.Base.BaseCommandHandler`1.Handle(`0)">
+            <summary>
+            Handle Command
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syp.CommandHandler.Base.BaseCommandHandler`1.GetDbConnection">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

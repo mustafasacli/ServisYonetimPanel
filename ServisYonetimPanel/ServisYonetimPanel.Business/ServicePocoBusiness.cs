@@ -13,6 +13,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using Net.FreeORM.EFValidation;
+    using SimpleInfra.Validation;
 
     public class ServicePocoBusiness : BaseBusiness, IServicePocoBusiness
     {
@@ -32,9 +33,9 @@
                 var validationResult = poco.Validate();
                 if (validationResult.HasError)
                 {
-                    response.ResponseMessage = validationResult.ErrorMessage;
+                    response.ResponseMessage = validationResult.GetKey();
                     response.ResponseCode = -1002;
-                    response.ResponseData = false;
+                    response.Data = false;
                 }
 
                 Database.OpenConnection();
@@ -46,7 +47,7 @@
 
                 if (existCount > 0)
                 {
-                    response.ResponseData = -1001;
+                    response.Data = -1001;
                     response.ResponseCode = -1001;
                     response.ResponseMessage = "Data with given name is already exist.";
                     return response;
@@ -86,9 +87,9 @@
                 var validationResult = poco.Validate();
                 if (validationResult.HasError)
                 {
-                    response.ResponseMessage = validationResult.ErrorMessage;
+                    //response.ResponseMessage = validationResult.ErrorMessage;
                     response.ResponseCode = -1002;
-                    response.ResponseData = false;
+                    response.Data = false;
                 }
 
                 var existCount = Database.ExecuteScalar("select count(1) from serviceentity where name = @name and isactive = 1 and id <> @id;",
@@ -96,7 +97,7 @@
 
                 if (existCount > 0)
                 {
-                    response.ResponseData = false;
+                    response.Data = false;
                     response.ResponseCode = -1001;
                     response.ResponseMessage = "Record is not active.";
                     return response;
@@ -115,9 +116,9 @@
                     entity.Name = poco.Name;
                     entity.UpdatedOn = DateTime.Now;
                     entity.UpdatedBy = 1;
-
+                }
                 var o = InternalUpdate(entity);
-                response.ResponseData = (o as bool?).GetValueOrDefault();
+                response.Data = (o as bool?).GetValueOrDefault();
                 response.ResponseCode = 1;
             }
             catch (Exception e)
@@ -185,7 +186,7 @@
             {
                 var o = InternalGet<ServiceGetCommand>(id);
                 var result = GeneralMapperExtensions.Map<ServiceGetCommand, ServicePocoModel>(o);
-                response.ResponseData = result ?? new ServicePocoModel { };
+                response.Data = result ?? new ServicePocoModel { };
                 response.ResponseCode = 1;
             }
             catch (Exception e)
