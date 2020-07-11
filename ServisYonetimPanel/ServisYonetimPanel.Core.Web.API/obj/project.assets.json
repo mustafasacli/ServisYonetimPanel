@@ -4616,6 +4616,42 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "ServisYonetimPanel.Business/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "ServisYonetimPanel.Command": "1.0.0",
+          "ServisYonetimPanel.Contracts": "1.0.0",
+          "ServisYonetimPanel.Entity": "1.0.0",
+          "ServisYonetimPanel.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServisYonetimPanel.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServisYonetimPanel.Business.dll": {}
+        }
+      },
+      "ServisYonetimPanel.Command/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ServisYonetimPanel.Command.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServisYonetimPanel.Command.dll": {}
+        }
+      },
+      "ServisYonetimPanel.Contracts/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "ServisYonetimPanel.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ServisYonetimPanel.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServisYonetimPanel.Contracts.dll": {}
+        }
+      },
       "ServisYonetimPanel.Data/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -7249,7 +7285,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.1.1": {
-      "sha512": "xvNRQmZOYfuReVC9trT8sTYVRm7yJzI5z1YZ4iO6Im/EWOWoqqLNoYG0sY8EHnp4DOtioGJ/hmJ+ksqaJN8aBA==",
+      "sha512": "T261YUlVUH1nINaPN7odLnV/Qx3nNXaM+ZqOfMRy+W9uP4ZmaDPMGIjzxzauKYF/Td0zBZx8VzUOW+QBOFq84g==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration/2.1.1",
       "files": [
@@ -7262,7 +7298,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.1.1": {
-      "sha512": "Su++Q22kR3EaWmg7flhuAX0xZFPVL4z99HYc9CNQZksi4L/lCzxyIRXJUV3qTEyyX8wkl6sx3RDVUcYcBTdjlg==",
+      "sha512": "a42G/myvJTNq2D0aS/ryYR614V0RLlqNCv/pIQ+vrR96LlXhVo96n5xOrtGDWebfkMgFWlU+Bg0Wrks/pNXNZQ==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.contracts/2.1.1",
       "files": [
@@ -7275,7 +7311,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.1.1": {
-      "sha512": "uIhfMpJOjQi/fBtKglWDP8lSuiX5AOQwomCS6hZ37EzKB5tMnaH+Z7DbkEFoZLaGcLDaskoOJ0nhIjA9A2i0Rg==",
+      "sha512": "8RlWoUsGqK/fxqQTIgFizBYJinUpVSkrNax1tKugqahYNtUsdhJlRYj/y5fRl+bdNzoMKnbz/9iRwU01oSBe8g==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.core/2.1.1",
       "files": [
@@ -7288,7 +7324,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Design/2.1.1": {
-      "sha512": "d4xk6rWvW9HR2/QdwQ7OfrbmQcMi4EE3IlZT3JwfIRFdbtCXDFz+PCjs/qomLC+d+vlEXZuPvneX+G5FF9d1MA==",
+      "sha512": "ubJdwxSYJlvZsS3Ae7AKtAS5d1TjAO9+4GBTuyX13O/ek7INPJxqLLYGuD5TIvk6UQl0tHA1tvq+QrtjRCkLuA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.design/2.1.1",
       "files": [
@@ -7311,7 +7347,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.1": {
-      "sha512": "03wiQubZKezzT5OKgnExDOnzrtn/TQG4QDQfOJI524yZ2CCC/h4PxtPmO5FDH7x1qP/99EXLaZYojE9fZ7u9Yw==",
+      "sha512": "HvhP/iwUa9Y7ArQ0xIWOEp8HFz7si5EEC6r1WdpQSWr/l9iilNKnPzpmb4gb8SbmJAZ7Qt9nHEmHPH6+xbDVwg==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.entityframeworkcore/2.1.1",
       "files": [
@@ -7325,7 +7361,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Templating/2.1.1": {
-      "sha512": "8rubHXs2ufTJ205H2c9aSga/X8ToURtGguISBHEGkAcz/1Qp922jAaGvGvvJNhoXiBg/9K5VupkfkJDvnhN3/Q==",
+      "sha512": "PTJYeSfXooNP77z2cpfo8TgCWE2G17qnpJ7c2GSREdJt65PBjA5/kuw2LMUIDGN+XbTDNREYwj0956Kp76+xyA==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.templating/2.1.1",
       "files": [
@@ -7338,7 +7374,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.Utils/2.1.1": {
-      "sha512": "MRtBhRi0CQ36yi9r08l/j7I24a2bfiAW9N6fSq69M5mZFw1vjijPaM2NPokWv9hqT0aUCLNKCX7A6E20XgYE1w==",
+      "sha512": "2CyDpIyKv/Ehoc5ds7tAMnVljAR9a+rKXKQ7WrWQ70/SXwrvlgFPklh+5GYeUJViNCVIoQO0aSi/oiixdTFdKw==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegeneration.utils/2.1.1",
       "files": [
@@ -7351,7 +7387,7 @@
       ]
     },
     "Microsoft.VisualStudio.Web.CodeGenerators.Mvc/2.1.1": {
-      "sha512": "LhsJrKf4fMqOyaVqAexbpkR6GmHDuVeek+s1NFGwFYFZAgSbnLmBt8DIw41zGbEXO/GYiPLTOTA7F1fJknsf6g==",
+      "sha512": "SOOsomV+rRKH9BrAK3IDs6NMT9qkpWqllF5nnd9meZsa7o7oFbJsX4hlJQaKAUgD7ACawgDfwPLNJehz7Ge2KQ==",
       "type": "package",
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.1",
       "files": [
@@ -7814,11 +7850,12 @@
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "JBoe6cGvVdYcNll/DG5tSKEJvuuiQ1uZJqCtw6O5vZPemdOoc8v66sSzangMv8+H3ysIyI9M5x+aps9wBIrdXQ==",
+      "sha512": "A8v6PGmk+UGbfWo5Ixup0lPM4swuSwOiayJExZwKIOjTlFFQIsu3QnDXECosBEyrWSPryxBVrdqtJyhK3BaupQ==",
       "type": "package",
       "path": "runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -7984,7 +8021,7 @@
       ]
     },
     "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "R2LXiuObWLXHhigqtRmezpvYNS0GYpDK1+gsXd9jaiZaEvKNb5VjB2WVpi5XOR6/JHkh37amk9HdJys7M/NIDA==",
+      "sha512": "LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
       "type": "package",
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -7999,11 +8036,12 @@
       ]
     },
     "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "K08osYcwkn3cYtL755DlMjJxrETI6QxkAw26S3qWpfVX09feqjqPlke7vKsCazaZUUG3SYb1guCcKQxandiqZQ==",
+      "sha512": "38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
       "type": "package",
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -8014,7 +8052,7 @@
       ]
     },
     "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
-      "sha512": "y16va8zxKVzUjm8AOiZE4SHi9GofphrNKFmzvZRektMYwomkDc4SNKZ08RkH8SXDhQcqIZmZqfP5RB5wINz1TQ==",
+      "sha512": "YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "type": "package",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
@@ -9654,7 +9692,7 @@
       ]
     },
     "System.Linq.Parallel/4.3.0": {
-      "sha512": "eFG9P1qem+1eM/18NTmKeuNzcwOF4RZPxdmTV8TFXcMA1SH+TrPNl4Y0K80rkWwy8coPZlKjY0f7RnIoaUC+ag==",
+      "sha512": "td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "type": "package",
       "path": "system.linq.parallel/4.3.0",
       "files": [
@@ -12529,6 +12567,21 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "ServisYonetimPanel.Business/1.0.0": {
+      "type": "project",
+      "path": "../ServisYonetimPanel.Business/ServisYonetimPanel.Business.csproj",
+      "msbuildProject": "../ServisYonetimPanel.Business/ServisYonetimPanel.Business.csproj"
+    },
+    "ServisYonetimPanel.Command/1.0.0": {
+      "type": "project",
+      "path": "../ServisYonetimPanel.Command/ServisYonetimPanel.Command.csproj",
+      "msbuildProject": "../ServisYonetimPanel.Command/ServisYonetimPanel.Command.csproj"
+    },
+    "ServisYonetimPanel.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../ServisYonetimPanel.Contracts/ServisYonetimPanel.Contracts.csproj",
+      "msbuildProject": "../ServisYonetimPanel.Contracts/ServisYonetimPanel.Contracts.csproj"
+    },
     "ServisYonetimPanel.Data/1.0.0": {
       "type": "project",
       "path": "../ServisYonetimPanel.Data/ServisYonetimPanel.Data.csproj",
@@ -12547,36 +12600,36 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj",
-      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj",
-      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj",
-      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj",
+      "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
+      "ServisYonetimPanel.Business >= 1.0.0",
+      "ServisYonetimPanel.Command >= 1.0.0",
+      "ServisYonetimPanel.Contracts >= 1.0.0",
       "ServisYonetimPanel.Data >= 1.0.0",
       "ServisYonetimPanel.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Krkt\\.nuget\\packages\\": {},
+    "C:\\Users\\mustafa.sacli\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Core.Web.API\\ServisYonetimPanel.Core.Web.API.csproj",
+      "projectUniqueName": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Core.Web.API\\ServisYonetimPanel.Core.Web.API.csproj",
       "projectName": "ServisYonetimPanel.Core.Web.API",
-      "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Core.Web.API\\ServisYonetimPanel.Core.Web.API.csproj",
-      "packagesPath": "C:\\Users\\Krkt\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Core.Web.API\\obj\\",
+      "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Core.Web.API\\ServisYonetimPanel.Core.Web.API.csproj",
+      "packagesPath": "C:\\Users\\mustafa.sacli\\.nuget\\packages\\",
+      "outputPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Core.Web.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Krkt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mustafa.sacli\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12589,23 +12642,23 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj": {
-              "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj"
+            "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj": {
+              "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj"
             },
-            "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj": {
-              "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj"
+            "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj": {
+              "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj"
             },
-            "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj": {
-              "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj"
+            "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj": {
+              "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj"
             },
-            "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj": {
-              "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj"
+            "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj": {
+              "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj"
             },
-            "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Data\\ServisYonetimPanel.Data.csproj": {
-              "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Data\\ServisYonetimPanel.Data.csproj"
+            "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Data\\ServisYonetimPanel.Data.csproj": {
+              "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Data\\ServisYonetimPanel.Data.csproj"
             },
-            "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Models\\ServisYonetimPanel.Models.csproj": {
-              "projectPath": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Models\\ServisYonetimPanel.Models.csproj"
+            "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Models\\ServisYonetimPanel.Models.csproj": {
+              "projectPath": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Models\\ServisYonetimPanel.Models.csproj"
             }
           }
         }
@@ -12652,35 +12705,8 @@
     {
       "code": "NU1105",
       "level": "Error",
-      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
-      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
-      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
-      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    },
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
-      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj",
+      "message": "Unable to find project information for 'C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\GitProjects\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syp.QueryHandler.Base</name>
+    </assembly>
+    <members>
+        <member name="M:Syp.QueryHandler.Base.BaseQueryHandler`2.GetDbConnection">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Entity", "ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj", "{20394588-54D6-40D9-A9BE-0B3B166B8E03}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Api.ConsoleApp", "ServisYonetimPanel.Api.ConsoleApp\ServisYonetimPanel.Api.ConsoleApp.csproj", "{AC8E34AB-F629-4D6E-B0FE-9F8551520271}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServisYonetimPanel.Models", "ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj", "{759B83DE-7011-48C0-A307-7C4331F0C43D}"
@@ -38,16 +36,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.CommandHandler.Factory", "Syp.CommandHandler.Factory\Syp.CommandHandler.Factory.csproj", "{A89B9ED0-C79D-4385-A96C-945CD7FF980E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalDlls", "ExternalDlls", "{748F0DC8-89B3-4332-BEFA-7319A0EC3799}"
-	ProjectSection(SolutionItems) = preProject
-		ExternalDlls\SimpleInfra.Common.Extensions.dll = ExternalDlls\SimpleInfra.Common.Extensions.dll
-		ExternalDlls\SimpleInfra.Common.Extensions.pdb = ExternalDlls\SimpleInfra.Common.Extensions.pdb
-		ExternalDlls\SimpleInfra.Common.Extensions.xml = ExternalDlls\SimpleInfra.Common.Extensions.xml
-		ExternalDlls\SimpleInfra.Crud.Extensions.dll = ExternalDlls\SimpleInfra.Crud.Extensions.dll
-		ExternalDlls\SimpleInfra.Crud.Extensions.pdb = ExternalDlls\SimpleInfra.Crud.Extensions.pdb
-		ExternalDlls\SimpleInfra.Crud.Extensions.xml = ExternalDlls\SimpleInfra.Crud.Extensions.xml
-		ExternalDlls\SimpleInfra.Data.Extensions.dll = ExternalDlls\SimpleInfra.Data.Extensions.dll
-		ExternalDlls\SimpleInfra.Data.Extensions.pdb = ExternalDlls\SimpleInfra.Data.Extensions.pdb
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.Query.Core", "Syp.Query.Core\Syp.Query.Core.csproj", "{8D780D81-A194-4D74-890D-31EFCA3755D2}"
 EndProject
@@ -68,16 +56,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PgSqlScripts", "PgSqlScript
 		PgSqlScripts\service_user create script.sql = PgSqlScripts\service_user create script.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.Entity", "Syp.Entity\Syp.Entity.csproj", "{82F73E9E-5353-419E-8313-2810C364D703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.CommandHandlers.TestApp", "Syp.CommandHandlers.TestApp\Syp.CommandHandlers.TestApp.csproj", "{D2638022-A14E-4453-BEC9-56C69DE6B792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInfra.Crud.Extensions", "..\..\SI.Crud.Extensions.Repo\SI.Crud.Extensions.Repo\SimpleInfra.Crud.Extensions\SimpleInfra.Crud.Extensions.csproj", "{185872F6-6F49-4DC6-B939-10FCC8E04AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInfra.Data.Extensions", "..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Data.Extensions\SimpleInfra.Data.Extensions.csproj", "{D7EB06B3-BDAB-4847-ABF0-3CD6DCCA3EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleInfra.Common.Extensions", "..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Common.Extensions\SimpleInfra.Common.Extensions.csproj", "{439E5314-5CD3-494F-A948-68C8D3FD94EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20394588-54D6-40D9-A9BE-0B3B166B8E03}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC8E34AB-F629-4D6E-B0FE-9F8551520271}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -162,6 +156,26 @@ Global
 		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F73E9E-5353-419E-8313-2810C364D703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F73E9E-5353-419E-8313-2810C364D703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F73E9E-5353-419E-8313-2810C364D703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F73E9E-5353-419E-8313-2810C364D703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2638022-A14E-4453-BEC9-56C69DE6B792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2638022-A14E-4453-BEC9-56C69DE6B792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2638022-A14E-4453-BEC9-56C69DE6B792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2638022-A14E-4453-BEC9-56C69DE6B792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185872F6-6F49-4DC6-B939-10FCC8E04AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185872F6-6F49-4DC6-B939-10FCC8E04AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185872F6-6F49-4DC6-B939-10FCC8E04AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185872F6-6F49-4DC6-B939-10FCC8E04AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7EB06B3-BDAB-4847-ABF0-3CD6DCCA3EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7EB06B3-BDAB-4847-ABF0-3CD6DCCA3EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7EB06B3-BDAB-4847-ABF0-3CD6DCCA3EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7EB06B3-BDAB-4847-ABF0-3CD6DCCA3EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{439E5314-5CD3-494F-A948-68C8D3FD94EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{439E5314-5CD3-494F-A948-68C8D3FD94EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{439E5314-5CD3-494F-A948-68C8D3FD94EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{439E5314-5CD3-494F-A948-68C8D3FD94EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

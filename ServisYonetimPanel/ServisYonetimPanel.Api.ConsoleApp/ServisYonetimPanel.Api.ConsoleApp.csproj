@@ -117,10 +117,6 @@
       <Project>{61f35f80-6cad-4ac2-a0a2-5adc051878a4}</Project>
       <Name>ServisYonetimPanel.Contracts</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj">
-      <Project>{20394588-54d6-40d9-a9be-0b3b166b8e03}</Project>
-      <Name>ServisYonetimPanel.Entity</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ServisYonetimPanel.Models\ServisYonetimPanel.Models.csproj">
       <Project>{759b83de-7011-48c0-a307-7c4331f0c43d}</Project>
       <Name>ServisYonetimPanel.Models</Name>

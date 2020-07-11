@@ -6,18 +6,20 @@
 
     public class BaseInsertCommand : IInsertCommand
     {
-        [DataMember]
-        public long CreatedBy
-        { get; set; }
-
         private DateTime? _createdOn = null;
 
         [DataMember]
+        [Column("created_on", Order = 3, TypeName = "timestamp")]
         public DateTime CreatedOn
         {
             get { return _createdOn ?? DateTime.Now; }
             set { _createdOn = value; }
         }
+
+        [DataMember]
+        [Column("created_by", Order = 4, TypeName = "int4")]
+        public long CreatedBy
+        { get; set; }
 
         private long? createdOnTicks = null;
 
@@ -30,6 +32,7 @@
         }
 
         [DataMember]
+        [Column("is_deleted", Order = 7, TypeName = "bool")]
         public bool IsDeleted
         { get; set; }
     }

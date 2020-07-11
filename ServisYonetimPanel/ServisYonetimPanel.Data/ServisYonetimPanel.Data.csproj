@@ -71,12 +71,6 @@
     <None Include="packages.config" />
     <None Include="servisyonetimpanel.data.snk" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ServisYonetimPanel.Entity\ServisYonetimPanel.Entity.csproj">
-      <Project>{20394588-54d6-40d9-a9be-0b3b166b8e03}</Project>
-      <Name>ServisYonetimPanel.Entity</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>rd /s /q "$(ProjectDir)obj\Debug"

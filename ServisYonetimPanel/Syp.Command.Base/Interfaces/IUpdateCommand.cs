@@ -11,5 +11,7 @@
         DateTime? UpdatedOn { get; set; }
 
         long? UpdatedOnTicks { get; set; }
+
+        bool IsDeleted { get; set; }
     }
 }

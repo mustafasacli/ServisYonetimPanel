@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syp.Command</name>
+    </assembly>
+    <members>
+        <member name="P:Syp.Command.Insert.ServiceDetailTypeInsertCommand.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceDetailTypeInsertCommand.DetailTypeName">
+            <summary>
+            Gets and Sets the DetailTypeName
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.ServiceId">
+            <summary>
+            Gets and Sets the ServiceId
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.DetailTypeId">
+            <summary>
+            Gets and Sets the DetailTypeId
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.Info">
+            <summary>
+            Gets and Sets the Info
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceDetailTypeUpdateCommand.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceDetailTypeUpdateCommand.DetailTypeName">
+            <summary>
+            Gets and Sets the DetailTypeName
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.ServiceId">
+            <summary>
+            Gets and Sets the ServiceId
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.DetailTypeId">
+            <summary>
+            Gets and Sets the DetailTypeId
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.Info">
+            <summary>
+            Gets and Sets the Info
+            </summary>
+        </member>
+    </members>
+</doc>

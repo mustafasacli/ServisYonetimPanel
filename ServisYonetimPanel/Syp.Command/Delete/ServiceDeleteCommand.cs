@@ -3,12 +3,15 @@
     using Syp.Command.Base;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Runtime.Serialization;
 
-    //[Table("ServiceEntity")]
     [Table("service")]
-    public class ServiceDeleteCommand : BaseUpdateCommand
+    [DataContract]
+    public class ServiceDeleteCommand : BaseDeleteCommand
     {
         [Key]
+        [Column("id", Order = 1, TypeName = "int4")]
+        [DataMember]
         public long Id
         { get; set; }
     }

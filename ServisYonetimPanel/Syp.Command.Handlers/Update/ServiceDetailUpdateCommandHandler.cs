@@ -1,5 +1,6 @@
 ﻿using SimpleInfra.Common.Response;
 using SimpleInfra.Crud.Extensions.ConnectionExtensions;
+using SimpleInfra.Data.Extensions;
 using Syp.Command.Base.Result;
 using Syp.Command.Update;
 using Syp.CommandHandler.Base;
@@ -21,7 +22,18 @@ namespace Syp.Command.Handlers.Update
             {
                 using (var connection = GetDbConnection())
                 {
-                    response.ResponseCode = connection.Update(command);
+                    try
+                    {
+                        connection.OpenIfNot();
+                        var result = connection.Update(command);
+                        response.ResponseCode = result;
+                        response.RCode = result.ToString();
+                        response.Data = new LongCommandResult { ReturnValue = result };
+                    }
+                    finally
+                    {
+                        connection.CloseIfNot();
+                    }
                 }
             }
             catch (Exception ex)

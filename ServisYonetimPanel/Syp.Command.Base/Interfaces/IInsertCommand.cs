@@ -11,5 +11,7 @@
         DateTime CreatedOn { get; set; }
 
         long CreatedOnTicks { get; set; }
+
+        bool IsDeleted { get; set; }
     }
 }

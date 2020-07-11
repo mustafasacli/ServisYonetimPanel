@@ -1,6 +1,6 @@
 -- DROP TABLE syp.service
 
-CREATE TABLE syp.service (
+CREATE TABLE service (
 	id serial NOT NULL,
 	name varchar(50) NOT NULL,
 	CONSTRAINT pk_service PRIMARY KEY (id)
