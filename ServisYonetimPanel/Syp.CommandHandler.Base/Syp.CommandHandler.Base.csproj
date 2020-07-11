@@ -55,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Syp.Command.Base\Syp.Command.Base.csproj">
+      <Project>{DCCF1F33-C51D-4E2E-B991-6199C8EC487E}</Project>
+      <Name>Syp.Command.Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Syp.Command.Core\Syp.Command.Core.csproj">
       <Project>{2B54B980-CDEB-47B9-ADB3-4E193362B8AA}</Project>
       <Name>Syp.Command.Core</Name>

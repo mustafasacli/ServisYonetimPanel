@@ -1,5 +1,6 @@
 ﻿using SimpleInfra.Common.Response;
 using SimpleInfra.Crud.Extensions.ConnectionExtensions;
+using Syp.Command.Base.Result;
 using Syp.Command.Insert;
 using Syp.CommandHandler.Base;
 using System;
@@ -7,13 +8,14 @@ using System;
 namespace Syp.Command.Handlers.Insert
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public class ServiceInsertCommandHandler : BaseCommandHandler<ServiceInsertCommand>
+    public class ServiceInsertCommandHandler
+        : BaseCommandHandler<ServiceInsertCommand, LongCommandResult>
     {
-        public override SimpleResponse Handle(ServiceInsertCommand command)
+        public override SimpleResponse<LongCommandResult> Handle(ServiceInsertCommand command)
         {
-            var response = new SimpleResponse();
+            var response = new SimpleResponse<LongCommandResult>();
 
             try
             {

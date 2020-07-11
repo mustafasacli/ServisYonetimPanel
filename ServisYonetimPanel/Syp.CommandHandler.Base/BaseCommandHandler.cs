@@ -10,20 +10,23 @@
     using System.Data;
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     /// <typeparam name="TCommand"></typeparam>
-    public abstract class BaseCommandHandler<TCommand> : ICommandHandler<TCommand> where TCommand : class, ICommand
+    public abstract class BaseCommandHandler<TCommand, TCommandResult>
+        : ICommandHandler<TCommand, TCommandResult>
+        where TCommand : class, ICommand<TCommandResult>
+        where TCommandResult : class, ICommandResult
     {
         /// <summary>
         /// Handle Command
         /// </summary>
         /// <param name="command"></param>
         /// <returns></returns>
-        public abstract SimpleResponse Handle(TCommand command);
+        public abstract SimpleResponse<TCommandResult> Handle(TCommand command);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <returns></returns>
         protected virtual IDbConnection GetDbConnection()

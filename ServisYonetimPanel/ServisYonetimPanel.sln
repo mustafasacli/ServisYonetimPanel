@@ -49,6 +49,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalDlls", "ExternalDll
 		ExternalDlls\SimpleInfra.Data.Extensions.pdb = ExternalDlls\SimpleInfra.Data.Extensions.pdb
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.Query.Core", "Syp.Query.Core\Syp.Query.Core.csproj", "{8D780D81-A194-4D74-890D-31EFCA3755D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.QueryHandler.Core", "Syp.QueryHandler.Core\Syp.QueryHandler.Core.csproj", "{D72246D7-78FB-457A-8EEE-2360FBE9B326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.QueryHandler.Base", "Syp.QueryHandler.Base\Syp.QueryHandler.Base.csproj", "{D525D2EF-AE21-431D-A49B-3922721EACDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.Command.Bus.Core", "Syp.Command.Bus.Core\Syp.Command.Bus.Core.csproj", "{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.Command.Bus", "Syp.Command.Bus\Syp.Command.Bus.csproj", "{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PgSqlScripts", "PgSqlScripts", "{653B9A32-6A0C-4A84-9526-568C3E4AE607}"
+	ProjectSection(SolutionItems) = preProject
+		PgSqlScripts\add_standart_columns.sql = PgSqlScripts\add_standart_columns.sql
+		PgSqlScripts\service create script.sql = PgSqlScripts\service create script.sql
+		PgSqlScripts\service_detail create script.sql = PgSqlScripts\service_detail create script.sql
+		PgSqlScripts\service_detail_type create script.sql = PgSqlScripts\service_detail_type create script.sql
+		PgSqlScripts\service_user create script.sql = PgSqlScripts\service_user create script.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +142,26 @@ Global
 		{A89B9ED0-C79D-4385-A96C-945CD7FF980E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A89B9ED0-C79D-4385-A96C-945CD7FF980E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A89B9ED0-C79D-4385-A96C-945CD7FF980E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D780D81-A194-4D74-890D-31EFCA3755D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D780D81-A194-4D74-890D-31EFCA3755D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D780D81-A194-4D74-890D-31EFCA3755D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D780D81-A194-4D74-890D-31EFCA3755D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72246D7-78FB-457A-8EEE-2360FBE9B326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72246D7-78FB-457A-8EEE-2360FBE9B326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72246D7-78FB-457A-8EEE-2360FBE9B326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72246D7-78FB-457A-8EEE-2360FBE9B326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D525D2EF-AE21-431D-A49B-3922721EACDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D525D2EF-AE21-431D-A49B-3922721EACDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D525D2EF-AE21-431D-A49B-3922721EACDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D525D2EF-AE21-431D-A49B-3922721EACDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

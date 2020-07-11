@@ -1,5 +1,6 @@
 ﻿using SimpleInfra.Common.Response;
 using SimpleInfra.Crud.Extensions.ConnectionExtensions;
+using Syp.Command.Base.Result;
 using Syp.Command.Update;
 using Syp.CommandHandler.Base;
 using System;
@@ -7,13 +8,14 @@ using System;
 namespace Syp.Command.Handlers.Update
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public class ServiceDetailUpdateCommandHandler : BaseCommandHandler<ServiceDetailUpdateCommand>
+    public class ServiceDetailUpdateCommandHandler :
+        BaseCommandHandler<ServiceDetailUpdateCommand, LongCommandResult>
     {
-        public override SimpleResponse Handle(ServiceDetailUpdateCommand command)
+        public override SimpleResponse<LongCommandResult> Handle(ServiceDetailUpdateCommand command)
         {
-            var response = new SimpleResponse();
+            var response = new SimpleResponse<LongCommandResult>();
 
             try
             {

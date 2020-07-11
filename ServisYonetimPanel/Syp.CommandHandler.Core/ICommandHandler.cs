@@ -3,8 +3,10 @@
     using SimpleInfra.Common.Response;
     using Syp.Command.Core;
 
-    public interface ICommandHandler<TCommand> where TCommand : class, ICommand
+    public interface ICommandHandler<TCommand, TCommandResult>
+        where TCommand : class, ICommand<TCommandResult>
+        where TCommandResult : class, ICommandResult
     {
-        SimpleResponse Handle(TCommand command);
+        SimpleResponse<TCommandResult> Handle(TCommand command);
     }
 }

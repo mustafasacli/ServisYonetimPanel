@@ -81,6 +81,10 @@
       <Project>{4CB9B49F-52DE-48FA-863B-C9F006ECB858}</Project>
       <Name>Syp.CommandHandler.Base</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Syp.CommandHandler.Core\Syp.CommandHandler.Core.csproj">
+      <Project>{A21A6666-A331-475D-A24C-A4E5AC4216B0}</Project>
+      <Name>Syp.CommandHandler.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Syp.Command\Syp.Command.csproj">
       <Project>{02F9A5A4-71E4-491B-B0A1-0DEE93BF98AC}</Project>
       <Name>Syp.Command</Name>

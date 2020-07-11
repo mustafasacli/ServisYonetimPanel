@@ -1,8 +1,10 @@
-﻿namespace Syp.Command.Core
+﻿namespace Syp.Command.Base
 {
+    using Syp.Command.Base.Result;
+    using Syp.Command.Core;
     using System;
 
-    public interface IUpdateCommand : ICommand
+    public interface IUpdateCommand : ICommand<LongCommandResult>
     {
         long? UpdatedBy { get; set; }
 

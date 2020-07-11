@@ -1,6 +1,5 @@
 ﻿namespace Syp.Command.Base
 {
-    using Syp.Command.Core;
     using System;
     using System.Runtime.Serialization;
 

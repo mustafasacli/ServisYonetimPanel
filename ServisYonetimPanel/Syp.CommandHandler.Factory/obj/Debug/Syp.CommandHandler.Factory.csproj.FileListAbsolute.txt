@@ -1,0 +1,2 @@
+E:\Projects\Git_Projects\ServisYonetimPanel\mustafasacli\ServisYonetimPanel\ServisYonetimPanel\Syp.CommandHandler.Factory\obj\Debug\Syp.CommandHandler.Factory.csprojAssemblyReference.cache
+E:\Projects\Git_Projects\ServisYonetimPanel\mustafasacli\ServisYonetimPanel\ServisYonetimPanel\Syp.CommandHandler.Factory\obj\Debug\Syp.CommandHandler.Factory.csproj.CoreCompileInputs.cache

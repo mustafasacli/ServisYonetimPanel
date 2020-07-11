@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    public class ServiceDetailPocoModel: BasePocoModel
+    public class ServiceDetailPocoModel : BasePocoModel
     {
         [Key]
         public long Id

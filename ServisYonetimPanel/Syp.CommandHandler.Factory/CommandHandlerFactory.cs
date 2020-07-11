@@ -1,6 +1,4 @@
-﻿using Syp.Command.Core;
-using Syp.CommandHandler.Core;
-using System;
+﻿using System;
 
 namespace Syp.CommandHandler.Factory
 {

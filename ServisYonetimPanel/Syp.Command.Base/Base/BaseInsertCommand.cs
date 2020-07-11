@@ -1,7 +1,7 @@
 ﻿namespace Syp.Command.Base
 {
-    using Syp.Command.Core;
     using System;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Runtime.Serialization;
 
     public class BaseInsertCommand : IInsertCommand
@@ -11,6 +11,7 @@
         { get; set; }
 
         private DateTime? _createdOn = null;
+
         [DataMember]
         public DateTime CreatedOn
         {
@@ -19,7 +20,9 @@
         }
 
         private long? createdOnTicks = null;
+
         [DataMember]
+        [NotMapped]
         public long CreatedOnTicks
         {
             get { return (createdOnTicks ?? this.CreatedOn.Ticks); }

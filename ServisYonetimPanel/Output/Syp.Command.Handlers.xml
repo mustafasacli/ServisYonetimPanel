@@ -5,24 +5,24 @@
     </assembly>
     <members>
         <member name="T:Syp.Command.Handlers.Delete.ServiceDeleteCommandHandler">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="T:Syp.Command.Handlers.Delete.ServiceDetailDeleteCommandHandler">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="T:Syp.Command.Handlers.Insert.ServiceInsertCommandHandler">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
         <member name="T:Syp.Command.Handlers.Update.ServiceDetailUpdateCommandHandler">
-            <summary>
+             <summary>
             
-            </summary>
+             </summary>
         </member>
     </members>
 </doc>

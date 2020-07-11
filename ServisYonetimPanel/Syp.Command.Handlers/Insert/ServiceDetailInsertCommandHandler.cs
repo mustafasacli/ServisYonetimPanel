@@ -1,16 +1,18 @@
 ﻿using SimpleInfra.Common.Response;
 using SimpleInfra.Crud.Extensions.ConnectionExtensions;
+using Syp.Command.Base.Result;
 using Syp.Command.Insert;
 using Syp.CommandHandler.Base;
 using System;
 
 namespace Syp.Command.Handlers.Insert
 {
-    public class ServiceDetailInsertCommandHandler : BaseCommandHandler<ServiceDetailInsertCommand>
+    public class ServiceDetailInsertCommandHandler
+        : BaseCommandHandler<ServiceDetailInsertCommand, LongCommandResult>
     {
-        public override SimpleResponse Handle(ServiceDetailInsertCommand command)
+        public override SimpleResponse<LongCommandResult> Handle(ServiceDetailInsertCommand command)
         {
-            var response = new SimpleResponse();
+            var response = new SimpleResponse<LongCommandResult>();
 
             try
             {

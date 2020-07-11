@@ -1,7 +1,7 @@
 ﻿namespace Syp.Command.Base
 {
-    using Syp.Command.Core;
     using System;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Runtime.Serialization;
 
     public abstract class BaseUpdateCommand : IUpdateCommand
@@ -15,6 +15,7 @@
         { get; set; }
 
         [DataMember]
+        [NotMapped]
         public long? UpdatedOnTicks
         { get; set; }
 
