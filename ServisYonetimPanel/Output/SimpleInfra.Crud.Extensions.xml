@@ -717,72 +717,6 @@
             <param name="queryType"></param>
             <returns></returns>
         </member>
-        <member name="T:SimpleInfra.Crud.Extensions.RocketCommandBuilder">
-             <summary>   A rocket command builder. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCommandBuilder.BuildInsertAndGetIdCommand``1(System.Data.IDbConnection)">
-             <summary>   Builds insert and get id command. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-            
-             <typeparam name="T">    Generic type parameter. </typeparam>
-             <param name="connection">   The connection. </param>
-            
-             <returns>   An IDbCommand. </returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCommandBuilder.BuildInsertCommand``1(System.Data.IDbConnection)">
-             <summary>   Builds insert command. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-            
-             <typeparam name="T">    Generic type parameter. </typeparam>
-             <param name="connection">   The connection. </param>
-            
-             <returns>   An IDbCommand. </returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCommandBuilder.BuildUpdateCommand``1(System.Data.IDbConnection)">
-             <summary>   Builds update command. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-            
-             <typeparam name="T">    Generic type parameter. </typeparam>
-             <param name="connection">   The connection. </param>
-            
-             <returns>   An IDbCommand. </returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCommandBuilder.BuildDeleteCommand``1(System.Data.IDbConnection)">
-             <summary>   Builds delete command. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-            
-             <typeparam name="T">    Generic type parameter. </typeparam>
-             <param name="connection">   The connection. </param>
-            
-             <returns>   An IDbCommand. </returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCommandBuilder.BuildGetByIdCommand``1(System.Data.IDbConnection)">
-             <summary>   Builds get by ıd command. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-            
-             <typeparam name="T">    Generic type parameter. </typeparam>
-             <param name="connection">   The connection. </param>
-            
-             <returns>   An IDbCommand. </returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCommandBuilder.BuildCommand``1(System.Data.IDbConnection,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
-             <summary>   Builds a command. </summary>
-            
-             <remarks>   Mustafa SAÇLI, 5.05.2019. </remarks>
-            
-             <typeparam name="T">    Generic type parameter. </typeparam>
-             <param name="connection">   The connection. </param>
-             <param name="queryType">    Type of the query. </param>
-            
-             <returns>   An IDbCommand. </returns>
-        </member>
         <member name="T:SimpleInfra.Crud.Extensions.RocketQueryBuilder">
              <summary>
             
@@ -879,14 +813,43 @@
              <param name="commandDefinition"></param>
              <returns></returns>
         </member>
-        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcPredicateOperations.GetPropertyName(System.Linq.Expressions.BinaryExpression)">
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator.GetByIdDynamic``1(System.Data.IDbConnection,System.Nullable{System.Int32},System.Object[])">
+             <summary>
+            
+             </summary>
+             <typeparam name="T"></typeparam>
+             <param name="dbConnection"></param>
+             <param name="commandTimeout"></param>
+             <param name="idValues"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator.GetAllDynamic``1(System.Data.IDbConnection,System.Nullable{System.Int32})">
+             <summary>
+            
+             </summary>
+             <typeparam name="T"></typeparam>
+             <param name="dbConnection"></param>
+             <param name="commandTimeout"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator.GetByIdListDynamic``1(System.Data.IDbConnection,System.Nullable{System.Int32},System.Object[])">
+             <summary>
+            
+             </summary>
+             <typeparam name="T"></typeparam>
+             <param name="dbConnection"></param>
+             <param name="commandTimeout"></param>
+             <param name="idValues"></param>
+             <returns></returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperations.GetPropertyName(System.Linq.Expressions.BinaryExpression)">
             <summary>
             Gets the name of the property.
             </summary>
             <param name="body">The body.</param>
             <returns>The property name for the property expression.</returns>
         </member>
-        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcPredicateOperations.GetOperator(System.Linq.Expressions.ExpressionType)">
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperations.GetOperator(System.Linq.Expressions.ExpressionType)">
             <summary>
             Gets the operator.
             </summary>
@@ -1236,497 +1199,27 @@
             Inserts entity with databse generated id.
             </summary>
         </member>
-        <member name="T:SimpleInfra.Crud.Extensions.Extensions.CommandExtensions">
-             <summary>
-            
-             </summary>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.Extensions.CommandExtensions.CreateCommandParameters(System.Data.IDbCommand,System.Collections.Generic.IList{System.String},System.Collections.Generic.IList{System.String})">
-            <summary>
-            creates parameters of IDbCommand.
-            </summary>
-            <param name="command"></param>
-            <param name="inputProperties"></param>
-            <param name="outputProperties"></param>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.InsertAndGetIdWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Boolean)">
-            <summary>
-            Inserts And Get Id Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.InsertWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Boolean)">
-            <summary>
-            Inserts Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.UpdateWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Boolean)">
-            <summary>
-            Updates Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.DeleteWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Boolean)">
-            <summary>
-            Deletes Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T">Entity class</typeparam>
-            <param name="dbConnection">Database Connection</param>
-            <param name="entityList">Entity List will be deleted.</param>
-            <returns>Returns object array for Delete operation.</returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.DeleteByIdListWIT``1(System.Data.IDbConnection,System.Object[],System.Boolean)">
-            <summary>
-            Deletes Id List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="idValues"></param>
-            <param name="ignoreNullEntries"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.InsertAndGetId``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Boolean,System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entityList"></param>
-             <param name="transaction"></param>
-             <param name="setIdValue"></param>
-             <param name="ignoreNullEntries"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.Insert``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entityList"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketBulkCrudFactory.Update``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entityList"></param>
-             <param name="transaction"></param>
-             <param name="ignoreNullEntries"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.InsertWIT``1(System.Data.IDbConnection,``0)">
-            <summary>
-            Inserts with Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.InsertAndGetIdWIT``1(System.Data.IDbConnection,``0,System.Boolean)">
-            <summary>
-            Inserts and gets Id With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <param name="setIdValue"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.UpdateWIT``1(System.Data.IDbConnection,``0)">
-            <summary>
-            Updates With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.DeleteWIT``1(System.Data.IDbConnection,``0)">
-            <summary>
-            Deletes With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.DeletByIdWIT``1(System.Data.IDbConnection,System.Object)">
-            <summary>
-             Deletes With Internal Transaction with given id.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="idValue"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.Insert``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.InsertAndGetId``1(System.Data.IDbConnection,``0,System.Boolean,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="setIdValue"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.Update``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.Delete``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketCrudFactory.DeleteById``1(System.Data.IDbConnection,System.Object,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValue"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketGetFactory.GetDynamicById``1(System.Data.IDbConnection,System.Object)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="keyValue"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketGetFactory.GetById``1(System.Data.IDbConnection,System.Object)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="keyValue"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketGetFactory.GetAll``1(System.Data.IDbConnection,System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="useStepByStepConvert"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketGetFactory.GetAllAsDyn``1(System.Data.IDbConnection)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketGetFactory.GetListByIdList``1(System.Data.IDbConnection,System.Object[],System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValues"></param>
-             <param name="ignoreNullEntries"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RocketGetFactory.GetListByIdListAsDynamic``1(System.Data.IDbConnection,System.Object[],System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValues"></param>
-             <param name="ignoreNullEntries"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.InsertAndGetIdWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0})">
-            <summary>
-            Inserts And Get Id Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.InsertWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0})">
-            <summary>
-            Inserts Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.UpdateWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0})">
-            <summary>
-            Updates Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.DeleteWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Boolean)">
-            <summary>
-            Deletes Entity List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entityList"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.DeleteByIdListWIT``1(System.Data.IDbConnection,System.Object[],System.Boolean)">
-            <summary>
-            Deletes Id List With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="idValues"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.InsertAndGetId``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entityList"></param>
-             <param name="transaction"></param>
-             <param name="setIdValue"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.Insert``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entityList"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxBulkCrudFactory.Update``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entityList"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.InsertWIT``1(System.Data.IDbConnection,``0)">
-            <summary>
-            Inserts with Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.InsertAndGetIdWIT``1(System.Data.IDbConnection,``0,System.Boolean)">
-            <summary>
-            Inserts and gets Id With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <param name="setIdValue"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.UpdateWIT``1(System.Data.IDbConnection,``0)">
-            <summary>
-            Updates With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.DeleteWIT``1(System.Data.IDbConnection,``0)">
-            <summary>
-            Deletes With Internal Transaction.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.DeletByIdWIT``1(System.Data.IDbConnection,System.Object)">
-            <summary>
-             Deletes With Internal Transaction with given id.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="dbConnection"></param>
-            <param name="idValue"></param>
-            <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.Insert``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.InsertAndGetId``1(System.Data.IDbConnection,``0,System.Boolean,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="setIdValue"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.Update``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.Delete``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="entity"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxCrudFactory.DeleteById``1(System.Data.IDbConnection,System.Object,System.Data.IDbTransaction)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValue"></param>
-             <param name="transaction"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxGetFactory.GetDynamicById``1(System.Data.IDbConnection,System.Object)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValue"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxGetFactory.GetById``1(System.Data.IDbConnection,System.Object)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValue"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxGetFactory.GetAll``1(System.Data.IDbConnection,System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="useStepByStepConvert"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxGetFactory.GetAllAsDyn``1(System.Data.IDbConnection)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxGetFactory.GetListByIdList``1(System.Data.IDbConnection,System.Object[],System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValues"></param>
-             <returns></returns>
-        </member>
-        <member name="M:SimpleInfra.Crud.Extensions.RxGetFactory.GetListByIdListAsDynamic``1(System.Data.IDbConnection,System.Object[],System.Boolean)">
-             <summary>
-            
-             </summary>
-             <typeparam name="T"></typeparam>
-             <param name="dbConnection"></param>
-             <param name="idValues"></param>
-             <returns></returns>
-        </member>
-        <member name="T:SimpleInfra.Crud.Extensions.Interfaces.IQueryAdds">
+        <member name="T:SimpleInfra.Crud.Extensions.Interfaces.IQueryOptions">
             <summary>
             Represents Parameter Prefix, Column-Table Prefix And Suffix and last IdentityInsert Part.
             </summary>
         </member>
-        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryAdds.ParameterPrefix">
+        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryOptions.ParameterPrefix">
             <summary>
             Gets Parameter Name Prefix.
             </summary>
         </member>
-        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryAdds.Prefix">
+        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryOptions.Prefix">
             <summary>
             Gets Table and Column Name Prefix.
             </summary>
         </member>
-        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryAdds.Suffix">
+        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryOptions.Suffix">
             <summary>
             Gets Table and Column Name Suffix.
             </summary>
         </member>
-        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryAdds.IdentityInsertAdd">
+        <member name="P:SimpleInfra.Crud.Extensions.Interfaces.IQueryOptions.IdentityInsertAdd">
             <summary>
             Gets Identity Insert Part of Query.
             </summary>
@@ -2063,7 +1556,7 @@
             <summary>
             The GetQueryAdd.
             </summary>
-            <returns>The <see cref="T:SimpleInfra.Crud.Extensions.Interfaces.IQueryAdds"/>.</returns>
+            <returns>The <see cref="T:SimpleInfra.Crud.Extensions.Interfaces.IQueryOptions"/>.</returns>
         </member>
         <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.FullTableName``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
             <summary>

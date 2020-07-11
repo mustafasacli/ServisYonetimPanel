@@ -1,0 +1,92 @@
+@model System.Collections.Generic.IEnumerable<Syp.ViewModel.ServiceUserViewModel>
+
+@{
+}
+
+<h2>Liste</h2>
+
+<p>
+    @Html.ActionLink("Ekle", "Create")
+</p>
+<table class="table">
+   <tr>
+       <th>
+           @Html.DisplayNameFor(model => model.UserName)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.FirstName)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.LastName)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.Email)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.Password)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.CreatedOn)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.CreatedBy)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.UpdatedOn)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.UpdatedBy)
+       </th>
+       <th>
+           @Html.DisplayNameFor(model => model.IsDeleted)
+       </th>
+       <th>
+           @Html.Label("", "İşlemler")
+       </th>
+   </tr>
+   @foreach (var item in Model)
+   {
+       <tr>
+           <td>
+               @(item.UserName)
+           </td>
+           <td>
+               @(item.FirstName)
+           </td>
+           <td>
+               @(item.LastName)
+           </td>
+           <td>
+               @(item.Email)
+           </td>
+           <td>
+               @(item.Password)
+           </td>
+           <td>
+               @(item.CreatedOn)
+           </td>
+           <td>
+               @(item.CreatedBy)
+           </td>
+           <td>
+               @(item.UpdatedOn)
+           </td>
+           <td>
+               @(item.UpdatedBy)
+           </td>
+           <td>
+               @(item.IsDeleted)
+           </td>
+           <td>
+               @Html.ActionLink("Detay", "Detail", new { id = item.Id }) |
+               @Html.ActionLink("Düzenle", "Edit", new { id = item.Id }) |
+               @Html.ActionLink("Sil", "Delete", new { id = item.Id })
+           </td>
+       </tr>
+   }
+</table>
+<div>
+       <ul>
+           <li>@Html.ActionLink("Anasayfaya dön", "Index", "Home")</li>
+       </ul>
+</div>

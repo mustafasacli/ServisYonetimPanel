@@ -4616,42 +4616,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "ServisYonetimPanel.Business/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "ServisYonetimPanel.Command": "1.0.0",
-          "ServisYonetimPanel.Contracts": "1.0.0",
-          "ServisYonetimPanel.Entity": "1.0.0",
-          "ServisYonetimPanel.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ServisYonetimPanel.Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ServisYonetimPanel.Business.dll": {}
-        }
-      },
-      "ServisYonetimPanel.Command/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/ServisYonetimPanel.Command.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ServisYonetimPanel.Command.dll": {}
-        }
-      },
-      "ServisYonetimPanel.Contracts/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "ServisYonetimPanel.Models": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ServisYonetimPanel.Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ServisYonetimPanel.Contracts.dll": {}
-        }
-      },
       "ServisYonetimPanel.Data/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -12565,21 +12529,6 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "ServisYonetimPanel.Business/1.0.0": {
-      "type": "project",
-      "path": "../ServisYonetimPanel.Business/ServisYonetimPanel.Business.csproj",
-      "msbuildProject": "../ServisYonetimPanel.Business/ServisYonetimPanel.Business.csproj"
-    },
-    "ServisYonetimPanel.Command/1.0.0": {
-      "type": "project",
-      "path": "../ServisYonetimPanel.Command/ServisYonetimPanel.Command.csproj",
-      "msbuildProject": "../ServisYonetimPanel.Command/ServisYonetimPanel.Command.csproj"
-    },
-    "ServisYonetimPanel.Contracts/1.0.0": {
-      "type": "project",
-      "path": "../ServisYonetimPanel.Contracts/ServisYonetimPanel.Contracts.csproj",
-      "msbuildProject": "../ServisYonetimPanel.Contracts/ServisYonetimPanel.Contracts.csproj"
-    },
     "ServisYonetimPanel.Data/1.0.0": {
       "type": "project",
       "path": "../ServisYonetimPanel.Data/ServisYonetimPanel.Data.csproj",
@@ -12598,14 +12547,14 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj",
+      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj",
       "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj",
+      "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.1",
-      "ServisYonetimPanel.Business >= 1.0.0",
-      "ServisYonetimPanel.Command >= 1.0.0",
-      "ServisYonetimPanel.Contracts >= 1.0.0",
       "ServisYonetimPanel.Data >= 1.0.0",
       "ServisYonetimPanel.Models >= 1.0.0"
     ]
@@ -12705,6 +12654,33 @@
       "level": "Error",
       "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
       "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Common\\ServisYonetimPanel.Common.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
+      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Contracts\\ServisYonetimPanel.Contracts.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
+      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Business\\ServisYonetimPanel.Business.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj'. Inside Visual Studio, this may be because the project is unloaded or not part of current solution. Otherwise the project file may be invalid or missing targets required for restore.",
+      "libraryId": "E:\\Projects\\Git_Projects\\ServisYonetimPanel\\mustafasacli\\ServisYonetimPanel\\ServisYonetimPanel\\ServisYonetimPanel.Command\\ServisYonetimPanel.Command.csproj",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.1"
       ]
