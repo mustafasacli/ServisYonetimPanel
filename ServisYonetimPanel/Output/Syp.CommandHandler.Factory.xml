@@ -4,5 +4,18 @@
         <name>Syp.CommandHandler.Factory</name>
     </assembly>
     <members>
+        <member name="T:Syp.CommandHandler.Factory.CommandHandlerFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandler.Factory.CommandHandlerFactory.GetCommandHandler``2">
+            <summary>
+            
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+            <typeparam name="TCommandResult"></typeparam>
+            <returns></returns>
+        </member>
     </members>
 </doc>

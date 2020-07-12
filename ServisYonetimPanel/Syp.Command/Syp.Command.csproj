@@ -44,16 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Delete\ServiceDeleteCommand.cs" />
-    <Compile Include="Delete\ServiceDetailTypeDeleteCommand.cs" />
-    <Compile Include="Delete\ServiceDetailDeleteCommand.cs" />
-    <Compile Include="Insert\ServiceDetailTypeInsertCommand.cs" />
-    <Compile Include="Insert\ServiceDetailInsertCommand.cs" />
-    <Compile Include="Insert\ServiceInsertCommand.cs" />
+    <Compile Include="Service\ServiceDeleteCommand.cs" />
+    <Compile Include="ServiceDetailType\ServiceDetailTypeDeleteCommand.cs" />
+    <Compile Include="ServiceDetail\ServiceDetailDeleteCommand.cs" />
+    <Compile Include="ServiceDetailType\ServiceDetailTypeInsertCommand.cs" />
+    <Compile Include="ServiceDetail\ServiceDetailInsertCommand.cs" />
+    <Compile Include="Service\ServiceInsertCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Update\ServiceDetailTypeUpdateCommand.cs" />
-    <Compile Include="Update\ServiceDetailUpdateCommand.cs" />
-    <Compile Include="Update\ServiceUpdateCommand.cs" />
+    <Compile Include="ServiceDetailType\ServiceDetailTypeUpdateCommand.cs" />
+    <Compile Include="ServiceDetail\ServiceDetailUpdateCommand.cs" />
+    <Compile Include="Service\ServiceUpdateCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Syp.Command.Base\Syp.Command.Base.csproj">
@@ -61,6 +61,7 @@
       <Name>Syp.Command.Base</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>rd /s /q "$(ProjectDir)obj\Debug"

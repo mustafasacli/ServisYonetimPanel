@@ -69,15 +69,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\SI.Crud.Extensions.Repo\SI.Crud.Extensions.Repo\SimpleInfra.Crud.Extensions\SimpleInfra.Crud.Extensions.csproj">
+    <ProjectReference Include="..\..\..\..\..\SI.Crud.Extensions.Repo\SI.Crud.Extensions.Repo\SimpleInfra.Crud.Extensions\SimpleInfra.Crud.Extensions.csproj">
       <Project>{185872f6-6f49-4dc6-b939-10fcc8e04aa7}</Project>
       <Name>SimpleInfra.Crud.Extensions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Common.Extensions\SimpleInfra.Common.Extensions.csproj">
+    <ProjectReference Include="..\..\..\..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Common.Extensions\SimpleInfra.Common.Extensions.csproj">
       <Project>{439e5314-5cd3-494f-a948-68c8d3fd94ec}</Project>
       <Name>SimpleInfra.Common.Extensions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Data.Extensions\SimpleInfra.Data.Extensions.csproj">
+    <ProjectReference Include="..\..\..\..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Data.Extensions\SimpleInfra.Data.Extensions.csproj">
       <Project>{d7eb06b3-bdab-4847-abf0-3cd6dcca3eea}</Project>
       <Name>SimpleInfra.Data.Extensions</Name>
     </ProjectReference>

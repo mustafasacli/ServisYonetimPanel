@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInfra.Common.Response, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c1ce61cdd45628f7, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInfra.Common.Response.dll.1.3.0\lib\net40\SimpleInfra.Common.Response.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +57,17 @@
       <Project>{2B54B980-CDEB-47B9-ADB3-4E193362B8AA}</Project>
       <Name>Syp.Command.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Syp.CommandHandler.Core\Syp.CommandHandler.Core.csproj">
+      <Project>{A21A6666-A331-475D-A24C-A4E5AC4216B0}</Project>
+      <Name>Syp.CommandHandler.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Syp.CommandHandler.Factory\Syp.CommandHandler.Factory.csproj">
+      <Project>{A89B9ED0-C79D-4385-A96C-945CD7FF980E}</Project>
+      <Name>Syp.CommandHandler.Factory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

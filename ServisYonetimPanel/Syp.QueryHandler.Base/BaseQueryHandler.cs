@@ -9,7 +9,8 @@
     using System.Data;
 
     public abstract class BaseQueryHandler<TQuery, TResult> : IQueryHandler<TQuery, TResult>
-            where TQuery : IQuery<TResult>
+            where TQuery : class, IQuery<TResult>
+        where TResult : class, IQueryResult
     {
         protected BaseQueryHandler()
         {

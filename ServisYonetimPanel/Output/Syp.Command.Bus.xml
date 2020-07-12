@@ -4,5 +4,14 @@
         <name>Syp.Command.Bus</name>
     </assembly>
     <members>
+        <member name="M:Syp.Command.Bus.CommandBus.Send``2(``0)">
+            <summary>
+            
+            </summary>
+            <typeparam name="TCommand"></typeparam>
+            <typeparam name="TCommandResult"></typeparam>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

@@ -778,35 +778,35 @@
              <param name="connType"></param>
              <returns></returns>
         </member>
-        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandHandler.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
             <summary>
             protected ctor
             </summary>
             <param name="connectionType"></param>
         </member>
-        <member name="P:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.ConnectionType">
+        <member name="P:SimpleInfra.Crud.Extensions.Command.BaseCommandHandler.ConnectionType">
             <summary>
             Connection Type of DbConnection.
             </summary>
         </member>
-        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.Execute(SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandHandler.Execute(SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
              <summary>
             
              </summary>
              <param name="commandDefinition"></param>
              <returns></returns>
         </member>
-        <member name="T:SimpleInfra.Crud.Extensions.Command.ICommandExecutor">
+        <member name="T:SimpleInfra.Crud.Extensions.Command.ICommandHandler">
              <summary>
             
              </summary>
         </member>
-        <member name="P:SimpleInfra.Crud.Extensions.Command.ICommandExecutor.ConnectionType">
+        <member name="P:SimpleInfra.Crud.Extensions.Command.ICommandHandler.ConnectionType">
             <summary>
             Connection Type of Query Builder
             </summary>
         </member>
-        <member name="M:SimpleInfra.Crud.Extensions.Command.ICommandExecutor.Execute(SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+        <member name="M:SimpleInfra.Crud.Extensions.Command.ICommandHandler.Execute(SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
              <summary>
             
              </summary>
