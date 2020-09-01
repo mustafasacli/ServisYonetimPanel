@@ -10,9 +10,10 @@
     using System.Data;
 
     /// <summary>
-    ///
+    /// 
     /// </summary>
     /// <typeparam name="TCommand"></typeparam>
+    /// <typeparam name="TCommandResult"></typeparam>
     public abstract class BaseCommandHandler<TCommand, TCommandResult>
         : ICommandHandler<TCommand, TCommandResult>
         where TCommand : class, ICommand<TCommandResult>
@@ -38,6 +39,9 @@
             return conn;
         }
 
+        /// <summary>
+        /// Logger for Day format.
+        /// </summary>
         protected ISimpleLogger DayLogger
         {
             get
@@ -48,6 +52,9 @@
             }
         }
 
+        /// <summary>
+        /// Logger for Hour format.
+        /// </summary>
         protected ISimpleLogger HourLogger
         {
             get
@@ -58,6 +65,9 @@
             }
         }
 
+        /// <summary>
+        /// Logger has no format.
+        /// </summary>
         protected ISimpleLogger NoneLogger
         {
             get

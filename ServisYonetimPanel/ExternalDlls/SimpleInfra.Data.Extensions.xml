@@ -1,0 +1,2115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleInfra.Data.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleInfra.Data.Extensions.InternalDbCommandBuilder">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.InternalDbCommandBuilder.CreateCommandWithOptions(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The CreateCommandWithOptions.
+            </summary>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="sqlText">The sqlText<see cref="T:System.String"/>.</param>
+            <param name="commandType">The commandType<see cref="T:System.Data.CommandType"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="parameters">The parameters<see cref="!:object[]"/>.</param>
+            <returns>The <see cref="T:System.Data.IDbCommand"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.InternalDbCommandBuilder.CreateCommandWithOptions(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object},System.Nullable{System.Int32})">
+            <summary>
+            The CreateCommandWithOptions.
+            </summary>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="sqlText">The sqlText<see cref="T:System.String"/>.</param>
+            <param name="commandType">The commandType<see cref="T:System.Data.CommandType"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="inputParameters">The inputParameters<see cref="!:Dictionary&lt;string, object&gt;"/>.</param>
+            <param name="outputParameters">The outputParameters<see cref="!:Dictionary&lt;string, object&gt;"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="T:System.Data.IDbCommand"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.InternalDbCommandBuilder.CreateCommandWithOptions(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The CreateCommandWithOptions.
+            </summary>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="commandDefinition">The commandDefinition<see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <returns>The <see cref="T:System.Data.IDbCommand"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Interfaces.IQueryOption">
+            <summary>
+            Represents Parameter Prefix, Column-Table Prefix And Suffix and last IdentityInsert Part.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Interfaces.IQueryOption.ParameterPrefix">
+            <summary>
+            Gets the ParameterPrefix
+            Gets Parameter Name Prefix..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Interfaces.IQueryOption.Prefix">
+            <summary>
+            Gets the Prefix
+            Gets Table and Column Name Prefix..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Interfaces.IQueryOption.Suffix">
+            <summary>
+            Gets the Suffix
+            Gets Table and Column Name Suffix..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Interfaces.IQueryOption.IdentityInsertAdd">
+            <summary>
+            Gets the IdentityInsertAdd
+            Gets Identity Insert Part of Query..
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.QueryOption">
+            <summary>
+            Represents Parameter Prefix, Column-Table Prefix And Suffix and last IdentityInsert Part.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.QueryOption.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Data.Extensions.QueryOption"/> class.
+            </summary>
+            <param name="conn_type">.</param>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.QueryOption.ParameterPrefix">
+            <summary>
+            Gets the ParameterPrefix
+            Gets Parameter Name Prefix..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.QueryOption.Prefix">
+            <summary>
+            Gets the Prefix
+            Gets Table and Column Name Prefix..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.QueryOption.Suffix">
+            <summary>
+            Gets the Suffix
+            Gets Table and Column Name Suffix..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.QueryOption.IdentityInsertAdd">
+            <summary>
+            Gets the IdentityInsertAdd
+            Gets Identity Insert Part of Query..
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.QueryOption.GetParameterPrefix(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Returns Prefix for parameters according to Connection Type.
+            </summary>
+            <param name="conn_type">The conn_type<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns> Returns Prefix for parameters according to Connection Type.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.QueryOption.GetPrefix(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Returns Prefix for columns and tables according to Connection Type.
+            </summary>
+            <param name="conn_type">The conn_type<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns> Returns Prefix for columns and tables according to Connection Type.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.QueryOption.GetSuffix(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Returns Suffix for columns and tables according to Connection Type.
+            </summary>
+            <param name="conn_type">The conn_type<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>Returns Suffix for columns and tables according to Connection Type.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.QueryOption.GetIdentityInsert(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Returns GetIdentity query part of InsertAndGetId.
+            </summary>
+            <param name="conn_type">The conn_type<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns> Returns GetIdentity query part of InsertAndGetId. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Build.QueryOptionsBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Build.QueryOptionsBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.Build.QueryOptionsBuilder.GetQueryOption(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The GetQueryOption.
+            </summary>
+            <param name="connectionType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Interfaces.IQueryOption"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.ConnectionExtensions.SimpleDbAnonymousDynOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.ConnectionExtensions.SimpleDbAnonymousDynOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.ConnectionExtensions.SimpleDbAnonymousDynOperator.QueryFirstDynamic(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryFirstDynamic.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.ConnectionExtensions.SimpleDbAnonymousDynOperator.QueryLastDynamic(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryLastDynamic.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.ConnectionExtensions.SimpleDbAnonymousDynOperator.QueryListDynamic(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryListDynamic.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.ConnectionExtensions.SimpleDbAnonymousDynOperator.QueryListSkipAndTakeDynamic(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction,System.UInt32,System.UInt32)">
+            <summary>
+            The QueryListSkipAndTakeDynamic.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.GetParametersFromObject(System.Data.IDbConnection,System.Object)">
+            <summary>
+            Gets parameters from.
+            </summary>
+            <param name="connection">.</param>
+            <param name="obj">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.QueryExecute(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryExecute.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sql">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.QueryExecuteScalar(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryExecuteScalar.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sql">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.QueryFirst``1(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryFirst.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.QueryLast``1(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryLast.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.QueryList``1(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction)">
+            <summary>
+            The QueryList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAnonymousOperator.QueryListSkipAndTake``1(System.Data.IDbConnection,System.String,System.Object,System.Data.CommandType,System.Data.IDbTransaction,System.UInt32,System.UInt32)">
+            <summary>
+            The QueryListSkipAndTake.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="obj">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.ExecuteAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            An IDbConnection extension method that executes the asynchronous operation.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the execute. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.ExecuteReaderAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            An IDbConnection extension method that executes the reader asynchronous operation.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the execute reader. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.ExecuteScalarAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            An IDbConnection extension method that executes the scalar asynchronous operation.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the execute scalar. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.GetResultSetAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The GetResultSetAsync.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.GetDynamicResultSetAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            An IDbConnection extension method that gets dynamic result set asynchronous.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.GetDynamicResultSetWithPagingAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object},System.UInt32,System.UInt32)">
+            <summary>
+            An IDbConnection extension method that gets dynamic result set with paging asynchronous.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <param name="pageNumber">       (Optional) The page number. .</param>
+            <param name="pageItemCount">    (Optional) Number of page ıtems. .</param>
+            <returns>   An asynchronous result that yields the dynamic result set with paging. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.GetMultiDynamicResultSetAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            An IDbConnection extension method that gets multi dynamic result set asynchronous.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the multi dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.FirstAsDynamicAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The FirstAsDynamicAsync.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the first as dynamic. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.FirstAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The FirstAsync.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields a T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.LastAsDynamicAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The LastAsDynamicAsync.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields the last as dynamic. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.LastAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The LastAsync.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An asynchronous result that yields a T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.GetListAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The GetListAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.ExecuteScalarAsAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The ExecuteScalarAsAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.ExecuteAsLongAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The ExecuteAsLongAsync.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperator.ExecuteAsDecimalAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The ExecuteAsDecimalAsync.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.ExecuteAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            An IDbConnection extension method that executes the asynchronous operation.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the execute. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.ExecuteReaderAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            An IDbConnection extension method that executes the reader asynchronous operation.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the execute reader. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.ExecuteScalarAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            An IDbConnection extension method that executes the scalar asynchronous operation.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the execute scalar. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.GetResultSetAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The GetResultSetAsync.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.GetDynamicResultSetAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            An IDbConnection extension method that gets dynamic result set asynchronous.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.GetDynamicResultSetWithPagingAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.UInt32,System.UInt32,System.Object[])">
+            <summary>
+            An IDbConnection extension method that gets dynamic result set with paging asynchronous.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="pageNumber">       (Optional) The page number. .</param>
+            <param name="pageItemCount">    (Optional) Number of page ıtems. .</param>
+            <param name="parameters">       A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the dynamic result set with paging. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.GetMultiDynamicResultSetAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            An IDbConnection extension method that gets multi dynamic result set asynchronous.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the multi dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.FirstAsDynamicAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The FirstAsDynamicAsync.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the first as dynamic. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.FirstAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The FirstAsync.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields a T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.LastAsDynamicAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The LastAsDynamicAsync.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields the last as dynamic. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.LastAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The LastAsync.
+            </summary>
+            <typeparam name="T">Generic type parameter. .</typeparam>
+            <param name="connection">The connection to act on. .</param>
+            <param name="sqlText">The SQL text. .</param>
+            <param name="commandType">(Optional) Type of the command. .</param>
+            <param name="transaction">(Optional) The transaction. .</param>
+            <param name="parameters">A variable-length parameters list containing parameters. .</param>
+            <returns>   An asynchronous result that yields a T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.GetListAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The GetListAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="parameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.ExecuteScalarAsAsync``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteScalarAsAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="parameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.ExecuteAsLongAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteAsLongAsync.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="parameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbAsyncOperatorWP.ExecuteAsDecimalAsync(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteAsDecimalAsync.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="parameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleDbOperatorV2">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleDbOperatorV2" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.ExecuteQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The ExecuteQuery.
+            </summary>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="commandDefinition">The commandDefinition<see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <returns>The <see cref="!:ISimpleCommandResult&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.ExecuteReaderQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Collections.Generic.Dictionary{System.String,System.Object}@,System.Data.IDbTransaction,System.Nullable{System.Data.CommandBehavior})">
+            <summary>
+            The ExecuteReaderQuery.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="outputValues">.</param>
+            <param name="transaction">.</param>
+            <param name="commandBehavior">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.ExecuteScalarQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The ExecuteScalarQuery.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetResultSetQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The GetResultSetQuery.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetDynamicResultSetQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction,System.Nullable{System.Data.CommandBehavior})">
+            <summary>
+            The GetDynamicResultSetQuery.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <param name="behavior">The behavior<see cref="!:CommandBehavior?"/>.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetDynamicResultSetWithPagingQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction,System.UInt32,System.UInt32)">
+            <summary>
+            The GetDynamicResultSetWithPagingQuery.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <param name="pageNumber">.</param>
+            <param name="pageItemCount">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetMultiDynamicResultSetQuery(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Collections.Generic.Dictionary{System.String,System.Object}@,System.Data.IDbTransaction)">
+            <summary>
+            The GetMultiDynamicResultSetQuery.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="outputValues">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.ExecuteScalarQueryAs``1(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The ExecuteScalarQueryAs.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.QueryFirstAsDynamic(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The QueryFirstAsDynamic.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="commandDefinition">The commandDefinition<see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.QueryFirst``1(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The QueryFirst.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.QueryLastAsDynamic(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The QueryLastAsDynamic.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.QueryLast``1(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The QueryLast.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetList``1(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction)">
+            <summary>
+            The GetList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetDynamicResultSetSkipAndTake(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction,System.UInt32,System.UInt32)">
+            <summary>
+            The GetDynamicResultSetSkipAndTake.
+            </summary>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorV2.GetListSkipAndTake``1(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition,System.Data.IDbTransaction,System.UInt32,System.UInt32)">
+            <summary>
+            The GetListSkipAndTake.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="commandDefinition">.</param>
+            <param name="transaction">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.DbConnectionExtension">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.DbConnectionExtension" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.GetServerVersion(System.Data.IDbConnection)">
+            <summary>
+            The GetServerVersion.
+            </summary>
+            <param name="dbConnection"> The dbConnection to act on. .</param>
+            <returns>   The server version. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.GetConnectionStringBuilder(System.Data.IDbConnection)">
+            <summary>
+            The GetConnectionStringBuilder.
+            </summary>
+            <param name="dbConnection"> The dbConnection to act on. .</param>
+            <returns>   The connection string builder. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.CloseIfNot(System.Data.IDbConnection)">
+            <summary>
+            The CloseIfNot.
+            </summary>
+            <param name="dbConnection"> The dbConnection to act on. .</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.OpenIfNot(System.Data.IDbConnection)">
+            <summary>
+            The OpenIfNot.
+            </summary>
+            <param name="dbConnection"> The dbConnection to act on. .</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.OpenAndBeginTransaction(System.Data.IDbConnection,System.Nullable{System.Data.IsolationLevel})">
+            <summary>
+            The OpenAndBeginTransaction.
+            </summary>
+            <param name="dbConnection">     The dbConnection to act on. .</param>
+            <param name="isolationLevel">   (Optional) The isolation level. .</param>
+            <returns>   An IDbTransaction. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.GetParameterPrefix(System.Data.IDbConnection)">
+            <summary>
+            The GetParameterPrefix.
+            </summary>
+            <param name="connection">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbConnectionExtension.GetQueryOption(System.Data.IDbConnection)">
+            <summary>
+            
+            </summary>
+            <param name="connection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleDbOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleDbOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.Execute(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The Execute.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An int. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.ExecuteReader(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object},System.Nullable{System.Data.CommandBehavior})">
+            <summary>
+            The ExecuteReader.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <param name="commandBehavior">CommandBehaviour for DataReader.</param>
+            <returns>   An IDataReader. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.ExecuteScalar(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The ExecuteScalar.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An object. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetResultSet(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The GetResultSet.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   The DataSet object instance. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetDynamicResultSet(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The GetDynamicResultSet.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   The dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetDynamicResultSetWithPaging(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object},System.UInt32,System.UInt32)">
+            <summary>
+            An IDbConnection extension method that gets dynamic result set with paging.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <param name="pageNumber">       (Optional) The page number. .</param>
+            <param name="pageItemCount">    (Optional) Number of page ıtems. .</param>
+            <returns>   The dynamic result set with paging. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetMultiDynamicResultSet(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The GetMultiDynamicResultSet.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   The multi dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.ExecuteScalarAs``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            An IDbConnection extension method that executes the scalar as operation.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   A T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.ExecuteAsLong(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The ExecuteAsLong.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   A long. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.ExecuteAsDecimal(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The ExecuteAsDecimal.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   A decimal. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.FirstAsDynamic(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The FirstAsDynamic.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.First``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The First.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   A T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.LastAsDynamic(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The LastAsDynamic.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.Last``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The Last.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sqlText">          The SQL text. .</param>
+            <param name="commandType">      (Optional) Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="inputParameters">  (Optional) Options for controlling the input. .</param>
+            <param name="outputParameters"> (Optional) Options for controlling the output. .</param>
+            <returns>   A T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetList``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The GetList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetDynamicResultSetSkipAndTake(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object},System.UInt32,System.UInt32)">
+            <summary>
+            The GetDynamicResultSetSkipAndTake.
+            </summary>
+            <param name="connection">.</param>
+            <param name="sql">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperator.GetListSkipAndTake``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object},System.UInt32,System.UInt32)">
+            <summary>
+            The GetListSkipAndTake.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="inputParameters">.</param>
+            <param name="outputParameters">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleDbOperatorWP">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleDbOperatorWP" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.Execute(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The Execute.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An int. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.ExecuteReader(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteReader.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An IDataReader. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.ExecuteScalar(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteScalar.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An object. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.GetResultSet(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The GetResultSet.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   The result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.GetDynamicResultSet(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The GetDynamicResultSet.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   The dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.GetDynamicResultSetWithPaging(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.UInt32,System.UInt32,System.Object[])">
+            <summary>
+            An IDbConnection extension method that gets dynamic result set with paging.
+            </summary>
+            <param name="connection">       The connection to act on. .</param>
+            <param name="sql">              The SQL. .</param>
+            <param name="commandType">      Type of the command. .</param>
+            <param name="transaction">      (Optional) The transaction. .</param>
+            <param name="pageNumber">       (Optional) The page number. .</param>
+            <param name="pageItemCount">    (Optional) Number of page ıtems. .</param>
+            <param name="parameters">       A variable-length parameters list containing parameters. .</param>
+            <returns>   The dynamic result set with paging. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.GetMultiDynamicResultSet(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The GetMultiDynamicResultSet.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sql">          The SQL. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   The multi dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.ExecuteScalarAs``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            An IDbConnection extension method that executes the scalar as operation.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   A T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.ExecuteAsLong(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteAsLong.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   A long. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.ExecuteAsDecimal(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The ExecuteAsDecimal.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   A decimal. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.FirstAsDynamic(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The FirstAsDynamic.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.First``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The First.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   A T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.LastAsDynamic(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The LastAsDynamic.
+            </summary>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.Last``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            The Last.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="connection">   The connection to act on. .</param>
+            <param name="sqlText">      The SQL text. .</param>
+            <param name="commandType">  (Optional) Type of the command. .</param>
+            <param name="transaction">  (Optional) The transaction. .</param>
+            <param name="parameters">   A variable-length parameters list containing parameters. .</param>
+            <returns>   A T. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleDbOperatorWP.GetList``1(System.Data.IDbConnection,System.String,System.Data.CommandType,System.Data.IDbTransaction,System.Object[])">
+            <summary>
+            Get List of model.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">.</param>
+            <param name="sqlText">.</param>
+            <param name="commandType">.</param>
+            <param name="transaction">.</param>
+            <param name="parameters">DbParameter List.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.ConnectionTypePairs">
+            <summary>
+            Defines the ConnectionTypePairs.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.GetDbConnectionType(System.Data.IDbConnection)">
+            <summary>
+            Gets Connection Type.
+            </summary>
+            <param name="connection">Connection instance.</param>
+            <returns>returns DbConnectionTypes enum.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.GetConnectionType(System.Data.IDbConnection)">
+            <summary>
+            The GetConnectionType.
+            </summary>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.GetDbConnectionType``1(``0)">
+            <summary>
+            Gets Connection Type.
+            </summary>
+            <typeparam name="T">DbConnection class.</typeparam>
+            <param name="connection">Connection instance.</param>
+            <returns>returns DbConnectionTypes enum.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.IsInsertScalarMode(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The IsInsertScalarMode.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.IsOdbcConn(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The IsOdbcConn.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.IsOledbConn(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The IsOledbConn.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.SimpleConnectionTypeBuilder.IsOracleConn(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The IsOracleConn.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Constants.DbConnectionNames">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Constants.DbConnectionNames" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.OleDb">
+            <summary>
+            Defines the OleDb.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Odbc">
+            <summary>
+            Defines the Odbc.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.MySql">
+            <summary>
+            Defines the MySql.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.MySqlDevart">
+            <summary>
+            Defines the MySqlDevart.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.SQLite">
+            <summary>
+            Defines the SQLite.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Devart_SQLite">
+            <summary>
+            Defines the Devart_SQLite.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Firebird">
+            <summary>
+            Defines the Firebird.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Devart_Oracle">
+            <summary>
+            Defines the Devart_Oracle.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Oracle">
+            <summary>
+            Defines the Oracle.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.OracleManaged">
+            <summary>
+            Defines the OracleManaged.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Oracle_Win">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.PostgreSql">
+            <summary>
+            Defines the PostgreSql.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.PostgreSqlDevart">
+            <summary>
+            Defines the PostgreSqlDevart.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.VistaDB">
+            <summary>
+            Defines the VistaDB.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Sql">
+            <summary>
+            Defines the MsSql.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.SqlBaseGupta">
+            <summary>
+            Defines the SqlBaseGupta.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.SqlBaseUnify">
+            <summary>
+            Defines the SqlBaseUnify.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.SqlBase">
+            <summary>
+            Defines the SqlBase.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.SqlCe">
+            <summary>
+            Defines the SqlCe.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Sde">
+            <summary>
+            Defines the Sde.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.DB2">
+            <summary>
+            Defines the DB2.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.NuoDb">
+            <summary>
+            Defines the NuoDb.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.SQLDatabaseNet">
+            <summary>
+            Defines the SQLDatabaseNet.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Ole_MySql">
+            <summary>
+            Defines the Ole_MySql.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Ole_DB2">
+            <summary>
+            Defines the Ole_DB2.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Ole_Ora">
+            <summary>
+            Defines the Ole_Ora.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Ole_Oracle">
+            <summary>
+            Defines the Ole_Oracle.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Ole_SQL">
+            <summary>
+            Defines the Ole_SQL.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.DbConnectionNames.Ole_Driver">
+            <summary>
+            Defines the Ole_Driver.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Constants.InternalAppValues">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Constants.InternalAppValues" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.InternalAppValues.NullValue">
+            <summary>
+            Defines the NullValue.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Constants.SimpleAppMessages">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Constants.SimpleAppMessages" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppMessages.UndefinedDbConnectionType">
+            <summary>
+            Defines the UndefinedDbConnectionType.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppMessages.UndefinedKey">
+            <summary>
+            Defines the UndefinedKey.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Constants.SimpleAppValues">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Constants.SimpleAppValues" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.CommandTimeout">
+            <summary>
+            General Command Timeout value..
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.NullValue">
+            <summary>
+            means DbNull.Value..
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.ErrorFileDateFormat">
+            <summary>
+            Time Format: yyyy-MM-dd-HH-mm-ss.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.GeneralDateFormat">
+            <summary>
+            Time Format: yyyy-MM-dd, HH:mm:ss ffffff.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.ServerVersionProperty">
+            <summary>
+            Defines the ServerVersionProperty.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.ParameterQueryDelimiter">
+            <summary>
+            char '|'.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Constants.SimpleAppValues.ParameterPropertyDelimiter">
+            <summary>
+            char ';'.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.DataExtensions">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.DataExtensions" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.ToList``1(System.Data.DataTable,System.Boolean)">
+            <summary>
+            The ToList.
+            </summary>
+            <typeparam name="T">    T object type. .</typeparam>
+            <param name="datatable">            Datatble object. .</param>
+            <param name="accordingToColumn">The accordingToColumn<see cref="T:System.Boolean"/>.</param>
+            <returns>   Returns A List of T object. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.GetPageOfDataTable(System.Data.DataTable,System.Int32,System.Int32)">
+            <summary>
+            The GetPageOfDataTable.
+            </summary>
+            <param name="dt">           DataTable object. .</param>
+            <param name="pageNumber">   The page number. .</param>
+            <param name="rowCount">     Number of rows. .</param>
+            <returns>   The page of data table. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.GetColumnsOfDataTable(System.Data.DataTable,System.String[])">
+            <summary>
+            The GetColumnsOfDataTable.
+            </summary>
+            <param name="dt">           DataTable object. .</param>
+            <param name="columnList">   column names array. .</param>
+            <returns>   Returns a DataTable with Selected column names. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.GetColumnsOfDataTable(System.Data.DataTable,System.Int32[])">
+            <summary>
+            The GetColumnsOfDataTable.
+            </summary>
+            <param name="dt">           DataTable object. .</param>
+            <param name="columnList">   column numbers array. .</param>
+            <returns>   Returns a DataTable with Selected column numbers. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.GetObjectWithSelectedColumn(System.Data.DataTable,System.String,System.Object,System.String)">
+            <summary>
+            The GetObjectWithSelectedColumn.
+            </summary>
+            <param name="dt">                   DataTable object. .</param>
+            <param name="refColumn">            Name of Reference Column. .</param>
+            <param name="refValue">             Value of Reference Column. .</param>
+            <param name="destinationColumn">    Name of Destination Column. .</param>
+            <returns>The <see cref="T:System.Object"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.ExportAsExcelWithIncludeColumns(System.Data.DataTable,System.String,System.Object[])">
+            <summary>
+            A DataTable extension method that export as excel with ınclude columns.
+            </summary>
+            <param name="dt">               DataTable object. .</param>
+            <param name="fileName">         Filename of the file. .</param>
+            <param name="includeColumns">   A variable-length parameters list containing include columns. .</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.ExportAsExcelWithExcludeColumns(System.Data.DataTable,System.String,System.Object[])">
+            <summary>
+            A DataTable extension method that export as excel with exclude columns.
+            </summary>
+            <param name="dt">               DataTable object. .</param>
+            <param name="fileName">         Filename of the file. .</param>
+            <param name="excludeColumns">   A variable-length parameters list containing exclude columns. .</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.Copy(System.Data.DataTable)">
+            <summary>
+            The Copy.
+            </summary>
+            <param name="dt">   DataTable object. .</param>
+            <returns>   A DataTable. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.GetSomeColumnsAsTable(System.Data.DataTable,System.String[])">
+            <summary>
+            The GetSomeColumnsAsTable.
+            </summary>
+            <param name="dt">           DataTable object. .</param>
+            <param name="columnList">   column names array. .</param>
+            <returns>   some columns as table. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.RowToObject``1(System.Data.DataRow,System.Data.DataColumnCollection)">
+            <summary>
+            The RowToObject.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="row">      The row to act on. .</param>
+            <param name="columns">  (Optional) The columns. .</param>
+            <returns>   A T instance. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.GetColumnAsUniqueList``1(System.Data.DataTable,System.String)">
+            <summary>
+            The GetColumnAsUniqueList.
+            </summary>
+            <typeparam name="T">    Generic type parameter. .</typeparam>
+            <param name="dataTable">    The dataTable to act on. .</param>
+            <param name="columnName">   Name of the column. .</param>
+            <returns>   The column as unique list. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataExtensions.ToDynamicList(System.Data.DataTable)">
+            <summary>
+            The ToDynamicList.
+            </summary>
+            <param name="table">    The table to act on. .</param>
+            <returns>   Table as a List&lt;ExpandoObject&gt; .</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.DataReaderAsyncOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.DataReaderAsyncOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderAsyncOperator.FirstRowAsync(System.Data.IDataReader)">
+            <summary>
+            The FirstRowAsync.
+            </summary>
+            <param name="reader">   The dataReader to act on. .</param>
+            <returns>   An asynchronous result that yields the first row. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderAsyncOperator.LastRowAsync(System.Data.IDataReader)">
+            <summary>
+            The LastRowAsync.
+            </summary>
+            <param name="reader">   The dataReader to act on. .</param>
+            <returns>   An asynchronous result that yields the last row. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderAsyncOperator.GetDynamicResultSetAsync(System.Data.IDataReader,System.Boolean)">
+            <summary>
+            The GetDynamicResultSetAsync.
+            </summary>
+            <param name="reader">       . .</param>
+            <param name="closeAtFinal"> (Optional) .</param>
+            <returns>Returns ExpandoObject object list.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderAsyncOperator.GetDynamicResultSetWithPagingAsync(System.Data.IDataReader,System.UInt32,System.UInt32,System.Boolean)">
+            <summary>
+            An IDataReader extension method that gets dynamic result set with paging asynchronous.
+            </summary>
+            <param name="reader">           . .</param>
+            <param name="pageNumber">       (Optional) The page number. .</param>
+            <param name="pageItemCount">    (Optional) Number of page items. .</param>
+            <param name="closeAtFinal">     (Optional) .</param>
+            <returns>   An asynchronous result that yields the dynamic result set with paging. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderAsyncOperator.GetMultiDynamicResultSetAsync(System.Data.IDataReader)">
+            <summary>
+            An IDataReader extension method that gets multi dynamic result set asynchronous.
+            </summary>
+            <param name="reader">IDataReader object.</param>
+            <returns>   An asynchronous result that yields the multi dynamic result set. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.DataReaderOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.DataReaderOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.FirstRow(System.Data.IDataReader)">
+            <summary>
+            The FirstRow.
+            </summary>
+            <param name="reader">   The dataReader to act on. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.LastRow(System.Data.IDataReader)">
+            <summary>
+            The LastRow.
+            </summary>
+            <param name="reader">   The dataReader to act on. .</param>
+            <returns>   An ExpandoObject. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.GetDynamicResultSet(System.Data.IDataReader,System.Boolean)">
+            <summary>
+            The GetDynamicResultSet.
+            </summary>
+            <param name="reader">       . .</param>
+            <param name="closeAtFinal"> (Optional) .</param>
+            <returns>   Returns ExpandoObject object list. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.GetDynamicResultSetWithPaging(System.Data.IDataReader,System.UInt32,System.UInt32,System.Boolean)">
+            <summary>
+            An IDataReader extension method that gets dynamic result set with paging.
+            </summary>
+            <param name="reader">           . .</param>
+            <param name="pageNumber">       (Optional) The page number. .</param>
+            <param name="pageItemCount">    (Optional) Number of page ıtems. .</param>
+            <param name="closeAtFinal">     (Optional) .</param>
+            <returns>   The dynamic result set with paging. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.GetMultiDynamicResultSet(System.Data.IDataReader,System.Boolean)">
+            <summary>
+            The GetMultiDynamicResultSet.
+            </summary>
+            <param name="reader">       . .</param>
+            <param name="closeAtFinal"> (Optional) .</param>
+            <returns>   The multi dynamic result set. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.GetDynamicFromDataReader(System.Data.IDataReader)">
+            <summary>
+            The GetDynamicFromDataReader.
+            </summary>
+            <param name="dataReader">   The dataReader to act on. .</param>
+            <returns>   The dynamic from data reader. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.GetDynamicResultSetSkipAndTake(System.Data.IDataReader,System.UInt32,System.UInt32,System.Boolean)">
+            <summary>
+            Get Expando List with skip and take options.
+            </summary>
+            <param name="reader">.</param>
+            <param name="skip">.</param>
+            <param name="take">.</param>
+            <param name="closeAtFinal">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DataReaderOperator.CloseIfNot(System.Data.IDataReader)">
+            <summary>
+            The CloseIfNot.
+            </summary>
+            <param name="reader">   The dataReader to act on. .</param>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetCommandTransaction(System.Data.IDbCommand,System.Data.IDbTransaction)">
+            <summary>
+            The SetCommandTransaction.
+            </summary>
+            <param name="command">The command<see cref="T:System.Data.IDbCommand"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetParameterValue(System.Data.IDbCommand,System.Int32,System.Object)">
+            <summary>
+            The SetParameterValue.
+            </summary>
+            <param name="command">The command<see cref="T:System.Data.IDbCommand"/>.</param>
+            <param name="parameterIndex">The parameterIndex<see cref="T:System.Int32"/>.</param>
+            <param name="parameterValue">The parameterValue<see cref="T:System.Object"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetParameterValue(System.Data.IDbCommand,System.String,System.Object)">
+            <summary>
+            The SetParameterValue.
+            </summary>
+            <param name="command">The command<see cref="T:System.Data.IDbCommand"/>.</param>
+            <param name="parameterName">The parameterName<see cref="T:System.String"/>.</param>
+            <param name="parameterValue">The parameterValue<see cref="T:System.Object"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetCommandConnection(System.Data.IDbCommand,System.Data.IDbConnection)">
+            <summary>
+            The SetCommandConnection.
+            </summary>
+            <param name="command">The command<see cref="T:System.Data.IDbCommand"/>.</param>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetCommandValuesToNull(System.Data.IDbCommand)">
+            <summary>
+            The SetCommandValuesToNull.
+            </summary>
+            <param name="command">The command<see cref="T:System.Data.IDbCommand"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetCommandParameters(System.Data.IDbCommand,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            The SetCommandParameters.
+            </summary>
+            <param name="command">          . .</param>
+            <param name="inputParameters">  (Optional) .</param>
+            <param name="outputParameters"> (Optional) .</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetCommandParameters(System.Data.IDbCommand,System.Collections.Generic.List{SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter})">
+            <summary>
+            The SetCommandParameters.
+            </summary>
+            <param name="command">The command<see cref="T:System.Data.IDbCommand"/>.</param>
+            <param name="commandParameters">The commandParameters<see cref="T:System.Collections.Generic.List`1"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.SetCommandParameters(System.Data.IDbCommand,System.Object[])">
+            <summary>
+            The SetCommandParameters.
+            </summary>
+            <param name="command">      Db command. .</param>
+            <param name="parameters">   Db Command Parameters. .</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbCommandExtensions.CommandExtensions.GetOutParametersOfCommand(System.Data.IDbCommand)">
+            <summary>
+            The GetOutParametersOfCommand.
+            </summary>
+            <param name="command">  db command .</param>
+            <returns>   The out parameters of command. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.DbTransactionExtensions.TransactionExtensions">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.DbTransactionExtensions.TransactionExtensions" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbTransactionExtensions.TransactionExtensions.DisposeTransaction(System.Data.IDbTransaction)">
+            <summary>
+            The DisposeTransaction.
+            </summary>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbTransactionExtensions.TransactionExtensions.CommitAndDispose(System.Data.IDbTransaction)">
+            <summary>
+            The CommitAndDispose.
+            </summary>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Data.Extensions.DbTransactionExtensions.TransactionExtensions.RollbackAndDispose(System.Data.IDbTransaction)">
+            <summary>
+            The RollbackAndDispose.
+            </summary>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes">
+             <summary>   Values that represent Database connection types. </summary>
+            
+             <remarks>   Mustafa SAÇLI, 4.05.2019. </remarks>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.None">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.MsSql">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.Oracle">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.PostgreSql">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.DB2">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.Odbc">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.Oledb">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.MySql">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlCE">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.FireBird">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SQLite">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.VistaDB">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlBase">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.Synergy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlOdbc">
+            <summary>   An enum constant representing the MsSql odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlOledb">
+            <summary>   An enum constant representing the MsSql oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.OracleOdbc">
+            <summary>   An enum constant representing the Oracle odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.OracleOledb">
+            <summary>   An enum constant representing the Oracle oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.PostgreSqlOdbc">
+            <summary>   An enum constant representing the PostgreSql odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.PostgreSqlOledb">
+            <summary>   An enum constant representing the PostgreSql oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.DB2Odbc">
+            <summary>   An enum constant representing the DB2 odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.DB2Oledb">
+            <summary>   An enum constant representing the DB2 oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.MySqlOdbc">
+            <summary>   An enum constant representing the MySql odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.MySqlOledb">
+            <summary>   An enum constant representing the MySql oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.FirebirdOdbc">
+            <summary>   An enum constant representing the Firebird odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.FirebirdOledb">
+            <summary>   An enum constant representing the Firebird oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlBaseOdbc">
+            <summary>   An enum constant representing the SQL base odbc option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlBaseOledb">
+            <summary>   An enum constant representing the SQL base oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SynergyOdbc">
+            <summary>   An enum constant representing the synergy ODBC option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SynergyOledb">
+            <summary>   An enum constant representing the synergy oledb option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.NuoDb">
+            <summary>
+             An enum constant representing the nuo db= 130 option. http://www.nuodb.com/
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes.SqlDatabase">
+            <summary>
+             An enum constant representing the SQL database= 131 option. SQLDATABASE.NET,
+             http://sqldatabase.net/
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition">
+            <summary>
+            Command Definition.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition.CommandText">
+            <summary>
+            Gets or sets the CommandText
+            MsSql query..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition.CommandType">
+            <summary>
+            Gets or sets the CommandType
+            commandType of MsSql.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition.CommandTimeout">
+            <summary>
+            Gets or sets the CommandTimeout
+            Command Timeout..
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition._parameters">
+            <summary>
+            Defines the _parameters.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition.Parameters">
+            <summary>
+            Gets or sets the Parameters
+            Command Parameters.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition._dbParams">
+            <summary>
+            Defines the _dbParams.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition.DbParameters">
+            <summary>
+            Gets or sets the DbParameters.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter" />.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.ParameterName">
+            <summary>
+            Gets or sets the ParameterName
+            Parameter Name.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.ParameterColumnName">
+            <summary>
+            Gets or sets the ParameterColumnName
+            Parameter Column Name.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.Value">
+            <summary>
+            Gets or sets the Value
+            Parameter value.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.Direction">
+            <summary>
+            Gets or sets the Direction
+            Parameter Direction.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.DbType">
+            <summary>
+            Gets or sets the DbType
+            Db Type of Parameter..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.Precision">
+            <summary>
+            Gets or sets the Precision
+            Precision of Parameter..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.Scale">
+            <summary>
+            Gets or sets the Scale
+            Scale of Parameter..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter.Size">
+            <summary>
+            Gets or sets the Size
+            Size of Parameter..
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandResult`1">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandResult`1" />.
+            </summary>
+            <typeparam name="T">.</typeparam>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandResult`1.OutputValues">
+            <summary>
+            Gets or sets the OutputValues
+            Parameters for Output values..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.SimpleCommandResult`1.Result">
+            <summary>
+            Gets or sets the Result
+            Result value..
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Data.Extensions.Objects.ISimpleCommandResult`1">
+            <summary>
+            Object contains Result and Output parameter values.
+            </summary>
+            <typeparam name="T">.</typeparam>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.ISimpleCommandResult`1.OutputValues">
+            <summary>
+            Gets or sets the OutputValues
+            Parameters for Output values..
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Data.Extensions.Objects.ISimpleCommandResult`1.Result">
+            <summary>
+            Gets or sets the Result
+            Result value..
+            </summary>
+        </member>
+    </members>
+</doc>

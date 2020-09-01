@@ -1,0 +1,2798 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleInfra.Crud.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache.TryGetValue(System.String,System.Data.IDbCommand@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandCache.GetOrAdd(System.String,System.Data.IDbCommand)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.InsertCommandCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertCommandCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.InsertCommandCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertCommandCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandCache.TryGetValue(System.String,System.Data.IDbCommand@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandCache.GetOrAdd(System.String,System.Data.IDbCommand)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache.TryGetValue(System.String,System.Data.IDbCommand@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandCache.GetOrAdd(System.String,System.Data.IDbCommand)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache.TryGetValue(System.String,System.Data.IDbCommand@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandCache.GetOrAdd(System.String,System.Data.IDbCommand)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache.TryGetValue(System.String,System.Data.IDbCommand@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandCache.GetOrAdd(System.String,System.Data.IDbCommand)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache.TryGetValue(System.String,System.Data.IDbCommand@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandCache.GetOrAdd(System.String,System.Data.IDbCommand)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertAndGetIdCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.InsertCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.UpdateCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.DeleteCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>True if it succeeds, false if it fails.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetAllCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetByIdCommandDefCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache.commandDictionary">
+            <summary>
+            Defines the commandDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache.TryGetValue(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache.GetOrAdd(System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.GetWhereIdInCommandDefCache.GetOrAdd(System.String,System.Func{System.String,SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition})">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">The key<see cref="T:System.String"/>.</param>
+            <param name="func">The func<see cref="!:Func&lt;string, SimpleCommandDefinition&gt;"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Build.RocketParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Build.RocketParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.RocketParameterBuilder.InputProperties``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The InputProperties.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="!:IList&lt;string&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.RocketParameterBuilder.OutputProperties``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The OutputProperties.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="!:IList&lt;string&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.RocketParameterBuilder.GetInputProperties(System.Reflection.PropertyInfo[],SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetInputProperties.
+            </summary>
+            <param name="properties">The properties<see cref="!:PropertyInfo[]"/>.</param>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="!:PropertyInfo[]"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Build.RocketParameterBuilder.GetOutputProperties(System.Reflection.PropertyInfo[],SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetOutputProperties.
+            </summary>
+            <param name="properties">The properties<see cref="!:PropertyInfo[]"/>.</param>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="!:PropertyInfo[]"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.InsertAndGetIdQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.InsertQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.InsertQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.InsertQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.InsertQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.InsertQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.InsertQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.InsertQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.UpdateQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.UpdateQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.UpdateQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.UpdateQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.UpdateQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.UpdateQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.UpdateQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.DeleteQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.DeleteQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.DeleteQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.DeleteQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.DeleteQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.DeleteQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.DeleteQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.GetByIdQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.GetByIdQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.GetByIdQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetByIdQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.GetByIdQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetByIdQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetByIdQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.GetAllQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.GetAllQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.GetAllQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetAllQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.GetAllQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetAllQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetAllQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.GetQueryCache">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.GetQueryCache" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.GetQueryCache.queryDictionary">
+            <summary>
+            Defines the queryDictionary.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetQueryCache.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:SimpleInfra.Crud.Extensions.GetQueryCache"/> class.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetQueryCache.TryGetValue(System.String,System.String@)">
+            <summary>
+            The TryGetValue.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    [out] The value. .</param>
+            <returns>   True if it succeeds, false if it fails. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.GetQueryCache.GetOrAdd(System.String,System.String)">
+            <summary>
+            The GetOrAdd.
+            </summary>
+            <param name="key">      The key. .</param>
+            <param name="value">    The value. .</param>
+            <returns>   The or add. .</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.QueryFormatter">
+            <summary>
+            Represents formatter of Query.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.QueryFormatter.GetQueryFormat(SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            Returns Format of Query according to QueryType.
+            </summary>
+            <param name="queryType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.SimpleFileOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.SimpleFileOperator" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.SimpleFileOperator.lazyOperator">
+            <summary>
+            Defines the lazyOperator.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.SimpleFileOperator.#ctor">
+            <summary>
+            Prevents a default instance of the <see cref="T:SimpleInfra.Crud.Extensions.SimpleFileOperator"/> class from being created.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.SimpleFileOperator.Instance">
+            <summary>
+            Gets the Instance.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.SimpleFileOperator.Write(System.String,System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            The Write.
+            </summary>
+            <param name="filePath">The filePath<see cref="T:System.String"/>.</param>
+            <param name="rows">The rows<see cref="!:List&lt;string&gt;"/>.</param>
+            <param name="writeLine">The writeLine<see cref="T:System.Boolean"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.RocketQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.RocketQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.FullTableName``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The FullTableName.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildColumnList``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The BuildColumnList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildValueList``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The BuildValueList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildQueryKey``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The BuildQueryKey.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildInsertAndGetIdQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The BuildInsertAndGetIdQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildInsertQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The BuildInsertQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildUpdateQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The BuildUpdateQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildDeleteQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The BuildDeleteQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildGetByIdQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The BuildGetByIdQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildGetAllQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The BuildGetAllQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.GetQuery``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.RocketQueryBuilder.BuildQueryV2``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,System.Reflection.PropertyInfo[],System.Reflection.PropertyInfo[],SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The BuildQueryV2.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="inputProperties">The inputProperties<see cref="!:PropertyInfo[]"/>.</param>
+            <param name="outputProperties">The outputProperties<see cref="!:PropertyInfo[]"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.SimpleCommandDefinitionBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.SimpleCommandDefinitionBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.SimpleCommandDefinitionBuilder.GetCommandDefinition``1(System.Data.IDbConnection,SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetCommandDefinition.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.SimpleCommandDefinitionBuilder.GetCommandDefinition``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetCommandDefinition.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="!:BaseCommandExecutor&lt;T&gt;"/> class.
+            </summary>
+            <param name="connectionType">.</param>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.ConnectionType">
+            <summary>
+            Gets or sets the ConnectionType
+            Connection Type of DbConnection...
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.Execute(SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The Execute.
+            </summary>
+            <param name="commandDefinition">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.InsertAndGetIdWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:ISimpleCommandResult&lt;object&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.BaseCommandExecutor.InsertAndGetId``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:ISimpleCommandResult&lt;object&gt;"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.DB2CommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.DB2CommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.DB2CommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.DB2CommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.ICommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.ICommandExecutor" />.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Command.ICommandExecutor.ConnectionType">
+            <summary>
+            Gets the ConnectionType
+            Connection Type of Query Builder..
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.ICommandExecutor.Execute(SimpleInfra.Data.Extensions.Objects.SimpleCommandDefinition)">
+            <summary>
+            The Execute.
+            </summary>
+            <param name="commandDefinition">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.ICommandExecutor.InsertAndGetIdWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:ISimpleCommandResult&lt;object&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.ICommandExecutor.InsertAndGetId``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:ISimpleCommandResult&lt;object&gt;"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.FirebirdCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.FirebirdCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.FirebirdCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.FirebirdCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.MsSqlCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.MsSqlCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.MsSqlCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.MsSqlCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.MySqlCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.MySqlCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.MySqlCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.MySqlCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.NuoDbCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.NuoDbCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.NuoDbCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.NuoDbCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.OdbcCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.OdbcCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.OdbcCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.OdbcCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.OledbCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.OledbCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.OledbCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.OledbCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.OracleCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.OracleCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.OracleCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.OracleCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.PgSqlCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.PgSqlCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.PgSqlCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.PgSqlCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.SqlBaseCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.SqlBaseCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.SqlBaseCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.SqlBaseCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.SqlCECommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.SqlCECommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.SqlCECommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.SqlCECommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.SqlDatabaseCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.SqlDatabaseCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.SqlDatabaseCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.SqlDatabaseCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.SQLiteCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.SQLiteCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.SQLiteCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.SQLiteCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.SynergyCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.SynergyCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.SynergyCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.SynergyCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Command.VistaDbCommandExecutor">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Command.VistaDbCommandExecutor" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Command.VistaDbCommandExecutor.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Command.VistaDbCommandExecutor"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.InsertAndGetIdWITAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetIdWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;long&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.InsertWITAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The InsertWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.UpdateWITAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The UpdateWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.DeleteWITAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The DeleteWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.InsertAndGetIdAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetIdAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;long&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.InsertAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncBulkCrudOperations.UpdateAsync``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The UpdateAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entityList">The entityList<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.InsertWITAsync``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.InsertAndGetIdWITAsync``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetIdWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;object&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.UpdateWITAsync``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The UpdateWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.DeleteWITAsync``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The DeleteWITAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.InsertAsync``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.InsertAndGetIdAsync``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetIdAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;object&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.UpdateAsync``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The UpdateAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.DeleteAsync``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The DeleteAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncCrudOperations.DeleteByIdAsync``1(System.Data.IDbConnection,System.Object,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The DeleteByIdAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="idValue">The idValue<see cref="T:System.Object"/>.</param>
+            <param name="transaction">The transaction<see cref="T:System.Data.IDbTransaction"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;int&gt;"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations.GetDynamicByIdAsync``1(System.Data.IDbConnection,System.Object,System.Nullable{System.Int32})">
+            <summary>
+            The GetDynamicByIdAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="idValue">The idValue<see cref="T:System.Object"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations.GetByIdAsync``1(System.Data.IDbConnection,System.Object,System.Nullable{System.Int32})">
+            <summary>
+            The GetByIdAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="idValue">The idValue<see cref="T:System.Object"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations.GetAllAsync``1(System.Data.IDbConnection,System.Nullable{System.Int32})">
+            <summary>
+            The GetAllAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;List&lt;T&gt;&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations.GetAllAsDynAsync``1(System.Data.IDbConnection,System.Nullable{System.Int32})">
+            <summary>
+            The GetAllAsDynAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;List&lt;ExpandoObject&gt;&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations.GetListByIdListAsync``1(System.Data.IDbConnection,System.Object[],System.Nullable{System.Int32})">
+            <summary>
+            The GetListByIdListAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="idValues">The idValues<see cref="!:object[]"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;List&lt;T&gt;&gt;"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.RcAsyncGetOperations.GetListByIdListAsDynAsync``1(System.Data.IDbConnection,System.Object[],System.Nullable{System.Int32})">
+            <summary>
+            The GetListByIdListAsDynAsync.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="idValues">The idValues<see cref="!:object[]"/>.</param>
+            <param name="commandTimeout">The commandTimeout<see cref="!:int?"/>.</param>
+            <returns>The <see cref="!:Task&lt;List&lt;ExpandoObject&gt;&gt;"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleAsyncPredicateOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleAsyncPredicateOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleAsyncPredicateOperator.GetWIT``1(System.Data.IDbConnection,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            The GetWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="expression">The expression<see cref="!:Expression&lt;Func&lt;T, bool&gt;&gt;"/>.</param>
+            <returns>The <see cref="!:Task&lt;IEnumerable&lt;T&gt;&gt;"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator.GetByIdDynamic``1(System.Data.IDbConnection,System.Nullable{System.Int32},System.Object[])">
+            <summary>
+            The GetByIdDynamic.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="commandTimeout">.</param>
+            <param name="idValues">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator.GetAllDynamic``1(System.Data.IDbConnection,System.Nullable{System.Int32})">
+            <summary>
+            The GetAllDynamic.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetDynamicOperator.GetByIdListDynamic``1(System.Data.IDbConnection,System.Nullable{System.Int32},System.Object[])">
+            <summary>
+            The GetByIdListDynamic.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="commandTimeout">.</param>
+            <param name="idValues">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator.GetWIT``1(System.Data.IDbConnection,System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            The GetWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connection">The connection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <param name="expression">The expression<see cref="!:Expression&lt;Func&lt;T, bool&gt;&gt;"/>.</param>
+            <returns>The <see cref="T:System.Collections.Generic.IEnumerable`1"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator.BuildParametersFromExpression(System.Linq.Expressions.BinaryExpression,System.Linq.Expressions.ExpressionType,System.Collections.Generic.Dictionary{System.String,System.Object}@)">
+            <summary>
+            The BuildParametersFromExpression.
+            </summary>
+            <param name="body">The body<see cref="T:System.Linq.Expressions.BinaryExpression"/>.</param>
+            <param name="linkingType">The linkingType<see cref="T:System.Linq.Expressions.ExpressionType"/>.</param>
+            <param name="parameters">The parameters<see cref="!:Dictionary&lt;string, object&gt;"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator.BuildQueryFromExpression``1(System.Linq.Expressions.BinaryExpression,System.Linq.Expressions.ExpressionType,SimpleInfra.Data.Extensions.Interfaces.IQueryOption,SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,System.String@,System.Collections.Generic.List{System.String}@)">
+            <summary>
+            The BuildQueryFromExpression.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="body">The body<see cref="T:System.Linq.Expressions.BinaryExpression"/>.</param>
+            <param name="linkingType">The linkingType<see cref="T:System.Linq.Expressions.ExpressionType"/>.</param>
+            <param name="queryAdd">The queryAdd<see cref="T:SimpleInfra.Data.Extensions.Interfaces.IQueryOption"/>.</param>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="query">The query<see cref="T:System.String"/>.</param>
+            <param name="propertyNames">The propertyNames<see cref="!:List&lt;string&gt;"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator.GetPropertyName(System.Linq.Expressions.BinaryExpression)">
+            <summary>
+            Gets the name of the property.
+            </summary>
+            <param name="body">The body.</param>
+            <returns>The property name for the property expression.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator.GetOperator(System.Linq.Expressions.ExpressionType)">
+            <summary>
+            Gets the operator.
+            </summary>
+            <param name="type">The type.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimplePredicateOperator.GetFormattedString(System.String,System.Int32)">
+            <summary>
+            The GetFormattedString.
+            </summary>
+            <param name="str">The str<see cref="T:System.String"/>.</param>
+            <param name="number">The number<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.InsertWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The InsertWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.UpdateWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The UpdateWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.DeleteWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The DeleteWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.InsertWithIdWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The InsertWithIdWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.InsertAndGetIdWIT``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetIdWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.Insert``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The Insert.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.Update``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The Update.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.Delete``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The Delete.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.InsertWithId``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertWithId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleBulkCrudOperator.InsertAndGetId``1(System.Data.IDbConnection,System.Collections.Generic.List{``0},System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entities">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.InsertWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.UpdateWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The UpdateWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.DeleteWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The DeleteWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.InsertWithIdWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertWithIdWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.InsertAndGetIdWIT``1(System.Data.IDbConnection,``0,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetIdWIT.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.Insert``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The Insert.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.Update``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The Update.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.Delete``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The Delete.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.InsertWithId``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertWithId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.InsertAndGetId``1(System.Data.IDbConnection,``0,System.Data.IDbTransaction,System.Nullable{System.Int32})">
+            <summary>
+            The InsertAndGetId.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="entity">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.DeleteByIdList``1(System.Data.IDbConnection,System.Data.IDbTransaction,System.Nullable{System.Int32},System.Object[])">
+            <summary>
+            The DeleteByIdList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="transaction">.</param>
+            <param name="commandTimeout">.</param>
+            <param name="idValues">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetOperator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetOperator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetOperator.GetById``1(System.Data.IDbConnection,System.Nullable{System.Int32},System.Object[])">
+            <summary>
+            The GetById.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="commandTimeout">.</param>
+            <param name="idValues">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetOperator.GetAll``1(System.Data.IDbConnection,System.Nullable{System.Int32})">
+            <summary>
+            The GetAll.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="commandTimeout">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleGetOperator.GetByIdList``1(System.Data.IDbConnection,System.Nullable{System.Int32},System.Object[])">
+            <summary>
+            The GetByIdList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">.</param>
+            <param name="commandTimeout">.</param>
+            <param name="idValues">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues" />.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTimeout">
+            <summary>
+            Defines the CommandTimeout.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextValueFormatKey">
+            <summary>
+            Defines the CommandTextValueFormatKey.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextTableFormatKey">
+            <summary>
+            Defines the CommandTextTableFormatKey.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextColumnFormatKey">
+            <summary>
+            Defines the CommandTextColumnFormatKey.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextIdColumnFormat">
+            <summary>
+            Defines the CommandTextIdColumnFormat.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextIdParamFormat">
+            <summary>
+            Defines the CommandTextIdParamFormat.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextIdValuesFormat">
+            <summary>
+            Defines the CommandTextIdValuesFormat.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.CommandTextSqlScriptFormat">
+            <summary>
+            Defines the CommandTextSqlScriptFormat.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.OracleSequenceExecFormat">
+            <summary>
+            Oracle Sequence Execution Format ===> SELECT SEQ_{0}.NEXTVAL FROM DUAL.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.NullValue">
+            <summary>
+            means DbNull.Value..
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.ErrorFileDateFormat">
+            <summary>
+            Time Format: yyyy-MM-dd-HH-mm-ss.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.GeneralDateFormat">
+            <summary>
+            Time Format: yyyy-MM-dd, HH:mm:ss ffffff.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.ServerVersionProperty">
+            <summary>
+            Defines the ServerVersionProperty.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.ParameterQueryDelimiter">
+            <summary>
+            char '|'.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Constants.SimpleCrudAppValues.ParameterPropertyDelimiter">
+            <summary>
+            char ';'.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes">
+             <summary>   Values that represent query types. </summary>
+            
+             <remarks>   Mustafa SAÇLI, 6.05.2019. </remarks>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.Insert">
+            <summary>   An enum constant representing the insert option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.Update">
+            <summary>   An enum constant representing the update option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.Delete">
+            <summary>   An enum constant representing the delete option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.InsertAndGetId">
+            <summary>   An enum constant representing the insert and get id option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.GetById">
+            <summary>   An enum constant representing the get by id option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.GetAll">
+            <summary>   An enum constant representing the get all option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.GetByIdList">
+            <summary>   An enum constant representing the get by id list option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.DeleteWhereIdIn">
+            <summary>   An enum constant representing the delete where id in option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.GetWhereIdIn">
+            <summary>   An enum constant representing the get where id in option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.CreateAsScript">
+            <summary>   An enum constant representing the create as script option. </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Enums.QueryTypes.InsertWithId">
+            <summary>
+            Inserts entity with databse generated id.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Helpers.InternalLogHelper">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Helpers.InternalLogHelper" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Helpers.InternalLogHelper.LogException(System.Exception,System.String,System.Nullable{System.Int32})">
+            <summary>
+            The LogException.
+            </summary>
+            <param name="e">The e<see cref="T:System.Exception"/>.</param>
+            <param name="callerName">The callerName<see cref="T:System.String"/>.</param>
+            <param name="callerLineNumber">The callerLineNumber<see cref="!:int?"/>.</param>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Helpers.InternalLogHelper.AssemblyDirectory">
+            <summary>
+            Gets the AssemblyDirectory.
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">.</param>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.ConnectionType">
+            <summary>
+            Gets or sets the ConnectionType
+            Connection Type of DbConnection...
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.GetParameters``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetParameters.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.GetInputProperties(System.Reflection.PropertyInfo[],SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetInputProperties.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.GetOutputProperties(System.Reflection.PropertyInfo[],SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetOutputProperties.
+            </summary>
+            <param name="properties">The properties.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>The .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.BuildParameters(SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            Builds Simple Command Parameters from RocketParameter.
+            </summary>
+            <param name="rocketParameter">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.GetParameterFromProperty(System.Reflection.PropertyInfo,System.Boolean)">
+            <summary>
+            The GetParameterFromProperty.
+            </summary>
+            <param name="propertyInfo">The propertyInfo<see cref="T:System.Reflection.PropertyInfo"/>.</param>
+            <param name="isInput">The isInput<see cref="T:System.Boolean"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.PropertyToDbType(System.Reflection.PropertyInfo)">
+            <summary>
+            The PropertyToDbType.
+            </summary>
+            <param name="info">The info<see cref="T:System.Reflection.PropertyInfo"/>.</param>
+            <returns>The <see cref="!:DbType?"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.BaseParameterBuilder.RebuildParameters``1(System.Collections.Generic.List{SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter},``0)">
+            <summary>
+            The RebuildParameters.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="simpleCommandParameters">The simpleCommandParameters<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <returns>The <see cref="T:System.Collections.Generic.List`1"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.IParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.IParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Parameter.IParameterBuilder.ConnectionType">
+            <summary>
+            Gets the ConnectionType
+            Connection Type of DbConnection...
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.IParameterBuilder.GetParameters``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            The GetParameters.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.IParameterBuilder.BuildParameters(SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            Builds Simple Command Parameters from RocketParameter.
+            </summary>
+            <param name="rocketParameter">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.IParameterBuilder.RebuildParameters``1(System.Collections.Generic.List{SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter},``0)">
+            <summary>
+            The RebuildParameters.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="simpleCommandParameters">.</param>
+            <param name="entity">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.DB2ParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.DB2ParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.DB2ParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.DB2ParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.ParameterBuilderFactory">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.ParameterBuilderFactory" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.ParameterBuilderFactory.GetBuilder(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The GetBuilder.
+            </summary>
+            <param name="connectionType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter">
+            <summary>
+            RocketParameter is class for using store input and output parameter properties.
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Parameter.RocketParameter._inputs">
+            <summary>
+            Defines the _inputs.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Parameter.RocketParameter.Inputs">
+            <summary>
+            Gets or sets the Inputs
+            Input parameter properties...
+            </summary>
+        </member>
+        <member name="F:SimpleInfra.Crud.Extensions.Parameter.RocketParameter._outputs">
+            <summary>
+            Defines the _outputs.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Parameter.RocketParameter.Outputs">
+            <summary>
+            Gets or sets the Outputs
+            Output parameter properties...
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.FirebirdParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.FirebirdParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.FirebirdParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.FirebirdParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.MsSqlParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.MsSqlParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.MsSqlParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.MsSqlParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.MySqlParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.MySqlParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.MySqlParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.MySqlParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.NuoDbParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.NuoDbParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.NuoDbParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.NuoDbParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.OdbcParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.OdbcParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.OdbcParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.OdbcParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.OledbParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.OledbParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.OledbParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.OledbParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.OracleParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.OracleParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.OracleParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.OracleParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.PgSqlParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.PgSqlParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.PgSqlParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.PgSqlParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.SimpleParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SimpleParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.SimpleParameterBuilder.RebuildParameters``1(System.Collections.Generic.List{SimpleInfra.Data.Extensions.Objects.SimpleCommandParameter},``0)">
+            <summary>
+            The RebuildParameters.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="simpleCommandParameters">The simpleCommandParameters<see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <param name="entity">The entity<see cref="!:T"/>.</param>
+            <returns>The <see cref="T:System.Collections.Generic.List`1"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.SqlBaseParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SqlBaseParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.SqlBaseParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SqlBaseParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.SqlCEParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SqlCEParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.SqlCEParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SqlCEParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.SqlDatabaseParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SqlDatabaseParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.SqlDatabaseParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SqlDatabaseParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.SQLiteParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SQLiteParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.SQLiteParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SQLiteParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.SynergyParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SynergyParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.SynergyParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.SynergyParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Parameter.VistaDbParameterBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.VistaDbParameterBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Parameter.VistaDbParameterBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Parameter.VistaDbParameterBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">.</param>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.ConnectionType">
+            <summary>
+            Gets or sets the ConnectionType.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.QueryAdd">
+            <summary>
+            Gets or sets the QueryAdd.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.CheckOdbc">
+            <summary>
+            The CheckOdbc.
+            </summary>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.CheckOledb">
+            <summary>
+            The CheckOledb.
+            </summary>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.FullTableName``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The FullTableName.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.BuildColumnList``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildColumnList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.BuildValueList``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes,SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildValueList.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connType">The connType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">.</param>
+            <param name="rocketParameter">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.IsOdbc">
+            <summary>
+            Gets or sets a value indicating whether IsOdbc
+            Defines connection is odbc connection...
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.IsOledb">
+            <summary>
+            Gets or sets a value indicating whether IsOledb
+            Defines connection is oledb connection...
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.GetIdentityInsertFormat(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Returns GetIdentity query part of InsertAndGetId.
+            </summary>
+            <param name="conn_type">The conn_type<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns> Returns GetIdentity query part of InsertAndGetId. .</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.BaseQueryBuilder.GetQueryFormat(SimpleInfra.Crud.Extensions.Enums.QueryTypes)">
+            <summary>
+            Returns Format of Query according to QueryType.
+            </summary>
+            <param name="queryType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.DB2QueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.DB2QueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.DB2QueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.DB2QueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.DB2QueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.DB2QueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.FirebirdQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.FirebirdQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.FirebirdQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.FirebirdQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.FirebirdQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.FirebirdQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.IQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.IQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.IQueryBuilder.ConnectionType">
+            <summary>
+            Gets the ConnectionType
+            Connection Type of Query Builder..
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.IQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">.</param>
+            <param name="rocketParameter">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.IQueryBuilder.IsOdbc">
+            <summary>
+            Gets the IsOdbc
+            Defines connection is odbc connection...
+            </summary>
+        </member>
+        <member name="P:SimpleInfra.Crud.Extensions.Query.IQueryBuilder.IsOledb">
+            <summary>
+            Gets the IsOledb
+            Defines connection is oledb connection...
+            </summary>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.MsSqlQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.MsSqlQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.MsSqlQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.MsSqlQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.MsSqlQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.MsSqlQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.MySqlQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.MySqlQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.MySqlQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.MySqlQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.MySqlQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.MySqlQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.NuoDbQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.NuoDbQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.NuoDbQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.NuoDbQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.NuoDbQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.NuoDbQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.OdbcQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.OdbcQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OdbcQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.OdbcQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OdbcQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OdbcQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.OledbQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.OledbQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OledbQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.OledbQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OledbQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OledbQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.OracleQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.OracleQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OracleQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.OracleQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OracleQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.OracleQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.PgSqlQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.PgSqlQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.PgSqlQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.PgSqlQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.PgSqlQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.PgSqlQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.QueryBuilderFactory">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.QueryBuilderFactory" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.QueryBuilderFactory.GetQueryBuilder(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The GetQueryBuilder.
+            </summary>
+            <param name="connectionType">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.SqlBaseQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.SqlBaseQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlBaseQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.SqlBaseQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlBaseQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlBaseQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.SqlCEQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.SqlCEQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlCEQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.SqlCEQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlCEQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlCEQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.SqlDatabaseQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.SqlDatabaseQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlDatabaseQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.SqlDatabaseQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlDatabaseQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SqlDatabaseQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.SQLiteQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.SQLiteQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SQLiteQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.SQLiteQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SQLiteQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SQLiteQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.SynergyQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.SynergyQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SynergyQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.SynergyQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SynergyQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.SynergyQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Query.VistaDbQueryBuilder">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Query.VistaDbQueryBuilder" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.VistaDbQueryBuilder.#ctor(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SimpleInfra.Crud.Extensions.Query.VistaDbQueryBuilder"/> class.
+            </summary>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.VistaDbQueryBuilder.BuildQuery``1(SimpleInfra.Crud.Extensions.Enums.QueryTypes,SimpleInfra.Crud.Extensions.Parameter.RocketParameter)">
+            <summary>
+            The BuildQuery.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="queryType">The queryType<see cref="T:SimpleInfra.Crud.Extensions.Enums.QueryTypes"/>.</param>
+            <param name="rocketParameter">The rocketParameter<see cref="T:SimpleInfra.Crud.Extensions.Parameter.RocketParameter"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Query.VistaDbQueryBuilder.GetIdentityInsertFormat">
+            <summary>
+            The GetIdentityInsertFormat.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Scripts.ScriptCreator">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Scripts.ScriptCreator" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Scripts.ScriptCreator.CreateDDL``1(SimpleInfra.Data.Extensions.Enums.DbConnectionTypes)">
+            <summary>
+            The CreateDDL.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="connectionType">The connectionType<see cref="T:SimpleInfra.Data.Extensions.Enums.DbConnectionTypes"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Scripts.ScriptCreator.GetInnerScript(System.Reflection.PropertyInfo[],System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            The GetInnerScript.
+            </summary>
+            <param name="properties">The properties<see cref="!:PropertyInfo[]"/>.</param>
+            <param name="columns">The columns<see cref="!:IDictionary&lt;string, string&gt;"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:SimpleInfra.Crud.Extensions.Scripts.ScriptCreatorHelper">
+            <summary>
+            Defines the <see cref="T:SimpleInfra.Crud.Extensions.Scripts.ScriptCreatorHelper" />.
+            </summary>
+        </member>
+        <member name="M:SimpleInfra.Crud.Extensions.Scripts.ScriptCreatorHelper.CreateDDL``1(System.Data.IDbConnection)">
+            <summary>
+            The CreateDDL.
+            </summary>
+            <typeparam name="T">.</typeparam>
+            <param name="dbConnection">The dbConnection<see cref="T:System.Data.IDbConnection"/>.</param>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+    </members>
+</doc>

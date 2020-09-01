@@ -35,8 +35,20 @@
     <Reference Include="SimpleFileLogging, Version=2.4.0.0, Culture=neutral, PublicKeyToken=3473942f32152fab, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleFileLogging.dll.2.4.0\lib\net45\SimpleFileLogging.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleInfra.Common.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=45a3b554a62754c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDlls\SimpleInfra.Common.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="SimpleInfra.Common.Response, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c1ce61cdd45628f7, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInfra.Common.Response.dll.1.3.0\lib\net40\SimpleInfra.Common.Response.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInfra.Crud.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b77daa61db3c74ff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDlls\SimpleInfra.Crud.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInfra.Data.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=446eb8a696af6425, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExternalDlls\SimpleInfra.Data.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInfra.Mapping, Version=2.3.0.0, Culture=neutral, PublicKeyToken=7c9186d61a57495d, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInfra.Mapping.2.3.0\lib\net45\SimpleInfra.Mapping.dll</HintPath>
@@ -69,18 +81,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\SI.Crud.Extensions.Repo\SI.Crud.Extensions.Repo\SimpleInfra.Crud.Extensions\SimpleInfra.Crud.Extensions.csproj">
-      <Project>{185872f6-6f49-4dc6-b939-10fcc8e04aa7}</Project>
-      <Name>SimpleInfra.Crud.Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Common.Extensions\SimpleInfra.Common.Extensions.csproj">
-      <Project>{439e5314-5cd3-494f-a948-68c8d3fd94ec}</Project>
-      <Name>SimpleInfra.Common.Extensions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Data.Extensions\SimpleInfra.Data.Extensions.csproj">
-      <Project>{d7eb06b3-bdab-4847-abf0-3cd6dcca3eea}</Project>
-      <Name>SimpleInfra.Data.Extensions</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Syp.Command.Base\Syp.Command.Base.csproj">
       <Project>{DCCF1F33-C51D-4E2E-B991-6199C8EC487E}</Project>
       <Name>Syp.Command.Base</Name>
