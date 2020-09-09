@@ -1,5 +1,6 @@
 ﻿namespace Syp.Command.Handlers.Insert
 {
+    using SimpleInfra.Common.Extensions;
     using SimpleInfra.Common.Response;
     using SimpleInfra.Crud.Extensions.ConnectionExtensions;
     using SimpleInfra.Data.Extensions;
@@ -40,7 +41,7 @@
                         var result = connection.InsertAndGetId(command);
                         response.ResponseCode = (int)result;
                         response.RCode = result.ToString();
-                        response.Data = new LongCommandResult { ReturnValue = result };
+                        response.Data = new LongCommandResult { ReturnValue = result.ToLongNullable() };
                     }
                     finally
                     {
