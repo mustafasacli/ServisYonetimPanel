@@ -1,9 +1,9 @@
 ﻿namespace Syp.Command.Bus
 {
     using SimpleInfra.Common.Response;
-    using Syp.Command.Bus.Core;
-    using Syp.Command.Core;
-    using Syp.CommandHandler.Factory;
+    using SI.CommandBus.Core;
+    using SI.Command.Core;
+    using SI.CommandHandler.Factory;
     using System;
 
     public class CommandBus : ICommandBus

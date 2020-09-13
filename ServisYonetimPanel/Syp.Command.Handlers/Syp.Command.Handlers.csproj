@@ -81,21 +81,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.Command.Core\SI.Command.Core.csproj">
+      <Project>{cd63cf39-40a9-493e-86a3-a07ba7f72373}</Project>
+      <Name>SI.Command.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandHandler.Base\SI.CommandHandler.Base.csproj">
+      <Project>{ddf9a38d-0b97-4e0b-919d-c73f4ee8ec71}</Project>
+      <Name>SI.CommandHandler.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandHandler.Core\SI.CommandHandler.Core.csproj">
+      <Project>{fdf55860-ec99-4e22-9bef-139ce4070145}</Project>
+      <Name>SI.CommandHandler.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Syp.Command.Base\Syp.Command.Base.csproj">
       <Project>{DCCF1F33-C51D-4E2E-B991-6199C8EC487E}</Project>
       <Name>Syp.Command.Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Syp.Command.Core\Syp.Command.Core.csproj">
-      <Project>{2B54B980-CDEB-47B9-ADB3-4E193362B8AA}</Project>
-      <Name>Syp.Command.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Syp.CommandHandler.Base\Syp.CommandHandler.Base.csproj">
-      <Project>{4CB9B49F-52DE-48FA-863B-C9F006ECB858}</Project>
-      <Name>Syp.CommandHandler.Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Syp.CommandHandler.Core\Syp.CommandHandler.Core.csproj">
-      <Project>{A21A6666-A331-475D-A24C-A4E5AC4216B0}</Project>
-      <Name>Syp.CommandHandler.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Syp.Command\Syp.Command.csproj">
       <Project>{02F9A5A4-71E4-491B-B0A1-0DEE93BF98AC}</Project>

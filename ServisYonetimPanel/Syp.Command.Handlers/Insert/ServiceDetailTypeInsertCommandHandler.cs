@@ -7,7 +7,7 @@
     using SimpleInfra.Validation;
     using Syp.Command.Base.Result;
     using Syp.Command.Insert;
-    using Syp.CommandHandler.Base;
+    using SI.CommandHandler.Base;
     using System;
 
     public class ServiceDetailTypeInsertCommandHandler

@@ -9,11 +9,11 @@
     using SimpleFileLogging;
     using SimpleFileLogging.Interfaces;
     using SimpleFileLogging.Enums;
-    using Syp.Command.Bus.Core;
-    using Syp.Command.Bus;
+    using SI.CommandBus.Core;
+    using SI.CommandBus;
     using SimpleInjector.Integration.Wcf;
-    using Syp.Query.Bus;
-    using Syp.Query.Bus.Core;
+    using SI.QueryBus;
+    using SI.QueryBus.Core;
 
     /// <summary>
     /// Syp Edonusum IoC class

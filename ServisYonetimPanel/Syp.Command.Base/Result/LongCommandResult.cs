@@ -1,4 +1,4 @@
-﻿using Syp.Command.Core;
+﻿using SI.Command.Core;
 
 namespace Syp.Command.Base.Result
 {

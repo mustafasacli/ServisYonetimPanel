@@ -3,7 +3,7 @@ using SimpleInfra.Crud.Extensions.ConnectionExtensions;
 using SimpleInfra.Data.Extensions;
 using Syp.Command.Base.Result;
 using Syp.Command.Update;
-using Syp.CommandHandler.Base;
+using SI.CommandHandler.Base;
 using System;
 
 namespace Syp.Command.Handlers.Update

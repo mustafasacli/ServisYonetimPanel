@@ -1,7 +1,7 @@
 ﻿namespace Syp.Command.Base
 {
-    using Syp.Command.Base.Result;
-    using Syp.Command.Core;
+    using Command.Base.Result;
+    using SI.Command.Core;
     using System;
 
     public interface IInsertCommand : ICommand<LongCommandResult>

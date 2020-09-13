@@ -49,25 +49,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Syp.Command.Bus.Core\Syp.Command.Bus.Core.csproj">
-      <Project>{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}</Project>
-      <Name>Syp.Command.Bus.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Syp.Command.Core\Syp.Command.Core.csproj">
-      <Project>{2B54B980-CDEB-47B9-ADB3-4E193362B8AA}</Project>
-      <Name>Syp.Command.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Syp.CommandHandler.Core\Syp.CommandHandler.Core.csproj">
-      <Project>{A21A6666-A331-475D-A24C-A4E5AC4216B0}</Project>
-      <Name>Syp.CommandHandler.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Syp.CommandHandler.Factory\Syp.CommandHandler.Factory.csproj">
-      <Project>{A89B9ED0-C79D-4385-A96C-945CD7FF980E}</Project>
-      <Name>Syp.CommandHandler.Factory</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.Command.Core\SI.Command.Core.csproj">
+      <Project>{cd63cf39-40a9-493e-86a3-a07ba7f72373}</Project>
+      <Name>SI.Command.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandBus.Core\SI.CommandBus.Core.csproj">
+      <Project>{981b8737-b77f-4629-951c-b2addbc4fc22}</Project>
+      <Name>SI.CommandBus.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandHandler.Core\SI.CommandHandler.Core.csproj">
+      <Project>{fdf55860-ec99-4e22-9bef-139ce4070145}</Project>
+      <Name>SI.CommandHandler.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandHandler.Factory\SI.CommandHandler.Factory.csproj">
+      <Project>{90eb3184-d168-43a2-9663-58334f4f108f}</Project>
+      <Name>SI.CommandHandler.Factory</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

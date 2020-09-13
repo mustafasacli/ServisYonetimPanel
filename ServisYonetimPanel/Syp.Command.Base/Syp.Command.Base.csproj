@@ -55,9 +55,9 @@
     <Compile Include="Result\LongCommandResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Syp.Command.Core\Syp.Command.Core.csproj">
-      <Project>{2B54B980-CDEB-47B9-ADB3-4E193362B8AA}</Project>
-      <Name>Syp.Command.Core</Name>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.Command.Core\SI.Command.Core.csproj">
+      <Project>{cd63cf39-40a9-493e-86a3-a07ba7f72373}</Project>
+      <Name>SI.Command.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

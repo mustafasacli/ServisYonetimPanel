@@ -60,21 +60,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Syp.Command.Bus.Core\Syp.Command.Bus.Core.csproj">
-      <Project>{B89371F3-1ED4-4C38-AD8D-B6C6AE911164}</Project>
-      <Name>Syp.Command.Bus.Core</Name>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandBus.Core\SI.CommandBus.Core.csproj">
+      <Project>{981b8737-b77f-4629-951c-b2addbc4fc22}</Project>
+      <Name>SI.CommandBus.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Syp.Command.Bus\Syp.Command.Bus.csproj">
-      <Project>{6E39FA18-EADF-4A97-9EEC-95D1A303E0D3}</Project>
-      <Name>Syp.Command.Bus</Name>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandBus\SI.CommandBus.csproj">
+      <Project>{0914cdf6-a20e-48b6-9807-04a38d3d6cd1}</Project>
+      <Name>SI.CommandBus</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Syp.Query.Bus.Core\Syp.Query.Bus.Core.csproj">
-      <Project>{D3F1FFB1-C474-4C34-A577-A6D311AA25A3}</Project>
-      <Name>Syp.Query.Bus.Core</Name>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.QueryBus.Core\SI.QueryBus.Core.csproj">
+      <Project>{ef4af97b-ae4b-4a1a-9e48-e02891882a44}</Project>
+      <Name>SI.QueryBus.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Syp.Query.Bus\Syp.Query.Bus.csproj">
-      <Project>{B7CAB491-A430-47C2-8BA3-EA79C6D9C871}</Project>
-      <Name>Syp.Query.Bus</Name>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.QueryBus\SI.QueryBus.csproj">
+      <Project>{2c25bf28-565d-479f-b7d1-8566dcfd271a}</Project>
+      <Name>SI.QueryBus</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

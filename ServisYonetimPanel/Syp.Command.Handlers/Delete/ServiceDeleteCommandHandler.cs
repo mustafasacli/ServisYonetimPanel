@@ -5,7 +5,7 @@
     using SimpleInfra.Data.Extensions;
     using Syp.Command.Base.Result;
     using Syp.Command.Delete;
-    using Syp.CommandHandler.Base;
+    using SI.CommandHandler.Base;
     using System;
 
     /// <summary>
