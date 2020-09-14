@@ -4,64 +4,156 @@
         <name>Syp.Command</name>
     </assembly>
     <members>
+        <member name="T:Syp.Command.Delete.ServiceDeleteCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Delete.ServiceDeleteCommand" />.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Delete.ServiceDeleteCommand.Id">
+            <summary>
+            Gets or sets the Id.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Delete.ServiceDetailTypeDeleteCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Delete.ServiceDetailTypeDeleteCommand" />.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Delete.ServiceDetailTypeDeleteCommand.Id">
+            <summary>
+            Gets or sets the Id.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Delete.ServiceDetailDeleteCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Delete.ServiceDetailDeleteCommand" />.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Delete.ServiceDetailDeleteCommand.Id">
+            <summary>
+            Gets or sets the Id.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Insert.ServiceDetailTypeInsertCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Insert.ServiceDetailTypeInsertCommand" />.
+            </summary>
+        </member>
         <member name="P:Syp.Command.Insert.ServiceDetailTypeInsertCommand.Id">
             <summary>
-            Gets and Sets the Id
+            Gets or sets the Id
+            Gets and Sets the Id.
             </summary>
         </member>
         <member name="P:Syp.Command.Insert.ServiceDetailTypeInsertCommand.DetailTypeName">
             <summary>
-            Gets and Sets the DetailTypeName
+            Gets or sets the DetailTypeName
+            Gets and Sets the DetailTypeName.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Insert.ServiceDetailInsertCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Insert.ServiceDetailInsertCommand" />.
             </summary>
         </member>
         <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.Id">
             <summary>
-            Gets and Sets the Id
+            Gets or sets the Id
+            Gets and Sets the Id.
             </summary>
         </member>
         <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.ServiceId">
             <summary>
-            Gets and Sets the ServiceId
+            Gets or sets the ServiceId
+            Gets and Sets the ServiceId.
             </summary>
         </member>
         <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.DetailTypeId">
             <summary>
-            Gets and Sets the DetailTypeId
+            Gets or sets the DetailTypeId
+            Gets and Sets the DetailTypeId.
             </summary>
         </member>
         <member name="P:Syp.Command.Insert.ServiceDetailInsertCommand.Info">
             <summary>
-            Gets and Sets the Info
+            Gets or sets the Info
+            Gets and Sets the Info.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Insert.ServiceInsertCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Insert.ServiceInsertCommand" />.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceInsertCommand.Id">
+            <summary>
+            Gets or sets the Id.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Insert.ServiceInsertCommand.Name">
+            <summary>
+            Gets or sets the Name.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Update.ServiceDetailTypeUpdateCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Update.ServiceDetailTypeUpdateCommand" />.
             </summary>
         </member>
         <member name="P:Syp.Command.Update.ServiceDetailTypeUpdateCommand.Id">
             <summary>
-            Gets and Sets the Id
+            Gets or sets the Id
+            Gets and Sets the Id.
             </summary>
         </member>
         <member name="P:Syp.Command.Update.ServiceDetailTypeUpdateCommand.DetailTypeName">
             <summary>
-            Gets and Sets the DetailTypeName
+            Gets or sets the DetailTypeName
+            Gets and Sets the DetailTypeName.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Update.ServiceDetailUpdateCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Update.ServiceDetailUpdateCommand" />.
             </summary>
         </member>
         <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.Id">
             <summary>
-            Gets and Sets the Id
+            Gets or sets the Id
+            Gets and Sets the Id.
             </summary>
         </member>
         <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.ServiceId">
             <summary>
-            Gets and Sets the ServiceId
+            Gets or sets the ServiceId
+            Gets and Sets the ServiceId.
             </summary>
         </member>
         <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.DetailTypeId">
             <summary>
-            Gets and Sets the DetailTypeId
+            Gets or sets the DetailTypeId
+            Gets and Sets the DetailTypeId.
             </summary>
         </member>
         <member name="P:Syp.Command.Update.ServiceDetailUpdateCommand.Info">
             <summary>
-            Gets and Sets the Info
+            Gets or sets the Info
+            Gets and Sets the Info.
+            </summary>
+        </member>
+        <member name="T:Syp.Command.Update.ServiceUpdateCommand">
+            <summary>
+            Defines the <see cref="T:Syp.Command.Update.ServiceUpdateCommand" />.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceUpdateCommand.Id">
+            <summary>
+            Gets or sets the Id.
+            </summary>
+        </member>
+        <member name="P:Syp.Command.Update.ServiceUpdateCommand.Name">
+            <summary>
+            Gets or sets the Name.
             </summary>
         </member>
     </members>

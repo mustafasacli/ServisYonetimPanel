@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syp.CommandHandlers</name>
+    </assembly>
+    <members>
+        <member name="T:Syp.CommandHandlers.Delete.ServiceDeleteCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Delete.ServiceDeleteCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Delete.ServiceDeleteCommandHandler.Handle(Syp.Command.Delete.ServiceDeleteCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Delete.ServiceDeleteCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Delete.ServiceDetailDeleteCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Delete.ServiceDetailDeleteCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Delete.ServiceDetailDeleteCommandHandler.Handle(Syp.Command.Delete.ServiceDetailDeleteCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Delete.ServiceDetailDeleteCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Delete.ServiceDetailTypeDeleteCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Delete.ServiceDetailTypeDeleteCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Delete.ServiceDetailTypeDeleteCommandHandler.Handle(Syp.Command.Delete.ServiceDetailTypeDeleteCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Delete.ServiceDetailTypeDeleteCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Insert.ServiceDetailInsertCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Insert.ServiceDetailInsertCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Insert.ServiceDetailInsertCommandHandler.Handle(Syp.Command.Insert.ServiceDetailInsertCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Insert.ServiceDetailInsertCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Insert.ServiceDetailTypeInsertCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Insert.ServiceDetailTypeInsertCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Insert.ServiceDetailTypeInsertCommandHandler.Handle(Syp.Command.Insert.ServiceDetailTypeInsertCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Insert.ServiceDetailTypeInsertCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Insert.ServiceInsertCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Insert.ServiceInsertCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Insert.ServiceInsertCommandHandler.Handle(Syp.Command.Insert.ServiceInsertCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Insert.ServiceInsertCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler.Handle(Syp.Command.Update.ServiceDetailTypeUpdateCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Update.ServiceDetailTypeUpdateCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Update.ServiceDetailUpdateCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Update.ServiceDetailUpdateCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceDetailUpdateCommandHandler.Handle(Syp.Command.Update.ServiceDetailUpdateCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Update.ServiceDetailUpdateCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="T:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler">
+            <summary>
+            Defines the <see cref="T:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler"/>.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler"/> class.
+            </summary>
+        </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler.Handle(Syp.Command.Update.ServiceUpdateCommand)">
+            <summary>
+            The Handle.
+            </summary>
+            <param name="command">The command <see cref="T:Syp.Command.Update.ServiceUpdateCommand"/>.</param>
+            <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+    </members>
+</doc>

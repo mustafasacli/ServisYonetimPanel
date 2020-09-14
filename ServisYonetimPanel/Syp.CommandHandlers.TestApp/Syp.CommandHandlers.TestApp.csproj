@@ -65,9 +65,9 @@
       <Project>{dccf1f33-c51d-4e2e-b991-6199c8ec487e}</Project>
       <Name>Syp.Command.Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Syp.Command.Handlers\Syp.Command.Handlers.csproj">
-      <Project>{4cd7b7e7-1104-477f-9ff2-4632728e410b}</Project>
-      <Name>Syp.Command.Handlers</Name>
+    <ProjectReference Include="..\Syp.CommandHandlers\Syp.CommandHandlers.csproj">
+      <Project>{e7ca6135-7bd7-482b-adff-a6109f69167e}</Project>
+      <Name>Syp.CommandHandlers</Name>
     </ProjectReference>
     <ProjectReference Include="..\Syp.Command\Syp.Command.csproj">
       <Project>{02f9a5a4-71e4-491b-b0a1-0dee93bf98ac}</Project>

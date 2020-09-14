@@ -36,7 +36,7 @@
       <HintPath>..\packages\SimpleFileLogging.dll.2.4.0\lib\net45\SimpleFileLogging.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInjector, Version=5.0.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
-      <HintPath>..\packages\SimpleInjector.5.0.2\lib\net45\SimpleInjector.dll</HintPath>
+      <HintPath>..\packages\SimpleInjector.5.0.3\lib\net45\SimpleInjector.dll</HintPath>
     </Reference>
     <Reference Include="SimpleInjector.Integration.Wcf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <HintPath>..\packages\SimpleInjector.Integration.Wcf.5.0.0\lib\net45\SimpleInjector.Integration.Wcf.dll</HintPath>

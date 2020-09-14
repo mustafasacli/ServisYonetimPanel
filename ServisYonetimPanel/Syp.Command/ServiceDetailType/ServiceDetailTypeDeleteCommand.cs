@@ -5,14 +5,19 @@
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Runtime.Serialization;
 
+    /// <summary>
+    /// Defines the <see cref="ServiceDetailTypeDeleteCommand" />.
+    /// </summary>
     [Table("service_detail_type")]
     [DataContract]
     public class ServiceDetailTypeDeleteCommand : BaseDeleteCommand
     {
+        /// <summary>
+        /// Gets or sets the Id.
+        /// </summary>
         [Key]
         [Column("id", Order = 1, TypeName = "int4")]
         [DataMember]
-        public long Id
-        { get; set; }
+        public long Id { get; set; }
     }
 }

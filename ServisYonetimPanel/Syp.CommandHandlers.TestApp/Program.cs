@@ -1,7 +1,7 @@
 ﻿using Syp.Command.Delete;
-using Syp.Command.Handlers.Delete;
-using Syp.Command.Handlers.Insert;
-using Syp.Command.Handlers.Update;
+using Syp.CommandHandlers.Delete;
+using Syp.CommandHandlers.Insert;
+using Syp.CommandHandlers.Update;
 using Syp.Command.Insert;
 using Syp.Command.Update;
 using System;
