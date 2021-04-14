@@ -28,22 +28,6 @@
 
             try
             {
-                var validationResult = command.Validate();
-                if (validationResult.HasError)
-                {
-                    response.Data = new LongCommandResult();
-                    response.ResponseCode = -200;
-#if DEBUG
-                    response.ResponseMessage =
-                        validationResult.AllDevValidationMessages;
-#else
-                    response.ResponseMessage =
-                        validationResult.AllValidationMessages;
-#endif
-
-                    return response;
-                }
-
                 using (var connection = GetDbConnection())
                 {
                     try
@@ -64,6 +48,31 @@
             {
                 response.ResponseCode = -500;
                 DayLogger.Error(ex);
+            }
+
+            return response;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        public override SimpleResponse Validate(ServiceDetailTypeInsertCommand command)
+        {
+            var response = new SimpleResponse();
+
+            var validationResult = command.Validate();
+            if (validationResult.HasError)
+            {
+                response.ResponseCode = -200;
+#if DEBUG
+                response.ResponseMessage =
+                    validationResult.AllDevValidationMessages;
+#else
+                    response.ResponseMessage =
+                        validationResult.AllValidationMessages;
+#endif
             }
 
             return response;

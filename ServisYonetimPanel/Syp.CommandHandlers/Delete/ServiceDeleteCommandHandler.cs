@@ -47,5 +47,19 @@
 
             return response;
         }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        public override SimpleResponse Validate(ServiceDeleteCommand command)
+        {
+            return new SimpleResponse
+            {
+                ResponseCode = command.Id < 1 ? -200 : 1,
+                ResponseMessage = command.Id < 1 ? "id parameter must be given." : ""
+            };
+        }
     }
 }

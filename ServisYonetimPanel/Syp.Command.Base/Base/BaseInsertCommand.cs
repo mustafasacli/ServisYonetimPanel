@@ -27,7 +27,7 @@
         [NotMapped]
         public long CreatedOnTicks
         {
-            get { return (createdOnTicks ?? this.CreatedOn.Ticks); }
+            get { return (createdOnTicks ?? (createdOnTicks = this.CreatedOn.Ticks).Value); }
             set { createdOnTicks = value; }
         }
 

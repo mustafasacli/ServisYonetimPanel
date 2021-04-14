@@ -4,6 +4,7 @@
     using SimpleInfra.Common.Response;
     using SimpleInfra.Crud.Extensions.ConnectionExtensions;
     using SimpleInfra.Data.Extensions;
+    using SimpleInfra.Validation;
     using Syp.Command.Base.Result;
     using Syp.Command.Update;
     using System;
@@ -53,6 +54,31 @@
             {
                 response.ResponseCode = -500;
                 DayLogger.Error(ex);
+            }
+
+            return response;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        public override SimpleResponse Validate(ServiceUpdateCommand command)
+        {
+            var response = new SimpleResponse();
+
+            var validationResult = command.Validate();
+            if (validationResult.HasError)
+            {
+                response.ResponseCode = -200;
+#if DEBUG
+                response.ResponseMessage =
+                    validationResult.AllDevValidationMessages;
+#else
+                    response.ResponseMessage =
+                        validationResult.AllValidationMessages;
+#endif
             }
 
             return response;

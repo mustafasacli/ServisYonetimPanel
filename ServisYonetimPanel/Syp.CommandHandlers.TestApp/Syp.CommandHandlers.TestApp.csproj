@@ -57,6 +57,14 @@
       <Project>{cd63cf39-40a9-493e-86a3-a07ba7f72373}</Project>
       <Name>SI.Command.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandBus.Core\SI.CommandBus.Core.csproj">
+      <Project>{981b8737-b77f-4629-951c-b2addbc4fc22}</Project>
+      <Name>SI.CommandBus.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandBus\SI.CommandBus.csproj">
+      <Project>{0914cdf6-a20e-48b6-9807-04a38d3d6cd1}</Project>
+      <Name>SI.CommandBus</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.CommandHandler.Base\SI.CommandHandler.Base.csproj">
       <Project>{ddf9a38d-0b97-4e0b-919d-c73f4ee8ec71}</Project>
       <Name>SI.CommandHandler.Base</Name>
