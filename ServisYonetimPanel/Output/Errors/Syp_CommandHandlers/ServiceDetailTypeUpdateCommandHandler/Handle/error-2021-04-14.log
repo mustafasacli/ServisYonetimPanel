@@ -1,0 +1,33 @@
+Time : 2021-04-14, 11:49:36 334979
+Assembly : Syp.CommandHandlers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly File Name : D:\Depo\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\Syp.CommandHandlers\Update\ServiceDetailTypeUpdateCommandHandler.cs
+Class : ServiceDetailTypeUpdateCommandHandler
+Method Name : Handle
+Line : 48
+Column : 17
+Message : ERROR: 42P01: relation "service_detail_type" does not exist
+Stack Trace :    konum: Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlState.cs içinde: satır 887
+   konum: Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1173
+   konum: Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1191
+   konum: Npgsql.ForwardsOnlyDataReader.NextResult() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1377
+   konum: Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1040
+   konum: Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlCommand.cs içinde: satır 609
+   konum: Npgsql.NpgsqlCommand.ExecuteNonQuery() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlCommand.cs içinde: satır 512
+   konum: SimpleInfra.Data.Extensions.SimpleDbOperatorV2.ExecuteQuery(IDbConnection connection, SimpleCommandDefinition commandDefinition, IDbTransaction transaction) C:\GitProjects\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Data.Extensions\ConnectionExtensions\SimpleDbOperatorV2.cs içinde: satır 42
+   konum: SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.Update[T](IDbConnection dbConnection, T entity, IDbTransaction transaction, Nullable`1 commandTimeout) C:\GitProjects\SI.Crud.Extensions.Repo\SI.Crud.Extensions.Repo\SimpleInfra.Crud.Extensions\ConnectionExtensions\SimpleCrudOperator.cs içinde: satır 278
+   konum: Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler.Handle(ServiceDetailTypeUpdateCommand command) D:\Depo\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\Syp.CommandHandlers\Update\ServiceDetailTypeUpdateCommandHandler.cs içinde: satır 34
+Exception Data : Npgsql.NpgsqlException:
+relation "service_detail_type" does not exist
+Severity: ERROR
+Code: 42P01
+   konum: Npgsql.NpgsqlState.<ProcessBackendResponses_Ver_3>d__a.MoveNext() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlState.cs içinde: satır 887
+   konum: Npgsql.ForwardsOnlyDataReader.GetNextResponseObject() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1173
+   konum: Npgsql.ForwardsOnlyDataReader.GetNextRowDescription() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1191
+   konum: Npgsql.ForwardsOnlyDataReader.NextResult() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1377
+   konum: Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean synchOnReadError) c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlDataReader.cs içinde: satır 1040
+   konum: Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb) c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlCommand.cs içinde: satır 609
+   konum: Npgsql.NpgsqlCommand.ExecuteNonQuery() c:\C#Apps\github.npgsql.Npgsql.stock\src\Npgsql\NpgsqlCommand.cs içinde: satır 512
+   konum: SimpleInfra.Data.Extensions.SimpleDbOperatorV2.ExecuteQuery(IDbConnection connection, SimpleCommandDefinition commandDefinition, IDbTransaction transaction) C:\GitProjects\SI.Extensions.Repo\SI.Extensions.Repo.Soln\SimpleInfra.Data.Extensions\ConnectionExtensions\SimpleDbOperatorV2.cs içinde: satır 42
+   konum: SimpleInfra.Crud.Extensions.ConnectionExtensions.SimpleCrudOperator.Update[T](IDbConnection dbConnection, T entity, IDbTransaction transaction, Nullable`1 commandTimeout) C:\GitProjects\SI.Crud.Extensions.Repo\SI.Crud.Extensions.Repo\SimpleInfra.Crud.Extensions\ConnectionExtensions\SimpleCrudOperator.cs içinde: satır 278
+   konum: Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler.Handle(ServiceDetailTypeUpdateCommand command) D:\Depo\Git_Projects\ServisYonetimPanel\ServisYonetimPanel\Syp.CommandHandlers\Update\ServiceDetailTypeUpdateCommandHandler.cs içinde: satır 34
+----------------------------------

@@ -16,6 +16,13 @@
             <param name="command">The command <see cref="T:Syp.Command.Delete.ServiceDeleteCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
         </member>
+        <member name="M:Syp.CommandHandlers.Delete.ServiceDeleteCommandHandler.Validate(Syp.Command.Delete.ServiceDeleteCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
+        </member>
         <member name="T:Syp.CommandHandlers.Delete.ServiceDetailDeleteCommandHandler">
             <summary>
             Defines the <see cref="T:Syp.CommandHandlers.Delete.ServiceDetailDeleteCommandHandler"/>.
@@ -27,6 +34,13 @@
             </summary>
             <param name="command">The command <see cref="T:Syp.Command.Delete.ServiceDetailDeleteCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="M:Syp.CommandHandlers.Delete.ServiceDetailDeleteCommandHandler.Validate(Syp.Command.Delete.ServiceDetailDeleteCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
         </member>
         <member name="T:Syp.CommandHandlers.Delete.ServiceDetailTypeDeleteCommandHandler">
             <summary>
@@ -40,6 +54,13 @@
             <param name="command">The command <see cref="T:Syp.Command.Delete.ServiceDetailTypeDeleteCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
         </member>
+        <member name="M:Syp.CommandHandlers.Delete.ServiceDetailTypeDeleteCommandHandler.Validate(Syp.Command.Delete.ServiceDetailTypeDeleteCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
+        </member>
         <member name="T:Syp.CommandHandlers.Insert.ServiceDetailInsertCommandHandler">
             <summary>
             Defines the <see cref="T:Syp.CommandHandlers.Insert.ServiceDetailInsertCommandHandler"/>.
@@ -51,6 +72,13 @@
             </summary>
             <param name="command">The command <see cref="T:Syp.Command.Insert.ServiceDetailInsertCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="M:Syp.CommandHandlers.Insert.ServiceDetailInsertCommandHandler.Validate(Syp.Command.Insert.ServiceDetailInsertCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
         </member>
         <member name="T:Syp.CommandHandlers.Insert.ServiceDetailTypeInsertCommandHandler">
             <summary>
@@ -64,6 +92,13 @@
             <param name="command">The command <see cref="T:Syp.Command.Insert.ServiceDetailTypeInsertCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
         </member>
+        <member name="M:Syp.CommandHandlers.Insert.ServiceDetailTypeInsertCommandHandler.Validate(Syp.Command.Insert.ServiceDetailTypeInsertCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
+        </member>
         <member name="T:Syp.CommandHandlers.Insert.ServiceInsertCommandHandler">
             <summary>
             Defines the <see cref="T:Syp.CommandHandlers.Insert.ServiceInsertCommandHandler"/>.
@@ -75,6 +110,13 @@
             </summary>
             <param name="command">The command <see cref="T:Syp.Command.Insert.ServiceInsertCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="M:Syp.CommandHandlers.Insert.ServiceInsertCommandHandler.Validate(Syp.Command.Insert.ServiceInsertCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
         </member>
         <member name="T:Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler">
             <summary>
@@ -88,6 +130,13 @@
             <param name="command">The command <see cref="T:Syp.Command.Update.ServiceDetailTypeUpdateCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
         </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceDetailTypeUpdateCommandHandler.Validate(Syp.Command.Update.ServiceDetailTypeUpdateCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
+        </member>
         <member name="T:Syp.CommandHandlers.Update.ServiceDetailUpdateCommandHandler">
             <summary>
             Defines the <see cref="T:Syp.CommandHandlers.Update.ServiceDetailUpdateCommandHandler"/>.
@@ -99,6 +148,13 @@
             </summary>
             <param name="command">The command <see cref="T:Syp.Command.Update.ServiceDetailUpdateCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceDetailUpdateCommandHandler.Validate(Syp.Command.Update.ServiceDetailUpdateCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
         </member>
         <member name="T:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler">
             <summary>
@@ -116,6 +172,13 @@
             </summary>
             <param name="command">The command <see cref="T:Syp.Command.Update.ServiceUpdateCommand"/>.</param>
             <returns>The <see cref="T:SimpleInfra.Common.Response.SimpleResponse`1"/>.</returns>
+        </member>
+        <member name="M:Syp.CommandHandlers.Update.ServiceUpdateCommandHandler.Validate(Syp.Command.Update.ServiceUpdateCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+             <returns></returns>
         </member>
     </members>
 </doc>

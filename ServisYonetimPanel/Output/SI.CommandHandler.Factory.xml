@@ -6,7 +6,7 @@
     <members>
         <member name="T:SI.CommandHandler.Factory.CommandHandlerFactory">
             <summary>
-            Defines the <see cref="T:SI.CommandHandler.Factory.CommandHandlerFactory" />.
+            Defines the <see cref="T:SI.CommandHandler.Factory.CommandHandlerFactory"/>.
             </summary>
         </member>
         <member name="F:SI.CommandHandler.Factory.CommandHandlerFactory.commandHandlerRegs">
@@ -26,11 +26,27 @@
         </member>
         <member name="M:SI.CommandHandler.Factory.CommandHandlerFactory.GetCommandHandler``2">
             <summary>
-            The GetCommandHandler.
+            Gets CommandHandler instance.
             </summary>
             <typeparam name="TCommand">.</typeparam>
             <typeparam name="TCommandResult">.</typeparam>
             <returns>.</returns>
+        </member>
+        <member name="P:SI.CommandHandler.Factory.CommandHandlerFactory.Logger">
+            <summary>
+            ISimpleLogger instance.
+            </summary>
+        </member>
+        <member name="M:SI.CommandHandler.Factory.CommandHandlerFactory.BootstrapHandlers">
+            <summary>
+            Bootstraps Command Handlers.
+            </summary>
+        </member>
+        <member name="M:SI.CommandHandler.Factory.CommandHandlerFactory.RegisterAssembly(System.Reflection.Assembly)">
+            <summary>
+            Registers CommandHandlers Assembly.
+            </summary>
+            <param name="assembly"></param>
         </member>
     </members>
 </doc>
