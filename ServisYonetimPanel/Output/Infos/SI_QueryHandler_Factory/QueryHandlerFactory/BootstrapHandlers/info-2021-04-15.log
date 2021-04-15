@@ -1,0 +1,36 @@
+Time : 2021-04-15, 13:33:58 400663
+Assembly : SI.QueryHandler.Factory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly File Name : D:\Depo\Git_Projects\SI.CQRS.Repository\SI.CQRS.Sln\src\QueryHandler.Factory\QueryHandlerFactory.cs
+Class : QueryHandlerFactory
+Method Name : BootstrapHandlers
+Line : 108
+Column : 25
+"Syp.QueryHandlers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" is loaded.
+----------------------------------
+Time : 2021-04-15, 13:34:37 484137
+Assembly : SI.QueryHandler.Factory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly File Name : D:\Depo\Git_Projects\SI.CQRS.Repository\SI.CQRS.Sln\src\QueryHandler.Factory\QueryHandlerFactory.cs
+Class : QueryHandlerFactory
+Method Name : BootstrapHandlers
+Line : 108
+Column : 25
+"Syp.QueryHandlers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" is loaded.
+----------------------------------
+Time : 2021-04-15, 13:35:41 561712
+Assembly : SI.QueryHandler.Factory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly File Name : D:\Depo\Git_Projects\SI.CQRS.Repository\SI.CQRS.Sln\src\QueryHandler.Factory\QueryHandlerFactory.cs
+Class : QueryHandlerFactory
+Method Name : BootstrapHandlers
+Line : 108
+Column : 25
+"Syp.QueryHandlers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" is loaded.
+----------------------------------
+Time : 2021-04-15, 13:37:53 138897
+Assembly : SI.QueryHandler.Factory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+Assembly File Name : D:\Depo\Git_Projects\SI.CQRS.Repository\SI.CQRS.Sln\src\QueryHandler.Factory\QueryHandlerFactory.cs
+Class : QueryHandlerFactory
+Method Name : BootstrapHandlers
+Line : 108
+Column : 25
+"Syp.QueryHandlers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" is loaded.
+----------------------------------

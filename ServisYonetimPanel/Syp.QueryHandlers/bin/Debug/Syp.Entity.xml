@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syp.Entity</name>
+    </assembly>
+    <members>
+        <member name="P:Syp.Entity.BaseEntity.CreatedOn">
+            <summary>
+            Gets and Sets the CreatedOn
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.BaseEntity.CreatedBy">
+            <summary>
+            Gets and Sets the CreatedBy
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.BaseEntity.UpdatedOn">
+            <summary>
+            Gets and Sets the UpdatedOn
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.BaseEntity.UpdatedBy">
+            <summary>
+            Gets and Sets the UpdatedBy
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.BaseEntity.IsDeleted">
+            <summary>
+            Gets and Sets the IsDeleted
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.Service.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.Service.Name">
+            <summary>
+            Gets and Sets the Name
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceDetail.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceDetail.ServiceId">
+            <summary>
+            Gets and Sets the ServiceId
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceDetail.DetailTypeId">
+            <summary>
+            Gets and Sets the DetailTypeId
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceDetail.Info">
+            <summary>
+            Gets and Sets the Info
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceDetailType.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceDetailType.DetailTypeName">
+            <summary>
+            Gets and Sets the DetailTypeName
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.Id">
+            <summary>
+            Gets and Sets the Id
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.UserName">
+            <summary>
+            Gets and Sets the UserName
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.FirstName">
+            <summary>
+            Gets and Sets the FirstName
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.LastName">
+            <summary>
+            Gets and Sets the LastName
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.Email">
+            <summary>
+            Gets and Sets the Email
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.Password">
+            <summary>
+            Gets and Sets the Password
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.CreatedOn">
+            <summary>
+            Gets and Sets the CreatedOn
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.CreatedBy">
+            <summary>
+            Gets and Sets the CreatedBy
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.UpdatedOn">
+            <summary>
+            Gets and Sets the UpdatedOn
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.UpdatedBy">
+            <summary>
+            Gets and Sets the UpdatedBy
+            </summary>
+        </member>
+        <member name="P:Syp.Entity.ServiceUser.IsDeleted">
+            <summary>
+            Gets and Sets the IsDeleted
+            </summary>
+        </member>
+    </members>
+</doc>
