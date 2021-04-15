@@ -1,12 +1,16 @@
 ﻿using SI.CommandBus;
 using SI.CommandBus.Core;
+using SI.QueryBus;
+using SI.QueryBus.Core;
 using Syp.Command.Base.Result;
 using Syp.Command.Delete;
 using Syp.Command.Insert;
 using Syp.Command.Update;
 using Syp.CommandHandlers.Delete;
+using Syp.Query.ServiceDetailType;
 using System;
 using System.Threading;
+using SimpleInfra.Common.Response;
 
 namespace Syp.CommandHandlers.TestApp
 {
@@ -15,6 +19,7 @@ namespace Syp.CommandHandlers.TestApp
         private static void Main(string[] args)
         {
             ICommandBus commandBus = new CommandBus();
+            IQueryBus queryBus = new QueryBus();
             var cmd = new ServiceDetailTypeInsertCommand
             {
                 DetailTypeName = "My First Service",
@@ -22,7 +27,7 @@ namespace Syp.CommandHandlers.TestApp
             };
 
             var result = commandBus.Send<ServiceDetailTypeInsertCommand, LongCommandResult>(cmd);
-
+            var response = queryBus.Send<ServiceDetailTypeListQuery, ServiceDetailTypeList>(new ServiceDetailTypeListQuery { Name = "fi" });
             //var serviceDetailTypeHandler = new ServiceDetailTypeInsertCommandHandler();
 
             //var result = serviceDetailTypeHandler.Handle(cmd);

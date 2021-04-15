@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SI.QueryHandler.Factory", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.CommandHandlers", "Syp.CommandHandlers\Syp.CommandHandlers.csproj", "{E7CA6135-7BD7-482B-ADFF-A6109F69167E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.QueryHandlers", "Syp.QueryHandlers\Syp.QueryHandlers.csproj", "{A9008BB9-0DEC-4E12-BD4F-B77D7B8628D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{E7CA6135-7BD7-482B-ADFF-A6109F69167E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7CA6135-7BD7-482B-ADFF-A6109F69167E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7CA6135-7BD7-482B-ADFF-A6109F69167E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9008BB9-0DEC-4E12-BD4F-B77D7B8628D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9008BB9-0DEC-4E12-BD4F-B77D7B8628D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9008BB9-0DEC-4E12-BD4F-B77D7B8628D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9008BB9-0DEC-4E12-BD4F-B77D7B8628D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

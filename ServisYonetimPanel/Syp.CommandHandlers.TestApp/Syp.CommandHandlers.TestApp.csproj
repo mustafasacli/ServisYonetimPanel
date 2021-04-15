@@ -69,6 +69,18 @@
       <Project>{ddf9a38d-0b97-4e0b-919d-c73f4ee8ec71}</Project>
       <Name>SI.CommandHandler.Base</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.Query.Core\SI.Query.Core.csproj">
+      <Project>{076741e2-4702-45f8-8caf-71ec86c4f1eb}</Project>
+      <Name>SI.Query.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.QueryBus.Core\SI.QueryBus.Core.csproj">
+      <Project>{ef4af97b-ae4b-4a1a-9e48-e02891882a44}</Project>
+      <Name>SI.QueryBus.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SI.CQRS.Repository\SI.CQRS.Sln\NetFramework\SI.QueryBus\SI.QueryBus.csproj">
+      <Project>{2c25bf28-565d-479f-b7d1-8566dcfd271a}</Project>
+      <Name>SI.QueryBus</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Syp.Command.Base\Syp.Command.Base.csproj">
       <Project>{dccf1f33-c51d-4e2e-b991-6199c8ec487e}</Project>
       <Name>Syp.Command.Base</Name>
@@ -80,6 +92,14 @@
     <ProjectReference Include="..\Syp.Command\Syp.Command.csproj">
       <Project>{02f9a5a4-71e4-491b-b0a1-0dee93bf98ac}</Project>
       <Name>Syp.Command</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Syp.QueryHandlers\Syp.QueryHandlers.csproj">
+      <Project>{a9008bb9-0dec-4e12-bd4f-b77d7b8628d3}</Project>
+      <Name>Syp.QueryHandlers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Syp.Query\Syp.Query.csproj">
+      <Project>{bfa34156-8f0c-4258-a16e-c133e839ded9}</Project>
+      <Name>Syp.Query</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
