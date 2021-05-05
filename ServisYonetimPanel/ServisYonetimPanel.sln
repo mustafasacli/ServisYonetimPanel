@@ -13,6 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Syp.Command.Handlers", "Syp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalDlls", "ExternalDlls", "{748F0DC8-89B3-4332-BEFA-7319A0EC3799}"
 	ProjectSection(SolutionItems) = preProject
+		ExternalDlls\Coddie.Common.dll = ExternalDlls\Coddie.Common.dll
+		ExternalDlls\Coddie.Crud.dll = ExternalDlls\Coddie.Crud.dll
+		ExternalDlls\Coddie.Data.dll = ExternalDlls\Coddie.Data.dll
 		ExternalDlls\SimpleInfra.Common.Extensions.dll = ExternalDlls\SimpleInfra.Common.Extensions.dll
 		ExternalDlls\SimpleInfra.Data.Extensions.dll = ExternalDlls\SimpleInfra.Data.Extensions.dll
 	EndProjectSection

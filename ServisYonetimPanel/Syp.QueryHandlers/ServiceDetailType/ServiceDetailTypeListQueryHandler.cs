@@ -31,7 +31,7 @@ namespace Syp.QueryHandlers.ServiceDetailType
                             {
                                 DetailTypeName = p.DetailTypeName,
                                 Id = p.Id
-                            }).ToList()
+                            }).ToList() ?? new List<Query.ServiceDetailType.ServiceDetailType>()
                         };
                         response.ResponseCode = response.Data?.List?.Count ?? 0;
                         response.RCode = result.ToString();
