@@ -1,13 +1,10 @@
 ﻿using SI.QueryHandler.Base;
 using SimpleInfra.Common.Response;
-using SimpleInfra.Crud.Extensions.ConnectionExtensions;
 using SimpleInfra.Data.Extensions;
 using Syp.Query.ServiceDetailType;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Syp.QueryHandlers.ServiceDetailType
 {
@@ -49,7 +46,6 @@ namespace Syp.QueryHandlers.ServiceDetailType
             }
 
             return response;
-            throw new NotImplementedException();
         }
     }
 }
